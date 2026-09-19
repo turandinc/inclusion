@@ -1,0 +1,44 @@
+{
+  "surum": "0.9-taslak",
+  "etkin": false,
+  "kaynak_dogrulamasi": "ONAYLANMADI",
+  "uyari": "DİKKAT: Harf tabanlı İfade Planları'nın (fiziksel / zihinsel / duygusal / sezgisel) harf gruplaması yazarlar arasında ÖNEMLİ ÖLÇÜDE değişir ve tek bir yerleşik tablo yoktur. Aşağıdaki gruplama yaygın yayınlanmış bir sürümdür, ancak bu depoda doğrulanmamıştır. Motor bu bölümü 'etkin': false olduğu sürece RAPORA BASMAZ. Kendi kaynağınıza göre gruplamayı onaylayıp etkin=true yapın; onaylamadan yayına almayın. Tek/çift ve üçlü eksen okumaları (data/denge.json) bu belirsizliği taşımaz ve etkin durumdadır.",
+
+  "harf_gruplari": {
+    "fiziksel": ["E", "W"],
+    "zihinsel": ["A", "H", "J", "N", "P"],
+    "duygusal": ["I", "O", "R", "S", "U", "Y"],
+    "sezgisel": ["B", "C", "D", "F", "G", "K", "L", "M", "Q", "T", "V", "X", "Z"]
+  },
+
+  "planlar": {
+    "fiziksel": {
+      "ad": "Fiziksel plan",
+      "aciklama": "Bedenle, elle, somut olanla kurulan ilişki.",
+      "zayif": "Fiziksel plan zayıf: somut ve bedensel olanla kurduğunuz ilişki ikincil kalır.",
+      "dengeli": "Fiziksel plan dengede: somut olanla kurduğunuz ilişki zorlanmadan çalışır.",
+      "baskin": "Fiziksel plan baskın: elle tutulur olan, bedensel olan sizin birincil kanalınız."
+    },
+    "zihinsel": {
+      "ad": "Zihinsel plan",
+      "aciklama": "Akıl yürütme, planlama, çözümleme.",
+      "zayif": "Zihinsel plan zayıf: çözümlemeden çok sezerek ya da yaparak ilerlersiniz.",
+      "dengeli": "Zihinsel plan dengede: düşünmek diğer kanalları bastırmadan çalışır.",
+      "baskin": "Zihinsel plan baskın: bir şeyi önce kafanızda kurar, sonra yaşarsınız."
+    },
+    "duygusal": {
+      "ad": "Duygusal plan",
+      "aciklama": "Duygu, bağ, etkilenme.",
+      "zayif": "Duygusal plan zayıf: duygu sizde kararın belirleyeni değil.",
+      "dengeli": "Duygusal plan dengede: duygu bilgi verir ama yönetmez.",
+      "baskin": "Duygusal plan baskın: her şeyi önce duygusal tonundan tanırsınız."
+    },
+    "sezgisel": {
+      "ad": "Sezgisel plan",
+      "aciklama": "Doğrudan kavrayış, nedenini söyleyemediğiniz bilgi.",
+      "zayif": "Sezgisel plan zayıf: gerekçesini kuramadığınız bir bilgiye güvenmezsiniz.",
+      "dengeli": "Sezgisel plan dengede: sezgi diğer kanallarla birlikte çalışır.",
+      "baskin": "Sezgisel plan baskın: bildiğinizi nereden bildiğinizi çoğu zaman açıklayamazsınız."
+    }
+  }
+}

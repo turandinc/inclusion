@@ -1,0 +1,66 @@
+{
+  "surum": "1.0",
+  "aciklama": "Frekansın NİCELİĞİNİ okuyan katman. Hücre metni (data/kapsam-hücreleri) sayı ile frekansın karışımını anlatır; bu dosya o frekansın beklenen ortalamaya göre nerede durduğunu söyler. 1.0 sürümünde iki anlam tek metne sıkıştırılmıştı ve 'aşırı' kaydı hiç yoktu — rapor bu yüzden sistematik olarak pohpohlayıcıydı.",
+  "kayitlar": {
+    "normalin_alti": "Nitelik var ama önde değil; adınızın uzunluğuna göre beklenenin altında.",
+    "dengeli": "Beklenen düzeyde; zorlanmadan, kendiliğinden çalışır.",
+    "normalin_ustu": "Beklenenin üzerinde; tablonun tonunu belirgin biçimde renklendirir.",
+    "asiri": "Beklenenin çok üzerinde. Disiplinde bu bir üstünlük değil, dengelenmesi gereken bir fazlalık olarak okunur."
+  },
+  "metinler": {
+    "1": {
+      "normalin_alti": "Kararı kendiniz alırsınız ama bunu ilk hareket olarak yapmazsınız; girişim sizde var, önde değil.",
+      "dengeli": "Kendi adınıza karar verme ve yer tutma kapasiteniz zorlanmadan çalışır. Ne geri çekilirsiniz ne de öne geçmek için itişirsiniz.",
+      "normalin_ustu": "Bağımsızlık ve öncülük tablonuzun belirgin bir rengi. İnisiyatif almanız beklenir hale gelir ve bu, çevrenizin size yüklediği bir role dönüşebilir.",
+      "asiri": "Bağımsızlık ihtiyacı beklenenin çok üzerinde. Bu yoğunlukta 1, kolayca inatçılığa, emir almaya tahammülsüzlüğe ve kendi kararını tek geçerli karar sayma eğilimine dönüşür. Yalnız kalmanız bir tercih gibi görünür; çoğu zaman kimseyle uzlaşamamanın sonucudur. Dengelemenin yolu, önemsiz bir konuda bilerek başkasının kararına uymak."
+    },
+    "2": {
+      "normalin_alti": "Duyarlılık ve işbirliği sizde var ama başkasıyla yan yana durmak ilk refleksiniz değil.",
+      "dengeli": "Duyarlılığınız ve işbirliği kapasiteniz zorlanmadan çalışır; hem kendinizi hem karşınızdakini hesaba katabilirsiniz.",
+      "normalin_ustu": "Duyarlılık ve ilişki kurma tablonuzun belirgin bir rengi. Ortamın havasını herkesten önce fark eder, buna göre ayarlanırsınız.",
+      "asiri": "Duyarlılık beklenenin çok üzerinde. Bu yoğunlukta 2, aşırı alınganlığa, karar verememeye ve kendini karşısındakinde kaybetmeye dönüşür. Uyumu korumak için kendi aleyhinize kabul ettiğiniz şeyler birikir ve bir noktada hepsi birden geri döner. Dengelemenin yolu, küçük bir konuda dahi 'hayır' demeyi bir alışkanlık haline getirmek."
+    },
+    "3": {
+      "normalin_alti": "İfade ve yaratıcılık sizde var ama kendini öne süren taraf değil; söylemek yerine yapmayı seçersiniz.",
+      "dengeli": "İfade, iletişim ve yaratıcılık zorlanmadan çalışır. Anlatmanız gerektiğinde anlatır, gerekmediğinde susarsınız.",
+      "normalin_ustu": "İfade ve yaratıcılık tablonuzun belirgin bir rengi. Söz ve biçim sizin doğal aracınız; çevreniz sizden bunu bekler hale gelir.",
+      "asiri": "İfade beklenenin çok üzerinde. Bu yoğunlukta 3, dağılmaya, söylenmiş olanı yapılmış saymaya ve alkış ihtiyacına dönüşür. Aynı anda birçok şeye başlarsınız; bitmiş iş sayısı başlamış iş sayısının çok gerisinde kalır. Dengelemenin yolu, yeni bir şeye başlamadan önce eldekini bitirme kuralını kendinize koymak."
+    },
+    "4": {
+      "normalin_alti": "Düzen ve emek sizde var ama işin çatısını kurmak ilk ilginiz değil.",
+      "dengeli": "Emek, metot ve istikrar zorlanmadan çalışır. Bir işin temelini de düşünür, gerektiğinde doğaçlama da yapabilirsiniz.",
+      "normalin_ustu": "Düzen ve somut emek tablonuzun belirgin bir rengi. Güvenilirliğiniz çevreniz için bir dayanak noktası haline gelir.",
+      "asiri": "Düzen ihtiyacı beklenenin çok üzerinde. Bu yoğunlukta 4, katılığa, yöntemin amaç yerine geçmesine ve plan dışına çıkıldığında işlevsizleşmeye dönüşür. Titizliğiniz genel görüşünüzü ve esnekliğinizi daraltabilir; çalışmak bir amaç değil bir sığınak olabilir. Dengelemenin yolu, bir işi bilerek planlamadan yapmak."
+    },
+    "5": {
+      "normalin_alti": "Esneklik ve merak sizde var ama değişimi kendiniz başlatmazsınız.",
+      "dengeli": "Uyum, merak ve çeşitlilik zorlanmadan çalışır. Yeniye açıksınız ama her yeni şey için mevcut olanı bırakmazsınız.",
+      "normalin_ustu": "Özgürlük ve çeşitlilik tablonuzun belirgin bir rengi. Hareket alanı sizin için konfor değil, çalışma koşulu.",
+      "asiri": "Özgürlük ihtiyacı beklenenin çok üzerinde. Bu yoğunlukta 5, istikrarsızlığa, dağılmaya ve duyusal aşırılığa dönüşür. Bağlanmak kısıtlanma gibi hissedilir; başlanmış birçok şey yarıda kalır ve huzursuzluk sürekli bir zemin sesi haline gelir. Dengelemenin yolu, süresi belli tek bir yükümlülüğü sonuna kadar taşımak."
+    },
+    "6": {
+      "normalin_alti": "Sorumluluk ve uyum duygusu sizde var ama yükü kendiliğinizden üstlenmezsiniz.",
+      "dengeli": "Sorumluluk, uyum ve estetik duyarlılık zorlanmadan çalışır. Yakınlarınıza dönük olabilir, kendinizi de gözden kaçırmazsınız.",
+      "normalin_ustu": "Sorumluluk ve uyum tablonuzun belirgin bir rengi. Çevreniz sizi doğal olarak taşıyıcı role yerleştirir.",
+      "asiri": "Sorumluluk duygusu beklenenin çok üzerinde. Bu yoğunlukta 6, fazla dahil olmaya, istenmediği halde düzeltmeye ve kendini feda etme alışkanlığına dönüşür. Durumlara duygusal olarak fazla girmek sağlığınızı yorabilir ve karar verme yeteneğinizi bulandırır. Dengelemenin yolu, bir kez de olsa çözebileceğiniz bir sorunu çözmemek."
+    },
+    "7": {
+      "normalin_alti": "Analiz ve derinlik sizde var ama bir konuyu dibine kadar takip etmek ilk eğiliminiz değil.",
+      "dengeli": "Analiz, gözlem ve iç hayat zorlanmadan çalışır. Düşünmeye zaman ayırır, düşünmek için hayatı durdurmazsınız.",
+      "normalin_ustu": "Derinlik ve analiz tablonuzun belirgin bir rengi. Bir şeyin nedenini bilmeden ilerlememek sizin çalışma biçiminiz.",
+      "asiri": "Analiz beklenenin çok üzerinde. Bu yoğunlukta 7, geri çekilmeye, soğukluğa ve hareketi felç eden bir kuşkuculuğa dönüşür. Anlamak eylemin yerine geçer; zihinsel üstünlük duygusu ilişkileri zamanla seyreltir. Dengelemenin yolu, tam olarak anlamadığınız bir konuda yine de bir adım atmak."
+    },
+    "8": {
+      "normalin_alti": "Güç ve somut başarı sizde var ama öne koyduğunuz eksen değil.",
+      "dengeli": "Güç, dayanıklılık ve somut başarı zorlanmadan çalışır. Hedef koyar, hedefin sizi yönetmesine izin vermezsiniz.",
+      "normalin_ustu": "Güç ve başarı tablonuzun belirgin bir rengi. Zorlukta toparlanma kapasiteniz çevrenizce fark edilir.",
+      "asiri": "Güç ekseni beklenenin çok üzerinde. Bu yoğunlukta 8, tahakküme, maddiyatın diğer tüm değerleri gölgelemesine ve dinlenmeyi bir kayıp sayma alışkanlığına dönüşür. Çatışma sizi harekete geçirir ve bu, ilişkilerde bedel ödetir. Dengelemenin yolu, kazanma imkânınız olan bir yerde bilerek geri adım atmak."
+    },
+    "9": {
+      "normalin_alti": "Şefkat ve geniş bakış sizde var ama ilk hareket noktanız değil.",
+      "dengeli": "İdealler, şefkat ve geniş bakış zorlanmadan çalışır. Başkasına dönük olabilir, kendinizi de unutmazsınız.",
+      "normalin_ustu": "İdealler ve insana dönüklük tablonuzun belirgin bir rengi. Meselelere bütünden bakma eğiliminiz belirleyici.",
+      "asiri": "Duygusal yoğunluk beklenenin çok üzerinde. Bu yoğunlukta 9, coşku ile çöküş arasında salınmaya, sınır tanımayan bir fedakârlığa ve gerçekle bağını gevşetmiş bir idealizme dönüşür. Aldatıldığınızı ya da hayal kırıklığına uğradığınızı düşündüğünüzde düşüş sert olur. Dengelemenin yolu, yardımı süresi ve kapsamı belli bir işe dönüştürmek."
+    }
+  }
+}

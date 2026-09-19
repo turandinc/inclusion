@@ -1,0 +1,62 @@
+{
+  "surum": "1.0",
+  "aciklama": "Harf-sayi haritasi ve Turkce normalizasyon kurallari. Iki secenek sunulur; etkin olan 'etkin_sema' ile belirlenir.",
+  "etkin_sema": "latin26_katlamali",
+
+  "semalar": {
+    "latin26_katlamali": {
+      "ad": "26 harfli Pitagor haritasi + Turkce harf katlama",
+      "gerekce": [
+        "Pitagor 1-9 haritasi tarihsel olarak 26 harfli Latin alfabesi uzerinde tanimlidir.",
+        "Turkce diakritikler ayni harfin yazim varyantidir; numeroloji harfi dogum kaydindaki yazimiyla alir.",
+        "Katlama, ayni adin ASCII ve Unicode yazimlarinda (Ayse / Ayse) ayni tabloyu uretir; nufus kayitlarindaki harf cevrimi tutarsizdir."
+      ],
+      "harita": {
+        "A": 1, "B": 2, "C": 3, "D": 4, "E": 5, "F": 6, "G": 7, "H": 8, "I": 9,
+        "J": 1, "K": 2, "L": 3, "M": 4, "N": 5, "O": 6, "P": 7, "Q": 8, "R": 9,
+        "S": 1, "T": 2, "U": 3, "V": 4, "W": 5, "X": 6, "Y": 7, "Z": 8
+      },
+      "katlama": {
+        "Ç": "C", "Ğ": "G", "İ": "I", "I": "I", "Ö": "O", "Ş": "S", "Ü": "U",
+        "Â": "A", "Î": "I", "Û": "U", "Ê": "E", "Ô": "O"
+      }
+    },
+
+    "turk29_dongusel": {
+      "ad": "29 harfli Turk alfabesi uzerinde 1-9 dongusu",
+      "gerekce": [
+        "Turkce'yi kendi alfabesiyle okuma tercihi. Geleneksel bir dayanagi YOKTUR; tamamen modern bir yorumdur.",
+        "Etkinlestirildiginde TUM tablo degisir ve kapsam-tablosu metinleri baska sayilara denk gelir. Uretimde kullanmadan once korpus yeniden dogrulanmalidir."
+      ],
+      "harita": {
+        "A": 1, "B": 2, "C": 3, "Ç": 4, "D": 5, "E": 6, "F": 7, "G": 8, "Ğ": 9,
+        "H": 1, "I": 2, "İ": 3, "J": 4, "K": 5, "L": 6, "M": 7, "N": 8, "O": 9,
+        "Ö": 1, "P": 2, "R": 3, "S": 4, "Ş": 5, "T": 6, "U": 7, "Ü": 8, "V": 9,
+        "Y": 1, "Z": 2
+      },
+      "katlama": { "Â": "A", "Î": "İ", "Û": "U", "Ê": "E", "Ô": "O", "Q": "K", "W": "V", "X": "KS" }
+    }
+  },
+
+  "sesli_harfler": {
+    "aciklama": "Ruh Arzusu (sesliler) ve Kisilik (sessizler) sayilari icin. Turkce'de Y her zaman sessizdir; Ingiliz ekolundeki 'kosullu sesli Y' kurali Turkce'ye tasinmaz.",
+    "sesliler": ["A", "E", "I", "İ", "O", "Ö", "U", "Ü"],
+    "y_seslimi": false
+  },
+
+  "ad_kaynagi": {
+    "aciklama": "Hangi ad tablo icin esas alinir.",
+    "birincil": "dogum_adi_tam",
+    "tanimlar": {
+      "dogum_adi_tam": "Nufus kaydindaki tum on adlar + dogum soyadi. Kapsam tablosunun ve Karmik Derslerin esas kaynagi budur.",
+      "kullanilan_ad": "Gunluk hayatta kullanilan ad. Ikincil tablo olarak sunulur; Karmik Ders uretmez, yalnizca mevcut ifade egilimini gosterir.",
+      "evlilik_soyadi": "Degisen soyadi. Ucuncul tablo; 'sonradan edinilen titresim' olarak okunur, dogum tablosunu gecersiz kilmaz."
+    },
+    "kurallar": [
+      "Ikinci ve ucuncu on adlar SAYILIR; nufusta yaziliysa tablonun parcasidir.",
+      "Unvan, lakap, kisaltma SAYILMAZ.",
+      "Tire ve kesme isareti atilir, harfler birlestirilmez (Al-i -> ALI).",
+      "Bosluklar tablo icin onemsizdir; frekanslar tum harfler uzerinden sayilir."
+    ]
+  }
+}

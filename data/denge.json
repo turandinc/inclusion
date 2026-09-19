@@ -1,0 +1,47 @@
+{
+  "surum": "1.0",
+  "aciklama": "Tablonun bütün olarak okunması: tek/çift dengesi ve üçlü eksenler. 1.0 sürümünde tablo yalnızca hücre hücre okunuyordu; bütünün kendisi hiç okunmuyordu.",
+
+  "tek_cift": {
+    "tanim": {
+      "tek": [1, 3, 5, 7, 9],
+      "cift": [2, 4, 6, 8],
+      "not": "Tek sayılar başlatan, dışa dönük ve etkin; çift sayılar alıcı, ilişkisel ve dengeleyen eksen olarak okunur. Oran, harf sayısına göre normalize edilir: Türkçe adlarda tek sayılar doğal olarak baskındır (tek sayılı harflerin toplam olasılığı yaklaşık %78), bu yüzden ham oran değil beklentiden sapma yorumlanır."
+    },
+    "metinler": {
+      "tek_agir": "Tablonuz beklentinin de ötesinde tek sayı ağırlıklı: başlatan, dışa dönük, kendi hareketiyle ilerleyen bir yapı. Harekete geçmek için dışarıdan bir işaret beklemezsiniz. Buna karşılık bekleme, alma ve başkasının temposuna uyma tarafı zayıf kalır — çoğu tıkanıklığınız yapmadığınızdan değil, durmadığınızdan doğar.",
+      "dengeli": "Tek ve çift sayılar tablonuzda dengede. Hem başlatabilir hem bekleyebilirsiniz; hem kendi hareketinizle hem başkasının hareketiyle çalışabilirsiniz. Bu, tabloda ender rastlanan ve en az bakım isteyen dağılım.",
+      "cift_agir": "Tablonuz beklentinin ötesinde çift sayı ağırlıklı: alıcı, ilişkisel, karşısındakini hesaba katarak ilerleyen bir yapı. Dengeyi kurma ve sürdürme konusunda güçlüsünüz. Buna karşılık ilk hareketi yapmak, kimse sormadan öne çıkmak zorlanmalı alan — beklediğiniz işaret çoğu zaman gelmez."
+    }
+  },
+
+  "ucul_eksenler": {
+    "tanim_notu": "Sayılar 1-9, üçlü kolonlar halinde okunur. Eksen adları bu dosyada TANIMLANMIŞ bir uzlaşımdır; yazarlar arasında adlandırma değişir. Motor eksen ağırlıklarını hesaplar, adlandırma buradan gelir ve değiştirilebilir.",
+    "eksenler": {
+      "eylem": {
+        "sayilar": [1, 4, 7],
+        "ad": "Eylem ekseni",
+        "aciklama": "Karar, yapı ve çözümleme. Bir işi başlatma, kurma ve nedenine inme kapasitesi.",
+        "zayif": "Eylem ekseni tablonuzda zayıf: karar almak, yapı kurmak ve bir şeyin nedenine inmek ilk refleksleriniz değil. İşler sizde niyetten uygulamaya geçerken yavaşlar. Bu eksene bilinçli bir yer açmak, diğer eksenlerin ürettiğini taşıyacak zemini kurar.",
+        "dengeli": "Eylem ekseni dengede: karar, yapı ve çözümleme birlikte çalışıyor. Bir işi hem başlatabilir hem kurabilir hem de neden öyle kurduğunuzu söyleyebilirsiniz.",
+        "baskin": "Eylem ekseni tablonuzun ağırlık merkezi: karar, yapı ve çözümleme birlikte öne çıkıyor. İşleri yürütme kapasiteniz yüksek. Dikkat edilecek yer, ilişki ve ifade eksenlerinin bunun gölgesinde kalması — verimli olmak, anlaşılmak ya da bağ kurmak anlamına gelmez."
+      },
+      "iliski": {
+        "sayilar": [2, 5, 8],
+        "ad": "İlişki ekseni",
+        "aciklama": "Uyum, alışveriş ve güç. Başkasıyla temas kurma, değiş tokuş ve etki alanı.",
+        "zayif": "İlişki ekseni tablonuzda zayıf: temas kurmak, alışveriş yapmak ve etki alanınızı kullanmak zorlanmalı alanlar. Kendi başınıza iyi çalışırsınız ama yaptığınız şeyin karşılığını almakta ve karşı tarafla pazarlık etmekte güçlük çekebilirsiniz.",
+        "dengeli": "İlişki ekseni dengede: temas, alışveriş ve etki birlikte çalışıyor. Hem bağ kurabilir hem karşılığını isteyebilirsiniz.",
+        "baskin": "İlişki ekseni tablonuzun ağırlık merkezi: temas, alışveriş ve etki birlikte öne çıkıyor. İnsan içinde çalışmak size enerji verir. Dikkat edilecek yer, kendi başınıza kalınca yönünüzü kaybetmek — ilişkiden aldığınız ivme, tek başına bir yön değil."
+      },
+      "ifade": {
+        "sayilar": [3, 6, 9],
+        "ad": "İfade ekseni",
+        "aciklama": "Yaratıcılık, sorumluluk ve idealler. Bir şeyi ortaya koyma, taşıma ve anlamlandırma.",
+        "zayif": "İfade ekseni tablonuzda zayıf: ortaya koymak, taşımak ve anlamlandırmak ilk yönelimleriniz değil. Yaptığınız işin görünür hale gelmesi ve neden yapıldığının anlatılması ihmal edilen taraf olabilir.",
+        "dengeli": "İfade ekseni dengede: yaratıcılık, sorumluluk ve idealler birlikte çalışıyor. Yaptığınız şeyi hem ortaya koyabilir hem taşıyabilir hem de bir bağlama yerleştirebilirsiniz.",
+        "baskin": "İfade ekseni tablonuzun ağırlık merkezi: yaratıcılık, sorumluluk ve idealler birlikte öne çıkıyor. Anlam ve biçim sizin doğal alanınız. Dikkat edilecek yer, eylem ekseninin geride kalması — anlatılmış ve anlamlandırılmış bir şey, henüz yapılmış değildir."
+      }
+    }
+  }
+}

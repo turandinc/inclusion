@@ -1,0 +1,1496 @@
+{
+  "surum": "2.0",
+  "aciklama": "Kapsam tablosunun frekans >= 1 hucreleri. Metin, sayi ile frekansin karisimini (blend) anlatir; frekansin NICELIGI ayri bir katmanda okunur (data/yogunluk.json). Bu ayrim 1.0'da karismis durumdaydi.",
+  "uretim": {
+    "betik": "scripts/hucre_migrasyonu.py",
+    "kaynak": "inclusion.md (surum 1.0)",
+    "hucre_sayisi": 78,
+    "elle_yazilan": 18,
+    "mekanik_duzeltme_sayisi": 73,
+    "yeniden_yazimla_kapsanan_kural": 7
+  },
+  "kutup_turetme_notu": "kutup alanindaki 'gerilim' etiketi, metinde cekince yan cumlesi bulunmasindan turetilir; elle atanmamistir.",
+  "hucreler": {
+    "1|1": {
+      "sayi": 1,
+      "frekans": 1,
+      "metin": "Bireyselliğiniz tek bir 1 üzerinden çalışır: net, dolambaçsız ve fazla süslenmeden. Girişmek ve risk almak size kolay gelir; bir işi başlatmak için ortamın hazır olmasını beklemezsiniz. Yeniliğe duyduğunuz ilgi meraktan çok sahiplenme isteğinden gelir — kendinize ait bir şey kurmak istersiniz. Tek bir 1'in sınırı şudur: başlangıç gücü kadar sürdürme gücünüz yoktur, bu yüzden başladığınız işi taşıyacak bir yapıya ya da bir ortağa ihtiyaç duyarsınız.",
+      "temalar": [
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "1|2": {
+      "sayi": 1,
+      "frekans": 2,
+      "metin": "Karar verme ve kendinizi ortaya koyma biçiminiz ölçülü. Daha çekingen ve daha hassassınız; sesinizi yükseltmeden ilerlemeyi tercih edersiniz. Buna karşın dostluk anlayışınız, diplomatik yetenekleriniz, işbirliği kapasiteniz, sezgileriniz ve verdiğiniz isabetli tavsiyelerle kendinizi kabul ettirirsiniz — bunlar sizin için gerçek değerler. Bu tablo, 1'in doğrudanlığını 2'nin dolaylı yollarına çevirir: istediğinizi elde ederken çarpışmak yerine ikna edersiniz.",
+      "temalar": [
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük",
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "1|3": {
+      "sayi": 1,
+      "frekans": 3,
+      "metin": "Girişimciliğiniz yaratıcılık, ifade yeteneği ve coşku üzerinden ilerler. Kararlarınız kendiliğindenliğiyle öne çıkar; uzun hesaplar yapmadan atlarsınız ve bu çoğu zaman işinize yarar. Ön planda olma arzusu doğal yaratıcılığınızı harekete geçirecek — belki gereğinden fazla. Dikkat edilecek yer, bir fikri anlatmakla onu gerçekleştirmenin aynı şey olmadığı: anlatma kolaylığınız, bitirme disiplininizin önüne geçebilir.",
+      "temalar": [
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük",
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "1|4": {
+      "sayi": 1,
+      "frekans": 4,
+      "metin": "Girişimciliğiniz ciddi niteliklerle, organizasyon yeteneğiyle, azimle ve elle tutulur başarılarla çalışır. Bir işe girerken temelini de düşünürsünüz; bu, 1'in aceleciliğini dengeleyen ender bir birleşim. Ciddi ve net bir hedefinizin olmaması girişimlerinizi yavaşlatabilir — 1 ile 4 birlikte yön istiyor; yön yoksa enerji düzene değil oyalanmaya gider.",
+      "temalar": [
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük",
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "1|5": {
+      "sayi": 1,
+      "frekans": 5,
+      "metin": "Girişimciliğiniz çeşitlilik, özgürlük tutkusu ve yeni fikirler üzerinden ilerler. Bir kapı kapanırsa üçünü birden denersiniz; bu esneklik sizin en güçlü tarafınız. Çok fazla kısıtlama ve durağan bir çevre arzularınızı da girişimlerinizi de söndürür — sizin için sıkıcı olan, yavaş olan değil tekrarlı olandır. Aynı esnekliğin bedeli, uzun soluklu işlerde ilginizin ilk zorlukta başka yöne kayması.",
+      "temalar": [
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük",
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "1|6": {
+      "sayi": 1,
+      "frekans": 6,
+      "metin": "Girişimciliğiniz uyum alanındaki birikiminizle çalışır: sanat, zevk, toplumsal ilişkiler. Uzlaşma yeteneğiniz ve sorumluluk üstlenme kapasiteniz sizi çevrenizde güvenilir kılar. Tek şartınız, attığınız adımın mevcut dengeyi bozmaması — 1 öne çıkmak isterken 6 kimseyi kırmamak ister. Bu gerilim iyi yönetildiğinde ikna edici bir liderlik, kötü yönetildiğinde hiç atılmayan adımlar üretir.",
+      "temalar": [
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük",
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "1|7": {
+      "sayi": 1,
+      "frekans": 7,
+      "metin": "Girişimciliğiniz gözlem ve düşünme üzerinden ilerler. Bağımsızlığınız çoğunlukla fikirlerde ve özgünlükte görünür; kalabalığın gittiği yere gitmemek sizin için bir tavır değil, doğal bir eğilim. Kararlarınız değerler sisteminizden ve ahlaki yapınızdan güçlü biçimde etkilenir — bir işin size uygun olması, kârlı olmasından önce gelir. Fazlası, harekete geçmeden önce çok uzun süre düşünmek.",
+      "temalar": [
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük",
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "1|8": {
+      "sayi": 1,
+      "frekans": 8,
+      "metin": "Kendi alanınızı koruma ve yönetme yeteneğiniz ile başarısızlık sonrası toparlanma gücünüz belirgin. Bağımsızlığınız ve dinamizminiz somut alanlarda, toplumsal ya da sportif başarıda görünür hale gelir; soyut bir bağımsızlık değil, gösterilebilir bir bağımsızlık istersiniz. Bu birleşim size sıra dışı bir dayanıklılık verir — düştüğünüz yerden kalkma süreniz kısadır. Karşılığında, gücü ölçmeyi öğrenmek gerekir; 1 ile 8 birlikte kolayca fazla ileri gider.",
+      "temalar": [
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük",
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "1|9": {
+      "sayi": 1,
+      "frekans": 9,
+      "metin": "Girişimciliğiniz önce ideallerinizden ve yüksek duyarlılığınızdan beslenir. Bağımsızlığınız ve dinamizminiz yaratıcılıkta, bilgi arayışında, insana dönük işlerde ya da yardım alanlarında serbest kalır. Girişme biçiminiz evrensel bir yerden çalışır, bencillikten uzaktır ve olaylara bakış açınız geneldir. Riski de buradan gelir: geneli görmek, önünüzdeki somut adımı gözden kaçırmanıza yol açabilir.",
+      "temalar": [
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük",
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "2|1": {
+      "sayi": 2,
+      "frekans": 1,
+      "metin": "İşbirliği yapma kapasiteniz, duyarlılığınız ve sezginiz (veya hayal gücünüz) bağımsız bir şekilde yaşanır ve hatta ifade edilir. Arkadaşlık kurmak, işbirliği yapmak ve nazik davranmak için ilk adımı siz atarsınız. Bu alanlarda güvenle hareket edersiniz.",
+      "temalar": [
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi",
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "2|2": {
+      "sayi": 2,
+      "frekans": 2,
+      "metin": "İşbirliği yapma kapasiteniz ve duyarlılığınız oldukça belirgin olacak (yumuşaklık, diplomasi, dinleme yeteneği, hayal gücü, sezgi) ve kendini aktif olmaktan çok alıcı bir biçimde gösterecektir. Duygularınızın güvende hissetmesi gerekiyor (özellikle teşvikler ve belirli bir dış destek aracılığıyla).",
+      "temalar": [
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "2|3": {
+      "sayi": 2,
+      "frekans": 3,
+      "metin": "Duyarlılığınız, en çok yaratıcılığınız, ifade yetenekleriniz (sözlü, yazılı veya jest) aracılığıyla kendini gösterecektir. İşbirlikçi zihniniz, öncelikle ilişkisel yetenekleriyle yaşar. 2 titreşimine bağlı doğal çekingenlik, iyi iletişim kurma ve kendinizi dışa vurma yeteneğiniz sayesinde büyük bir rol oynamayacaktır.",
+      "temalar": [
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi",
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "2|4": {
+      "sayi": 2,
+      "frekans": 4,
+      "metin": "2'nin işbirlikçi ve duyarlı zihni, her şeyi ciddi, somut ve görünür kılarak kendini ifade eder. 2'nin çekingenliği ve doğal ihtiyatı, somut ve güvenilir olana duyulan ihtiyaçla pekişir, bu da aşırı bir tedbir veya güvensizliğe yol açabilir. Aynı nedenle, 2 için doğal olan sezgi, somut kanıt ihtiyacı fazla ağır bastığında gölgede kalabilir.",
+      "temalar": [
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi",
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "2|5": {
+      "sayi": 2,
+      "frekans": 5,
+      "metin": "2'nin duyarlılığı çok canlıdır. Sezgi bundan yararlanabilir. İşbirliği yapma kapasiteniz, güçlü bir uyum yeteneği ile uyarlanır. Birçok kişiyle işbirliği yapmayı seversiniz ve bunu zeki, çeşitli bir şekilde yaparsınız ancak ne yazık ki her zaman sürekli bir şekilde yapamazsınız.",
+      "temalar": [
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi",
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "degismedi"
+    },
+    "2|6": {
+      "sayi": 2,
+      "frekans": 6,
+      "metin": "Yumuşaklığınız, duyarlılığınız ve işbirliği yapma yeteneğiniz, öncelikle sanatlarda, dokunmayla ilgili işlerde, uyum ve konfor ihtiyacında beceriyle ve incelikle kendini gösterir. Doğal nezaketinizle çevrenizdekilere fayda sağlarsınız. Aşırı duygusal ve olaylara fazla dahil olma nedeniyle karar vermede biraz zorluk çekersiniz.",
+      "temalar": [
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi",
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "2|7": {
+      "sayi": 2,
+      "frekans": 7,
+      "metin": "Duygularınız daha çok zihinsel düzeyde yaşanır; her durumda onları neredeyse hiç dışa vuramazsınız. İşbirliği yapma yeteneğiniz, gözlemlemek ve anlamak ihtiyacıyla ilgilidir. Bu düzlemde rahatladığınızda, sonra başkalarına yönelir ve özellikle fikirler ve tavsiyeler konusunda çok fazla işbirliği gösterirsiniz.",
+      "temalar": [
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi",
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "2|8": {
+      "sayi": 2,
+      "frekans": 8,
+      "metin": "İşbirliği zihniniz kendini öncelikle somut alanda gösterir ve maddi ve sosyal başarı için faydalı olabilir. Bu başarı sizi güvende hissettirir. Bu titreşimle duyarlılığınız vurgulanır ve duygularınız oldukça belirgin iniş çıkışlar yaşayabilir. Sezgi oldukça belirgin olabilir (bu, evrim seviyenize bağlıdır). Cömertlik, nezaket ve diplomasi anlayışı çok mevcuttur ve her türlü engellere rağmen öyle kalır (8'in gücü nedeniyle).",
+      "temalar": [
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi",
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "2|9": {
+      "sayi": 2,
+      "frekans": 9,
+      "metin": "2'nin doğal duyarlılığı, 9 numaralı titreşim tarafından güçlü bir şekilde vurgulanacak ve özgeciliğe, adanmışlığa, insanlıkla ilgilenme, ama aynı zamanda sanatlar ve bilgi ile ilgili en iyi ifadesini bulacaktır. Bu alanlarda iyi bir sezgi. İşbirliği yapma kapasiteniz, öncelikle insanlık projeleri aracılığıyla kendini gösterecektir. Çok güçlü duygularınız, idealleriniz tarafından yükseltilecek, ancak aldatıldığında veya hayal kırıklığına uğradığında da çökecektir.",
+      "temalar": [
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi",
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "3|1": {
+      "sayi": 3,
+      "frekans": 1,
+      "metin": "Kendinizi rahatlıkla, zekice ifade edersiniz ve diğerleri sizin ilişkilerdeki rahatlığınıza hayran kalır. Yaratırken bunu bağımsız olarak yapmayı seversiniz. İletişim yeteneğinize ve yaratıcılığınıza güven duyarsınız.",
+      "temalar": [
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe",
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "3|2": {
+      "sayi": 3,
+      "frekans": 2,
+      "metin": "İfade, iletişim ve yaratıcılık, öncelikle başkalarıyla işbirliği yaparak zarafet ve incelikle kendini gösterir. Dışa dönük olmak için her zaman ilk hamleyi yapmazsınız çünkü çevrenizdekilerle çatışmamak konusunda endişe duyarsınız.",
+      "temalar": [
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe",
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "3|3": {
+      "sayi": 3,
+      "frekans": 3,
+      "metin": "Yazılı veya sözlü ifadede büyük bir rahatlık ve büyük bir yaratıcılık fark edilir. Canlı zekâ, kendiliğindenlik ve merak sizi tanımlar ancak bu nitelikleri yapıcı bir şekilde kullanma eğilimi genellikle yoktur (dağılma, bitmemiş projeler).",
+      "temalar": [
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "3|4": {
+      "sayi": 3,
+      "frekans": 4,
+      "metin": "İfade ve doğal yaratıcılık, somut ve ciddi işlerde en iyi ifadesini bulur. Kendinizi iyi bir şekilde dışa vurabilmek için metoda ihtiyacınız vardır ve yetenek, yaratıcılık ve kendiliğindenlik izleniminizi güçlendirmek için somut kanıtlara ihtiyacınız vardır.",
+      "temalar": [
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe",
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "3|5": {
+      "sayi": 3,
+      "frekans": 5,
+      "metin": "Yaratıcılığınız, ifadeniz ve iletişim yeteneğiniz, çok çeşitli alanlarda parlaklıkla ve çiçek açarak kullanılır. Çok yönlüsünüz ve zekanız canlıdır. Tutkuyla keşfetmek ve kendinizi dışa vurmak istersiniz, bu sizi biraz kararsız yapabilir.",
+      "temalar": [
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe",
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "degismedi"
+    },
+    "3|6": {
+      "sayi": 3,
+      "frekans": 6,
+      "metin": "İfade yetenekleriniz ve yaratıcılığınız, öncelikle etrafınızdaki uyumlu bir ortam oluşturmayı amaçlayarak incelikli ve dengeli biçimde kullanılır. Güçlü bir sanatsal zevk, büyük bir bedensel ifade ihtiyacı veya ellerle yaratma. İfade yeteneklerinizi (sözlü veya yazılı) arkadaşlarınıza yardım etmek veya adaletsizliğe uğrayan kurbanlara yardım etmek için kullanabilirsiniz.",
+      "temalar": [
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe",
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "3|7": {
+      "sayi": 3,
+      "frekans": 7,
+      "metin": "Yaratım ve ifade, fikirler, kavramlar ve bilgide kendini gösterir. Kendiliğindenlik daha çok akıl yürütme ve ideallere yöneliktir.",
+      "temalar": [
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe",
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "3|8": {
+      "sayi": 3,
+      "frekans": 8,
+      "metin": "İfade, iletişim ve yaratıcılık yetenekleri, öncelikle somut alanlarda ve maddi başarıda, bu başarının araçları olarak kendini gösterir. Yaratıcı girişimlerinizde bir azim fark edilir ancak bu iki titreşime özgü dalgalanmalar da görülür.",
+      "temalar": [
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe",
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "3|9": {
+      "sayi": 3,
+      "frekans": 9,
+      "metin": "İfade ve yaratıcılık çok zengindir ve idealist bir yönle işaretlenmiştir. Konuşma yeteneği, iletişim ve başkalarına yardım etme konusunda rahatlık. Yüksek teknoloji alanlarına veya evrensel karakterli projelere ilgi.",
+      "temalar": [
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe",
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "4|1": {
+      "sayi": 4,
+      "frekans": 1,
+      "metin": "Pratik zeka ve başarı, bağımsızlık ve eminlikle güçlü bir anlam ifade eder. Yalnız çalışmayı seversiniz, yeteneklerinize güven duyarsınız ve başkalarını bu ciddi ve ilerleyici yola itmeye meyilli olabilirsiniz. Eylemleriniz yaratıcı, dinamik ve bazen sabırsızlıkla renklendirilmiştir.",
+      "temalar": [
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar",
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "4|2": {
+      "sayi": 4,
+      "frekans": 2,
+      "metin": "Pratik zekanız, nezaket ve incelikle kendini gösterir. Eyleme geçmeden önce durumun uygun olmasını beklemeniz önemlidir. Eylemleriniz bazen cesaretten yoksun olabilir çünkü başkalarıyla anlaşma içinde olmak istersiniz. Bir projenin tek sorumlusu olmaktansa başkalarıyla işbirliği yapmayı tercih edersiniz. Mükemmel bir asistan olabilirsiniz.",
+      "temalar": [
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar",
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "4|3": {
+      "sayi": 4,
+      "frekans": 3,
+      "metin": "Pratik zekanız, en çok iletişim ve ifade alanında kendini gösterir, burada objektif ve somut olma ihtiyacını hissedersiniz. Eylemleriniz orijinal ve zevklidir. Yaratıcı, zeki bir şekilde çalışırsınız.",
+      "temalar": [
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar",
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "degismedi"
+    },
+    "4|4": {
+      "sayi": 4,
+      "frekans": 4,
+      "metin": "Gerçekçilik anlayışınız çok belirgindir ve sizi çalışmaya, yapıcı eylemlere yönlendirir. Temeliniz somut, sağlam ve dürüsttür. Sınırların farkındasınızdır. Ayrıca, genel vizyonunuzu ve açık fikirliliğinizi zarar verecek şekilde titizliği ya da sertliği abartma eğiliminiz de vardır. Sıkı ve ciddi çalışmayı seversiniz (temponuz biraz yavaş olabilir).",
+      "temalar": [
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "4|5": {
+      "sayi": 4,
+      "frekans": 5,
+      "metin": "Somut yeteneklerinizi, yenilenen ve çeşitlilik sunan girişimlerde göstermeyi seversiniz. Pratik zekanız, iyi bir uyum yeteneği ve büyük bir açık fikirlilikle mutlu bir şekilde tamamlanır, bu da sizi oldukça çok yönlü kılar. Hızlı çalışmayı seversiniz.",
+      "temalar": [
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar",
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "4|6": {
+      "sayi": 4,
+      "frekans": 6,
+      "metin": "Gerçeklik duygunuz, bilgi birikiminiz, zarafetiniz ve sorumluluk alabilme yeteneğiniz aracılığıyla kendini gösterir. Eylemleriniz, uyum, estetik ve denge kavramlarıyla belirlenir. Yardım alanlarında çalışmayı seversiniz. Ancak, artıları ve eksileri uzun süre tarttığınız için karar vermeden önce tereddüt edebilirsiniz.",
+      "temalar": [
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar",
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "4|7": {
+      "sayi": 4,
+      "frekans": 7,
+      "metin": "Pratik zekanız, fikirler ve prensiplerle domine edilir. Büyük olasılıkla entelektüel alanlarda çalışmayı seversiniz. Bu, eylemden önce bir düşünme işi anlamına gelebilir, ancak aynı zamanda şüphecilik, hesaplanmış gecikme ve rezerv eğilimine de yol açabilir, bu da başarının gerçekleşmesini engelleyebilir.",
+      "temalar": [
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar",
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "4|8": {
+      "sayi": 4,
+      "frekans": 8,
+      "metin": "Gerçekçilik anlayışınız, 8'in gücü ve inancından yararlanır ve somut sonuçlar elde etmek ve ilerlemek için sizi harekete geçirir. Yüksek ölçekli projelerde enerjik biçimde çalışmayı seversiniz. Maddi başarıya aşırı ilgi gösterme riski vardır, bu da yaşamın diğer değerlerini gizleyebilir.",
+      "temalar": [
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar",
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "4|9": {
+      "sayi": 4,
+      "frekans": 9,
+      "metin": "Somut ve gerçekçi zihniniz, ideallere ve yardımseverliğe olan çekiminizle uyarılır. Küçük detaylara dahil olmaktansa genel ve idealist bir yaklaşımla çalışmayı veya eyleme geçmeyi tercih edersiniz. İnsancıl alanlarda çalışabilir veya bilgi, yüksek teknoloji, öğretim veya sanatla ilgilenmeye başlayabilirsiniz.",
+      "temalar": [
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar",
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "5|1": {
+      "sayi": 5,
+      "frekans": 1,
+      "metin": "Çeşitliliğiniz, canlı zekânız, uyum yeteneğiniz ve özgürlük ihtiyacınız kendini kendiliğinden, dinamik, özgün ve zaman zaman kışkırtıcı biçimde gösterir. Tek bir 1 ile birleşen 5, hızlı karar veren ve hızlı yön değiştiren bir yapı kurar. Sınırı açık: girişim uzun ve zorluysa, sonuç alınana kadar istek her zaman sürmez. Bu tabloyu iyi kullanmanın yolu, uzun işleri kısa etaplara bölmek.",
+      "temalar": [
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak",
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "5|2": {
+      "sayi": 5,
+      "frekans": 2,
+      "metin": "Merak, açık fikirlilik ve uyum yeteneğiniz bir iletişim, bir ilişki ya da bir alışveriş kurmak için çalışır. İnsanla temas sizin için bir araç değil, enerjinin kendisi. Ancak kurulan işbirliğinin fazla müdahaleci ya da fazla ağır olmaması gerekir; öyle olduğunda 5'in özgürlük ihtiyacıyla çatışır ve gergin bir durum doğar. Bu tabloda ilişkiler, nefes payı bırakıldığı sürece iyi işler.",
+      "temalar": [
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak",
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "5|3": {
+      "sayi": 5,
+      "frekans": 3,
+      "metin": "Canlılığınız, açık fikirliliğiniz, zekânız ve çok yönlülüğünüz sağlam bir zemin oluşturuyor. Yetenekleriniz öncelikle kendinizi ifade etme, iletişim ve yaratıcılık yönünde kullanılır — anlatmak sizin için düşünmenin bir parçası. Coşkunuz var ve doğal merakınız, başkalarıyla daha iyi iletişim kurmak amacıyla öğrenme isteği getirir. 5 ile 3 birlikte hızlı ve parlak bir zihin kurar; eksik kalan, o parlaklığı tek bir konuda derinleştirme sabrı.",
+      "temalar": [
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak",
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "5|4": {
+      "sayi": 5,
+      "frekans": 4,
+      "metin": "5'in açık fikirliliği, canlılığı, çok yönlülüğü ve enerjisi somut dış etkinliklere yönelir; sonuç almak ve ilerlemek istersiniz. Bu, 5'in en verimli birleşimlerinden biri — özgürlük ihtiyacı bir üretim biçimine dönüşür. Ancak çalışma dünyasının talepleri, 5 için hayati olan hareket özgürlüğünü her zaman sunmaz. Bu tablodaki asıl mesele, işin kendisi değil işin içindeki serbestlik payı.",
+      "temalar": [
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak",
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "5|5": {
+      "sayi": 5,
+      "frekans": 5,
+      "metin": "5'in enerjisi, tutkusu, canlı zekâsı ve en çeşitli duruma uyum sağlama yeteneği belirgin biçimde öne çıkar ve çoğunlukla yeni olanın, macera olanın peşinde kendiliğinden ifade bulur. Bu, tablonun doğal merkezine oturan bir denge: 5, beklenen düzeyde. Kendi kendini besleyen bir hareketlilik taşırsınız; dışarıdan uyarıya ihtiyacınız az. Buna karşılık kendi hareketinizi durdurmayı öğrenmek, bu tabloda dışarıdan gelen hiçbir şeyin öğretmediği tek beceri.",
+      "temalar": [
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "5|6": {
+      "sayi": 5,
+      "frekans": 6,
+      "metin": "Açık fikirlilik, canlılık ve uyum yeteneği ağırlıklı olarak aile içinde yaşanır: uyum, insan sıcaklığı, aşk, tutku ve duygusallık üzerinden. Yakınlarınıza kapalı bir düzen değil, hareketli ve konuk kabul eden bir ortam kurarsınız. Aile sorumlulukları kısıtlayıcı hale geldiğinde dengeyi korumak zorlaşabilir. Niteliklerinizin diğer olası ifadeleri yaratıcılık ve estetik duyarlılık.",
+      "temalar": [
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak",
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "5|7": {
+      "sayi": 5,
+      "frekans": 7,
+      "metin": "Açık fikirlilik ve uyum yeteneğiniz kavramlara ve yeni fikirlere yönelir. Merak entelektüel bir biçimde, bilgi arayışı içinde kullanılır; gözlem yeteneği ve sezgi mevcut. 5'in dışa dönük enerjisi burada içe kıvrılır — dünyayı gezmek yerine bir konunun içinde gezinirsiniz. Bunun bedeli, dışa dönük başarı tarafında bir zayıflık: fikir olgunlaşırken fırsat geçebilir.",
+      "temalar": [
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak",
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "5|8": {
+      "sayi": 5,
+      "frekans": 8,
+      "metin": "Açık zihninizi, uyum yeteneğinizi, canlılığınızı ve çok yönlülüğünüzü maddi ve rekabetçi dünyada başarılı olmak için kullanmayı seversiniz. Hırsınız, risk alma isteğiniz ve yaşam alanına duyduğunuz ihtiyaç tutumunuzda görülür. Büyük enerjinizi yüksek ölçekli projeler için kullanmayı seversiniz, ancak bu ciddi bir denge becerisi gerektirir — 5 ile 8 birlikte hem hızı hem de riski aynı anda yükseltir.",
+      "temalar": [
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak",
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "5|9": {
+      "sayi": 5,
+      "frekans": 9,
+      "metin": "Açık zihniniz ve keşfetme isteğiniz belirgin biçimde öne çıkar. Bu merakı ve doğal enerjiyi bilgiye, dünyaya ve insanlara açıklık yönünde kullanmaya eğilimlisiniz. Özgürlüğe, seyahate, insanlarla tanışmaya ve geniş bir alana yayılmaya ihtiyacınız var; büyük bir hoşgörü taşıyorsunuz. 5 ile 9 birlikte ufku genişletir ama merkezi zayıflatır: her yere ait olmak, hiçbir yere yerleşmemek anlamına gelebilir.",
+      "temalar": [
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak",
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "elle_yazildi"
+    },
+    "6|1": {
+      "sayi": 6,
+      "frekans": 1,
+      "metin": "Görev ve sorumluluklarınızın bilinci, uyum ve estetik beğeniniz, bağımsız ve yaratıcı bir şekilde kendini gösterir. Bu alanlarda kendinizi güvenle ifade edersiniz ve çatışmaları yatıştırmak ya da yeni fikirleri desteklemek için harekete geçersiniz. İyi bir aile reisi olabilirsiniz.",
+      "temalar": [
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik",
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "6|2": {
+      "sayi": 6,
+      "frekans": 2,
+      "metin": "Sorumluluklarınızın bilinci ve duygusal yanınız, ilişkilerinizde çok fazla yer almanıza neden olur. Seçiminiz, nezaket ve uyum lehine eğilimlidir. Sevgi kapasiteniz sizi sıcak bir partner yapar. Diğer yandan, çıkar çatışması olduğunda karar vermek zor olabilir. Partnerinizi (veya arkadaşlarınızı) kırmamak ve barışı korumak için, kendi aleyhinize yapılan uzlaşmaları kabul etme eğiliminde olabilirsiniz.",
+      "temalar": [
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik",
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "degismedi"
+    },
+    "6|3": {
+      "sayi": 6,
+      "frekans": 3,
+      "metin": "Estetik zevkiniz çok belirgindir, özellikle günlük yaşamınızda belirli bir yaratıcılık gösterirsiniz (kavramsaldan çok elle tutulur biçimde). Uyum duygunuzu dışa vurmak, güzel şeylerin bilincini başkalarıyla paylaşmak ve çevrenizdekileri görev bilincine daha duyarlı hale getirmek istersiniz. Bu alanlarda parlamak, coşkunuzu ve iletişim yeteneğinizi kullanma arzunuz olabilir.",
+      "temalar": [
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik",
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "6|4": {
+      "sayi": 6,
+      "frekans": 4,
+      "metin": "Sorumluluklarınızın bilinci, somut eylemlerinizde görülür, burada elle iş yapmada büyük bir yetenek ve belirli bir sanatsal duyu gösterirsiniz (dokunmanın önemi). 6 ve 4 titreşimleri, kendi özgürlüğünüz pahasına aileyi ve onun kısıtlamalarını öncelikli kılmanıza yol açabilir. Kendinizi duygusal olarak kuşatılmış hissetmemeye dikkat edin; zaman zaman bir adım geri çekilip bütüne bakmak iyi gelir.",
+      "temalar": [
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik",
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "6|5": {
+      "sayi": 6,
+      "frekans": 5,
+      "metin": "Günlük yaşamınızda büyük bir uyum gösterirsiniz. 6'nın alanlarına (estetik, uyum, yakınlarına yardım etme, sorumluluk duygusu) büyük bir özgür düşünce ve yeniye olan belirgin bir zevkle yaklaşırsınız. Ancak, özgürlük ihtiyacınız nedeniyle her zaman sorumluluklarınızı sonuna kadar üstlenmezsiniz. Duyusal iştahlar, zevkler ve tutkular muhtemelen oldukça belirgin olacak, ancak uyum arzusuyla çelişecek, bu da iyi yaşanabilmesi için derin bir olgunluğa ihtiyaç duyacak.",
+      "temalar": [
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik",
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "6|6": {
+      "sayi": 6,
+      "frekans": 6,
+      "metin": "Sevgi, sıcaklık ve sorumluluklar duygusu özellikle aile çevresinde doğuştan gelir. Güzel formlara ve dokunuşa olan güçlü sanatsal duyarlılık. Büyük uyum ihtiyacı. Bu, yönetilmesi nispeten zor bir titreşimdir (derin bir olgunluğa ihtiyaç duyar). Duygusal olarak durumlara çok fazla dahil olma eğilimindeyseniz, bu sağlığınıza zarar verebilir ve karar verme yeteneğinizi engelleyebilir. Meseleleri olduğundan büyütmeyin, basit tutun.",
+      "temalar": [
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "6|7": {
+      "sayi": 6,
+      "frekans": 7,
+      "metin": "Duygusal ve duygusal arzularınız, aklınız ve vicdanınız tarafından denetlenir. Zihinsel referanslarınız, konfor ve şefkat yaklaşımınızda büyük bir rol oynar. Sanatsal duyarlılığınız, şefkatiniz, başkalarına yardım etme ve uzlaşma duygunuz, çok zihinsel bir yaklaşımı terk etme konusunda kazanabilir. Zaman zaman kendiliğinden davranmayı seçin.",
+      "temalar": [
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik",
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "6|8": {
+      "sayi": 6,
+      "frekans": 8,
+      "metin": "Konfor, uyum ve sorumluluklar duygusu, hırslı ve cesur arzularla yatırım yapar. Bazen, aile yaşamı için gereken sakinliğe çok uymayan sert bir enerjiniz olabilir. Kalplerin arzularının ve fethetme gücünün bir arada yaşaması bazen hassas olabilir, ancak başka avantajlar sunar. Sevdiklerinize olan cömertlik mevcuttur.",
+      "temalar": [
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik",
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "6|9": {
+      "sayi": 6,
+      "frekans": 9,
+      "metin": "Sevgi, sıcaklık, estetik beğeni, sorumluluklar duygusu ve başkalarına yardım etme, 9 nedeniyle önemli bir yer kaplar. İdeal arayışı ve daha evrensel, daha çok yardımsever veya insancıl bir vizyonla genişleme. Başkalarına yardım etme potansiyeli, duygusal yön ve yaratıcılık daha geniş bir uygulama bulur. Ayrıca çok incelikli bir duyarlılık ve ilişkilerde çok güçlü bir kapasite.",
+      "temalar": [
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik",
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "7|1": {
+      "sayi": 7,
+      "frekans": 1,
+      "metin": "Zeka ve mantık doğuştan gelen özelliklerdir ve zihninizi netleştirme ve iyi bir yargılama yeteneğine sahip olma arzusu da öyledir. Özgün fikirleriniz sizi öne çıkarır. Yalnız başına düşünmeyi tercih etmenize rağmen, başkalarına kavramlar alanında yol gösterme fırsatını da seversiniz. Başarı ve başarılar elde etmek istiyorsanız belirli bir olgunluk gereklidir. 7'nin mantığı, 1'in coşkulu ve mükemmeliyet arzusunu kapsamakta zorlanır bazen. Anlama yetenekleriniz konusunda büyük bir güveniniz vardır ancak dikkatli olun, başkalarının fikirlerini ve tavsiyelerini görmezden gelmeyin veya reddetmeyin.",
+      "temalar": [
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat",
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "7|2": {
+      "sayi": 7,
+      "frekans": 2,
+      "metin": "Büyük bir algılama, sezgi ve kazanılmış gerçekleri sorgulama yeteneği. Dinleme ve iyi yargılama yeteneği çok iyi. Ancak, mantığınız başkalarıyla işbirliği yaparak veya başkalarının rehberlik eden fikirleri size bir çerçeve sağladığında daha verimlidir. Bu yönünüz sizi çok değerli bir sağ kol yapar. Algılama ve anlama yetenekleriniz size özgüven verir. Gelip geçici sözlere karşı fazla duyarlı olmayın; bu ölçekteki şeyler için kendinizi sorgulamak ilerlemenizi gereksiz yere yavaşlatır. Felsefeniz, huzur, barış, işbirliği ve karşılıklı güven konusunda bir endişeyle damgalanmıştır.",
+      "temalar": [
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat",
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "7|3": {
+      "sayi": 7,
+      "frekans": 3,
+      "metin": "Zekanız aktif ve çok ilham vericidir. Özellikle ifade yetenekleriniz ve coşkunuz aracılığıyla kendini gösterir. Fikirlerinizi paylaşmak ve başkalarıyla iletişim kurmak istersiniz. Büyük bir iç incelik ve belirli bir sezme keskinliği. Orijinallik, entelektüel yaratıcılık ve sözlü ya da yazılı ifade yetenekleri gösterirsiniz. Bu titreşim, gurur ve parlamak arzusunun hükmetmesini önlemek için evrensel yasaları anlama ve olgunlaşma gerektirir. Bu tuzaktan kaçınmak için, fikirlerinizi gerçeğe karşı karşılaştırmayı ve onları gerçekleştirmek için çaba sarf etmeyi öğrenin.",
+      "temalar": [
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat",
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "7|4": {
+      "sayi": 7,
+      "frekans": 4,
+      "metin": "Zeka, mantık ve sezgi, somut işlerinizde ve ilerlemenizde pratik bir şekilde katkıda bulunur. Günlük hayatta ve maddi konularda iyi bir yargı. Mükemmeliyet arzunuz ile inşa için gerekli olan sabır arasında olası bir gerilim. Kendinizi kısır bir entelektüel katılığa kapatmamaya dikkat edin.",
+      "temalar": [
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat",
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "7|5": {
+      "sayi": 7,
+      "frekans": 5,
+      "metin": "Geniş bir açık fikirlilik, canlı bir zekâ ve güçlü bir merak sizi tanımlar. Fikir özgürlüğü büyük. Keşif ve bilimsel deneyler yapma zevki. Dünyayı ilerletmek ve bilgisine katkıda bulunmak istersiniz. İyi anlayışınızı, belirli bir etiği saygı duymak için kullanın. Araştırmak için her alan iyi değildir.",
+      "temalar": [
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat",
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "7|6": {
+      "sayi": 7,
+      "frekans": 6,
+      "metin": "Düşünceleriniz ve zihinsel veya ruhani arayışınız, sorumluluk duygusu, denge hissi ve uyum arayışı ile zenginleştirilir. Zihinsel meşguliyetleriniz arasında, çatışan durumları uzlaştırma arzusu ve konfor ile huzurlu bir atmosfer ilgisi farkedilir. Entelektüel düzeyde belirli bir yaratıcılık. İyi bir dinleme ve tavsiye yeteneği. Fikirlerinizi paylaşan insanları arar, bir entelektüel veya ruhani grup oluşturmak için.",
+      "temalar": [
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat",
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "degismedi"
+    },
+    "7|7": {
+      "sayi": 7,
+      "frekans": 7,
+      "metin": "Çok belirgin düşünme yetenekleri. Ağırlıklı olarak zihinsel alanlarda rahatlık. Bilmesi ve öğretmesi gereken kişi olmak istersiniz. Ciddi, anlaşılmaz, kültürlü ve seçici bir düşünürsünüz. Süreciniz genellikle yalnızdır, tavrınız bazen uzaktır. Bir felsefe veya matematik tutkunu bir mükemmeliyetçi olabilirsiniz.",
+      "temalar": [
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "degismedi"
+    },
+    "8|1": {
+      "sayi": 8,
+      "frekans": 1,
+      "metin": "Gerçeği yüzleşmek ve her türlü engeli aşmak için karakteristik bir iç güçten ve büyük bir eylem gücünden yararlanabilirsiniz. Bu başarı arzusu, şeyleri doğrudan ele almanızı ve ilerlemenizi teşvik eden gerçek bir motor haline gelir. Temelde kendi başınıza (güçlü bağımsızlık ihtiyacı) başarılı olmak istersiniz, daha sonra başkalarını bu yolda rehberlik etmekte özgürsünüz. Bu enerji ve coşkunluk, kendi içgüdüleriniz ve bazen hoşgörüsüzlüğünüz tarafından sürüklenmemeniz için ölçü duygusunun bir öğrenilmesini gerektirir. Dengeyi korumayı öğrendiğinizde, verimliliğiniz ve ustalığınız büyük olacaktır. Başlamayı çok iyi bildiğiniz şeyi tamamlamanıza yardımcı olacak biriyle bir araya gelmeniz sizin yararınıza olacaktır.",
+      "temalar": [
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji",
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "degismedi"
+    },
+    "8|2": {
+      "sayi": 8,
+      "frekans": 2,
+      "metin": "Cesaret ve eylem gücü, ilişkileri ve iletişimi destekler. Doğru ortağı bulursanız büyük cömertlik ve verimli işbirliği mümkündür. Otorite arzunuz ile açıklık, işbirliği ve girişimlerinizde başkalarının desteğine duyduğunuz ihtiyaç arasında bazen bir çelişki gösterme veya hissetme olasılığınız vardır. İçsel denge ve olgunluk eksikse, aşırılıklar mümkündür.",
+      "temalar": [
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji",
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "degismedi"
+    },
+    "8|3": {
+      "sayi": 8,
+      "frekans": 3,
+      "metin": "Beceri ve iç gücünüz, eylemde ve yaratıcılıkta görülebilir. Başarılı olma ve parlamak isteği; güveninizi, ustalığınızı ve eylem gücünüzü ifade etme arzunuz vardır. İletişimde (her türlü medya) yer alabilirsiniz. Girişimlerinizde çok fazla hevesiniz var, ancak kendinizi fazla değerlendirme veya kendinizi fazla dağıtma eğiliminde olabilirsiniz. Bu nedenle, girişimlerinizi gerçekleştirmenizi sağlamak için ölçü duygusunu ve verimliliği geliştirmelisiniz.",
+      "temalar": [
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji",
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "8|4": {
+      "sayi": 8,
+      "frekans": 4,
+      "metin": "İç gücünüz ve eylem gücünüz, başarıya ve maddi başarıya yöneliktir. Zorluklarla karşılaştığınızda büyük beceri ve dayanıklılık kalitesi. Büyük bir çalışma ve organizasyon gücü, ancak aynı zamanda sertlik, otoriterlik ve maddiyata fazla bağlanmada olası aşırılıklar da var. Hayatın diğer değerlerini gözden kaçırmamaya dikkat edin.",
+      "temalar": [
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji",
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "8|5": {
+      "sayi": 8,
+      "frekans": 5,
+      "metin": "İç gücünüz, cesaretiniz ve zekanız kolayca görülür ve dünyanın gerçekleriyle karşı karşıya kaldığınızda özgürlüğünüzü ve yaşamsal kişisel alanınızı garanti altına almanızı teşvik eder. Girişimlerinizde büyük bir uyum yeteneğine sahipsiniz ve bu girişimler çeşitlidir. İçgüdüsel davranma, risk alma ve genişleme isteği sizi tanımlar. Ölçü duygusunu geliştirmek ve tüm durumlarda dengenizi korumak sizin yararınıza olacaktır.",
+      "temalar": [
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji",
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "8|6": {
+      "sayi": 8,
+      "frekans": 6,
+      "metin": "İç gücünüz, zekanız, yönetme isteğiniz, hırsınız ve cesaretiniz 6 numaralı titreşim tarafından denetlenir. Yavaşça ve emin adımlarla ilerlemeyi tercih edersiniz. Emlak, lüks, estetik, konfor ve belki de ekolojiye çekilirsiniz. Başarılı olmak için zekice hareket etmeyi biliyorsunuz. Her durumda, toplumsal rekabete yaklaşımınız budur. Politikanız esneklik, uzlaşma ve iletişime dayanmaktadır.",
+      "temalar": [
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji",
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "8|7": {
+      "sayi": 8,
+      "frekans": 7,
+      "metin": "Güç ve başarıya yaklaşımınızda ciddiyet, analiz ve gizlilik vardır. Bu, hırsınızda ve azminizde de ortaya çıkar. Proje programlama, bilgi ve doğru bilgi edinme isteği sizin için verimli olmak için gereklidir. Doğru bilgiyi araştırmak ve araştırmak için büyük bir karakter gücü.",
+      "temalar": [
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji",
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "degismedi"
+    },
+    "8|8": {
+      "sayi": 8,
+      "frekans": 8,
+      "metin": "Bir beceri, bir cesaret ve fethetme zevki çok belirgindir. Hırsınız güçlüdür. Çok üretkensiniz. Savaşlar sizi harekete geçirir. İnsanlar arası ilişkilerinizi rahatlatmak sizin yararınıza olacaktır.",
+      "temalar": [
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "degismedi"
+    },
+    "9|1": {
+      "sayi": 9,
+      "frekans": 1,
+      "metin": "Etki alanınız ve yardımseverliğiniz oldukça belirgin. İnsancıl ideallerinizle coşku ve zeka aracılığıyla görünürler. Evrensel değerlere ve onlarla birlikte gelen eylemlere ilgi göstererek, etrafınızdaki insanlara yardımcı olmak için önayak olursunuz. Ancak, bağımsızlığınızı ve yüksekliğinizi korumak için aynı zamanda, kendinizi gruba veya küçük detaylara çok fazla dahil etmekten kaçınırsınız. Toplumun refahı için vazgeçilmez olduğunuza inandığınız için belirli bir gerginlik mümkündür.",
+      "temalar": [
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik",
+        "karar",
+        "girişim",
+        "bağımsızlık",
+        "öncülük"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "9|2": {
+      "sayi": 9,
+      "frekans": 2,
+      "metin": "Etki alanınız ve yardımseverliğiniz, işbirliği ve başkalarına yardım etme veya onları rahatlama arzusunda ifade bulur. Büyük bir duyarlılık, nezaket ve cömertlik sizden gösterilir. Açık fikirliliğinizi ve inceliğinizi, öncelikle değişim ve iletişim fikrinde kullanıyorsunuz. Nezaketiniz doğal olsa bile, yardıma önce sizin davranmanız gerekmez. Teklifleriniz reddedildiğinde kolayca incindiğiniz için genellikle anlaşma veya diğer kişinin talebine ihtiyaç duyarsınız. Muhtemelen sanatsal bir duyarlılık var.",
+      "temalar": [
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik",
+        "işbirliği",
+        "duyarlılık",
+        "sezgi",
+        "diplomasi"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "9|3": {
+      "sayi": 9,
+      "frekans": 3,
+      "metin": "Yardımseverliğiniz, etki alanınız ve açık fikirliliğiniz kendiliğinden kullanılır ve yaşam sevincinizi iletmeye olan ihtiyacınız aracılığıyla ifade edilir. Başkalarına yardımcı olmak, onları rahatlatmak ve onlara yaratıcılığınızı sunmak için kendiliğinizden öne çıkarsınız. İletişim şekli, bu durumlarda büyük bir rol oynar. İdealiniz, zeki olmasına rağmen, biraz netlik ve gerçekçilikten yoksundur. Kendinizi fazla dağıtma eğilimi. Muhtemelen büyük bir yaratıcılık var.",
+      "temalar": [
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik",
+        "ifade",
+        "yaratıcılık",
+        "iletişim",
+        "neşe"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "9|4": {
+      "sayi": 9,
+      "frekans": 4,
+      "metin": "Başkalarına yardım etme ve hayatın temel değerlerine saygı gösterme fikri doğuştandır. Öncelikle somut yardımla gerçekleştirilirler. 4 titreşimi nedeniyle, etki alanınız gösterişsiz ve ölçülü kalır.",
+      "temalar": [
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik",
+        "emek",
+        "düzen",
+        "somutluk",
+        "istikrar"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "9|5": {
+      "sayi": 9,
+      "frekans": 5,
+      "metin": "Başkalarına yardım etme ve evrensel aklı ilgi duyanlar, özgür ve çeşitli bir ifade bulur. Araştırma, yeni ufukları keşfetme ve öğretme konusunda güçlü bir çekicilik. Geniş bir etki alanı, ama aynı zamanda dağılma ve yanılsama riski. Bu titreşim, dikkatli olmanızı ve kendinizi dağıtmamanızı gerektirir.",
+      "temalar": [
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik",
+        "özgürlük",
+        "değişim",
+        "çeşitlilik",
+        "merak"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "9|6": {
+      "sayi": 9,
+      "frekans": 6,
+      "metin": "Başkalarına olan bağlılığınız ve yardımcı olmanız ağırlıklı olarak aile içinde görülür. Çok fazla dahil olursunuz, bazen fazlasıyla ve bu dengenizi bozabilir. Sorumluluklar, başarıya doğru büyümenize yardımcı olabilir, ancak aşırı yüklenmiş sorumluluklar, bu konuda çok hassas olduğunuz için sizi yavaşlatabilir. Bu bir ölçü meselesidir. Aksi takdirde büyük sanatsal duyarlılık ve çok fazla insancıl sıcaklık var.",
+      "temalar": [
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik",
+        "sorumluluk",
+        "aile",
+        "uyum",
+        "estetik"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "degismedi"
+    },
+    "9|7": {
+      "sayi": 9,
+      "frekans": 7,
+      "metin": "Öncelikle, ilerlemeyi, açıklığı ve hoşgörüyü taşıyan evrensel fikirlerinizle parlıyorsunuz. Zekanız ve yardımseverliğiniz, bilim veya insanlık adına yardım etme şeklinde kendini ifade eder. Somut duygunuz sarsılırsa, ütopik bir görüş riski vardır.",
+      "temalar": [
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik",
+        "analiz",
+        "derinlik",
+        "bilgi",
+        "iç hayat"
+      ],
+      "kutup": [
+        "güç",
+        "gerilim"
+      ],
+      "kaynak": "degismedi"
+    },
+    "9|8": {
+      "sayi": 9,
+      "frekans": 8,
+      "metin": "Yardımseverliğiniz ve ideallerin alanları, 8'in hırsını ve dinamizmini alır. Bu, 9'un ayrıcalık tanıdığı alanlara (insancılık, başkalarına yardım etme, öğretme, dünyaya açıklık ve bilim, sanatsal duyarlılık...) yaklaştığınızda olgunluk ve verimlilik sağlar. Bu alanlardan birine dahil olma eğilimindesiniz. Stratejiniz güçlüdür. İyi genel görüş. İç ustalığı araştırın. Hem durmadan ilerleyen hem de geniş tavırlı, cömert bir kişiliksiniz.",
+      "temalar": [
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik",
+        "güç",
+        "başarı",
+        "maddi dünya",
+        "strateji"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "duzeltildi"
+    },
+    "9|9": {
+      "sayi": 9,
+      "frekans": 9,
+      "metin": "Büyük bir hassasiyet. Yardımsever bir tip. Coşku dönemlerinin ardından depresyon dönemlerini yaşama veya tam tersi bir eğilim.",
+      "temalar": [
+        "idealler",
+        "insanlık",
+        "şefkat",
+        "evrensellik"
+      ],
+      "kutup": [
+        "güç"
+      ],
+      "kaynak": "degismedi"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "surum": "1.0",
+  "aciklama": "Sentez katmanı. 1.0 sürümünde hücreler atomikti: çelişen iki hücre yan yana basılıp geçiliyordu. Bu dosya, birlikte ateşlendiğinde gerilim ya da pekişme üreten çiftleri tanımlar ve raporun onları adıyla kurmasını sağlar.",
+  "tetikleme": {
+    "celiski": "Her iki sayı da 'normalin_ustu' veya 'asiri' sınıfındaysa gerilim canlıdır.",
+    "pekisme": "Biri Karmik Ders (telafi edilmemiş sıfır), diğeri 'normalin_ustu' veya 'asiri' ise okuma pekişir — aynı şeyi iki yönden söylüyorlardır.",
+    "not": "Bir çift her iki koşulu da sağlayamaz; çelişki iki fazlalık, pekişme bir boşluk ve bir fazlalık gerektirir."
+  },
+
+  "celiskiler": [
+    {
+      "cift": [4, 5],
+      "ad": "Yöntem ile hareket özgürlüğü",
+      "metin": "Tablonuzda hem düzen hem özgürlük ihtiyacı beklenenin üzerinde. Bu ikisi aynı anda konuşur: bir yandan işin çatısını kurmak, bir yandan o çatıdan çıkmak istersiniz. Pratikte bu, kurduğunuz sistemleri bir süre sonra kendi elinizle bozmanız anlamına gelir. Çözüm ikisinden birini seçmek değil — sisteme baştan bir esneklik payı bırakmak; yani kuralı siz koyduğunuz için değiştirme hakkını da baştan yazmak."
+    },
+    {
+      "cift": [1, 2],
+      "ad": "Kendi başına olmak ile birlikte olmak",
+      "metin": "Tablonuzda hem bağımsızlık hem işbirliği beklenenin üzerinde. Kendi kararınızı vermek istersiniz ama o kararın karşınızdakini incitmesini de istemezsiniz. Bu iki istek aynı anda karşılanamadığı için kararlar gecikir. Çözüm, kararı ve kararın anlatılma biçimini birbirinden ayırmak: karar tek başına alınabilir, anlatımı ortak olabilir."
+    },
+    {
+      "cift": [5, 6],
+      "ad": "Özgürlük ile bağlanma",
+      "metin": "Tablonuzda hem özgürlük ihtiyacı hem sorumluluk duygusu beklenenin üzerinde. Yakınlarınıza dönük olmayı gerçekten istersiniz; aynı anda o bağın sizi kapatmasından korkarsınız. Bu tabloda ilişkiler genellikle ya fazla yakın ya fazla mesafeli kurulur, arası zor bulunur. Çözüm, bağın kendisini değil sınırlarını konuşmak: neyi ne kadar taşıyacağınızı baştan söylemek, sonradan kaçmaktan kolaydır."
+    },
+    {
+      "cift": [3, 7],
+      "ad": "Ortaya koymak ile içine çekilmek",
+      "metin": "Tablonuzda hem ifade hem derinlik beklenenin üzerinde. Bir şeyi anlatmak istersiniz ama yeterince derinleşmeden anlatmak size ucuz görünür. Sonuç, hazır olmadığı gerekçesiyle hiç anlatılmayan işler olur. Çözüm, derinliği bir eşik değil bir süreç saymak: anlatmak da anlamanın bir aracıdır."
+    },
+    {
+      "cift": [8, 9],
+      "ad": "Somut güç ile ideal",
+      "metin": "Tablonuzda hem maddi güç hem ideal beklenenin üzerinde. Bir işi büyütmek istersiniz ama yalnızca büyüdüğü için değerli bulmazsınız; anlamını da istersiniz. Bu birleşim iyi yönetildiğinde ender bir şey üretir — ölçekli ve anlamlı iş. Kötü yönetildiğinde ise ikisi birbirini iptal eder: ideal yüzünden kazanmaktan, kazanç yüzünden idealden vazgeçersiniz. Çözüm, anlamı işin sonuna değil tanımına koymak."
+    },
+    {
+      "cift": [1, 6],
+      "ad": "Kendi alanı ile başkasının ihtiyacı",
+      "metin": "Tablonuzda hem bireysellik hem sorumluluk duygusu beklenenin üzerinde. Kendinize ait bir alan istersiniz ve aynı zamanda çevrenizin ihtiyacını görmezden gelemezsiniz. Bu tabloda kendi işinize ayırdığınız zaman sürekli bir pazarlık konusu olur. Çözüm, kendi alanınızı da bir yükümlülük gibi takvime yazmak — korunmayan zaman her zaman başkasına gider."
+    },
+    {
+      "cift": [2, 8],
+      "ad": "Duyarlılık ile güç",
+      "metin": "Tablonuzda hem duyarlılık hem güç ekseni beklenenin üzerinde. Karşınızdakinin halini fark edersiniz ve yine de istediğinizi almak zorundasınızdır. Bu ikisi arasında salındığınızda ya fazla sert ya fazla geri çekilmiş görünürsünüz; ortası size yapmacık gelir. Çözüm, sertliği değil netliği seçmek: net olmak, duyarlılığı bozmayan tek güç biçimi."
+    },
+    {
+      "cift": [7, 8],
+      "ad": "Düşünme süresi ile hareket etme baskısı",
+      "metin": "Tablonuzda hem analiz hem eylem gücü beklenenin üzerinde. Bir işi tam anlamadan girmek istemezsiniz ama beklemek de size kayıp gibi gelir. Bu gerilim çoğu zaman şu şekilde çözülür: uzun süre hiç hareket etmez, sonra çok hızlı ve tek hamlede girersiniz. Çözüm, kararı ikiye bölmek — geri dönülebilir küçük bir adımı hemen atıp, geri dönülemez olanı düşünmeye bırakmak."
+    },
+    {
+      "cift": [3, 4],
+      "ad": "Kendiliğindenlik ile yöntem",
+      "metin": "Tablonuzda hem yaratıcılık hem düzen beklenenin üzerinde. Fikir hızlı gelir, ama onu kurallı biçimde yapma isteği de güçlüdür; bu ikisi genellikle aynı işin içinde çarpışır. Sonuç, başlanmış ama 'doğru biçimde' yapılmadığı için bırakılmış işler olabilir. Çözüm, üretmek ile düzenlemeyi aynı oturuma koymamak: önce dağınık haliyle bitirin, düzenlemeyi ayrı bir iş sayın."
+    },
+    {
+      "cift": [4, 9],
+      "ad": "Ayrıntı ile bütün",
+      "metin": "Tablonuzda hem somut düzen hem geniş bakış beklenenin üzerinde. Bütünü görürsünüz ve ayrıntıyı da atlamak istemezsiniz; ikisini aynı anda taşımak yorucudur. Bu tabloda işler ya gereğinden ince ya gereğinden genel kalır. Çözüm, ölçeği bilinçli seçmek: bir oturumda ya haritaya ya taşa bakmak, ikisine birden değil."
+    }
+  ],
+
+  "pekismeler": [
+    {
+      "ders": 4, "fazla": 5,
+      "metin": "Karmik Ders 4 ile 5'in fazlalığı aynı şeyi iki yönden söylüyor: hem düzenli emeğe karşı bir isteksizlik hem de beklenenin çok üzerinde bir hareket ihtiyacı var. Bu birleşimde kısa yol arayışı bir tercih değil, neredeyse bir refleks. Bu tablonun en çok fayda göreceği şey, süresi baştan belli tek bir rutin."
+    },
+    {
+      "ders": 6, "fazla": 5,
+      "metin": "Karmik Ders 6 ile 5'in fazlalığı birbirini pekiştiriyor: bağlanmaya karşı tedirginlik, özgürlük ihtiyacının fazlalığıyla birleşiyor. Yükümlülükten kaçınma bu tabloda hem öğrenilmemiş bir alan hem de güçlü bir eğilim. Küçük ve süresi sınırlı bir sorumluluk, buradaki tek gerçekçi başlangıç."
+    },
+    {
+      "ders": 7, "fazla": 5,
+      "metin": "Karmik Ders 7 ile 5'in fazlalığı aynı yöne bakıyor: derinleşmeye karşı isteksizlik, sürekli hareket ihtiyacıyla birleşiyor. Bir konuda kalmak bu tabloda iki kat zor. Bir soruyu cevaplamadan açık tutma pratiği, burada başka her şeyden önce gelir."
+    },
+    {
+      "ders": 1, "fazla": 2,
+      "metin": "Karmik Ders 1 ile 2'nin fazlalığı birbirini pekiştiriyor: kendi adınıza karar vermenin zorluğu, beklenenin çok üzerinde bir duyarlılıkla birleşiyor. Onay arayışı bu tabloda hem eksik kalmış bir alan hem de fazlalıktan gelen bir eğilim. Küçük konularda onay sormadan hareket etmek, iki tarafa aynı anda dokunan tek egzersiz."
+    },
+    {
+      "ders": 3, "fazla": 7,
+      "metin": "Karmik Ders 3 ile 7'nin fazlalığı aynı sessizliği besliyor: kendini gösterme alışkanlığının yokluğu, analiz fazlalığıyla birleşiyor. 'Henüz hazır değilim' bu tabloda gerçek bir yargı gibi hissedilir ama işlevi geri durmaktır. Bitmemiş halini anlatmak, buradaki en doğrudan kırılma noktası."
+    },
+    {
+      "ders": 8, "fazla": 9,
+      "metin": "Karmik Ders 8 ile 9'un fazlalığı birbirini pekiştiriyor: maddi dünyanın kurallarının öğrenilmemiş olması, idealizmin fazlalığıyla birleşiyor. Karşılık istemeden verme bu tabloda hem bir erdem hem de bir kaçış olabilir. Yardımı süresi ve kapsamı belli bir işe dönüştürmek, iki tarafı birden düzeltir."
+    },
+    {
+      "ders": 2, "fazla": 1,
+      "metin": "Karmik Ders 2 ile 1'in fazlalığı aynı yöne bakıyor: ayrıntı ve işbirliğinin öğrenilmemiş olması, bağımsızlık fazlalığıyla birleşiyor. Tek başına yapmak bu tabloda hem daha kolay hem de giderek tek seçenek haline gelir. Yapabileceğiniz bir işi bilerek birine bırakmak, buradaki asıl deney."
+    },
+    {
+      "ders": 5, "fazla": 4,
+      "metin": "Karmik Ders 5 ile 4'ün fazlalığı birbirini pekiştiriyor: deneyimden pay almanın zorluğu, düzen fazlalığıyla birleşiyor. Bilinen içinde kalmak bu tabloda hem öğrenilmemiş bir alan hem de yapının doğal sonucu. Planlanmamış küçük bir şey yapmak, buradaki tek gerçek açılım."
+    }
+  ],
+
+  "tekrar_denetimi": {
+    "aciklama": "Rapor tek seferde dokuz hücre basar; kalıplaşmış ifadeler bu yüzden görünür olur. Aşağıdaki kalıplar bir raporda 'esik' değerinden fazla görünmemeli. sentez.tekrar_denetle() bunu ölçer ve testler bunu doğrular.",
+    "kaliplar": [
+      { "kalip": "kendinizi ifade edersiniz", "esik": 2 },
+      { "kalip": "uyum yeteneği", "esik": 3 },
+      { "kalip": "açık fikirlilik", "esik": 3 },
+      { "kalip": "girişimde bulunur", "esik": 2 },
+      { "kalip": "ölçü duygusu", "esik": 2 },
+      { "kalip": "kendini gösterir", "esik": 3 },
+      { "kalip": "beklenenin çok üzerinde", "esik": 3 },
+      { "kalip": "Dengelemenin yolu", "esik": 3 }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "surum": "1.0",
+  "uretim": {
+    "betik": "scripts/taban_oran_uret.py",
+    "sema": "latin26_katlamali",
+    "ornek_sayisi": 346752,
+    "on_ad": 172,
+    "soyad": 112,
+    "ortalama_ad_uzunlugu": 13.52,
+    "not": "Korpus yaygin Turk on ad ve soyadlarinin capraz carpimidir; nufus dagilimina gore agirliklandirilmamistir. Oranlar buyukluk mertebesi icin kullanilir, nufus istatistigi olarak sunulmaz."
+  },
+  "harf_olasiligi": {
+    "1": 0.1862,
+    "2": 0.09205,
+    "3": 0.16052,
+    "4": 0.07512,
+    "5": 0.19912,
+    "6": 0.04008,
+    "7": 0.06326,
+    "8": 0.05292,
+    "9": 0.13073
+  },
+  "sifir_orani": {
+    "1": 0.0526,
+    "2": 0.2703,
+    "3": 0.0986,
+    "4": 0.3389,
+    "5": 0.0427,
+    "6": 0.5452,
+    "7": 0.3682,
+    "8": 0.4477,
+    "9": 0.1228
+  },
+  "siddet_sinifi": {
+    "1": "kisisel",
+    "2": "yaygin",
+    "3": "kisisel",
+    "4": "yaygin",
+    "5": "kisisel",
+    "6": "kolektif",
+    "7": "kolektif",
+    "8": "kolektif",
+    "9": "kisisel"
+  },
+  "gizli_tutku_dagilimi": {
+    "1": 0.3918,
+    "2": 0.0515,
+    "3": 0.2134,
+    "4": 0.0165,
+    "5": 0.2644,
+    "6": 0.002,
+    "7": 0.0011,
+    "8": 0.0027,
+    "9": 0.0565
+  },
+  "esikler": {
+    "aciklama": "Frekans sinifi, sayimin Binom(L, p_n) beklentisinden z-skoru ile belirlenir.",
+    "normalin_alti": -0.75,
+    "dengeli_ust": 0.75,
+    "normalin_ustu_ust": 1.75
+  }
+}
