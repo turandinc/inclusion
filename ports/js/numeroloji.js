@@ -139,6 +139,22 @@ function telafiKaynaklari(cekirdek, sayi) {
   return bulunan;
 }
 
+function disTelafiKumesi(liste) {
+  const kume = new Set();
+  for (const { deger } of liste) {
+    if (!Number.isInteger(deger) || deger <= 0) continue;
+    kume.add(deger);
+    if (USTA_SAYILAR.has(deger)) kume.add(indirge([deger], false));
+  }
+  return [...kume];
+}
+
+function disTelafiKaynaklari(liste, sayi) {
+  return liste
+    .filter(({ deger }) => deger === sayi || (USTA_SAYILAR.has(deger) && indirge([deger], false) === sayi))
+    .map(({ etiket, deger }) => (USTA_SAYILAR.has(deger) ? `${etiket} (usta sayı ${deger})` : etiket));
+}
+
 // ---------------------------------------------------------------------------
 // §4 Frekanslar ve sınıf
 // ---------------------------------------------------------------------------
@@ -173,7 +189,11 @@ function metinVaryanti(sinif, telafiEdildi, siddet) {
 /**
  * @param {string} ad            Doğum adı (tüm ön adlar + doğum soyadı)
  * @param {string} dogumTarihi   YYYY-MM-DD
- * @param {{veriDizini?: string}} [secenekler]
+ * @param {{veriDizini?: string, telafiCekirdegi?: Array<{etiket: string, deger: number}>}} [secenekler]
+ *   telafiCekirdegi: gömülen uygulama çekirdek sayıları KENDİ hesaplıyorsa,
+ *   telafi kontrolü o sayılarla yapılır — raporun başka sayfasında basılan
+ *   sayı ile telafi gerekçesi çelişmesin diye. Verilmezse §3'teki yedi sayı.
+ *   (Uyumluluk vektörleri varsayılan yolu doğrular.)
  */
 function kapsamHesapla(ad, dogumTarihi, secenekler = {}) {
   const veriDizini = secenekler.veriDizini || VARSAYILAN_VERI_DIZINI;
@@ -185,7 +205,9 @@ function kapsamHesapla(ad, dogumTarihi, secenekler = {}) {
   if (!ad_duz) throw new Error('Ad, harf haritasında karşılığı olan hiç harf içermiyor.');
 
   const cekirdek = cekirdekHesapla(ad, dogumTarihi, hm);
-  const telafiKumesi = new Set(cekirdek.telafi_kumesi);
+  const dis = secenekler.telafiCekirdegi;
+  const telafiKumesi = new Set(dis ? disTelafiKumesi(dis) : cekirdek.telafi_kumesi);
+  const kaynaklar = (n) => (dis ? disTelafiKaynaklari(dis, n) : telafiKaynaklari(cekirdek, n));
 
   const f = {};
   for (let n = 1; n <= 9; n++) f[n] = 0;
@@ -204,7 +226,7 @@ function kapsamHesapla(ad, dogumTarihi, secenekler = {}) {
       o.taban_orani = taban.sifir_orani[n];
       o.siddet = taban.siddet_sinifi[n];
       o.telafi_edildi = telafiKumesi.has(n);
-      o.telafi_kaynaklari = telafiKaynaklari(cekirdek, n);
+      o.telafi_kaynaklari = kaynaklar(n);
     } else {
       o.telafi_edildi = false;
     }
