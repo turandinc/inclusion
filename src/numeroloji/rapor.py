@@ -72,22 +72,22 @@ def _gizli_tutku_bolumu(tablo: KapsamTablosu) -> Bolum:
         ortaklar = ", ".join(str(x) for x in tablo.gizli_tutku_ortaklari)
         p.append(
             f"Bu tutku tek bir eksende toplanmıyor: {ortaklar} sayıları aynı "
-            "zirvede duruyor. İkisi arasında bir seçim yapmadığınız sürece "
-            "enerjinizin bir kısmı geçişlerde harcanır."
+            "zirvede duruyor. İkisi arasında bir seçim yapmadığın sürece "
+            "enerjinin bir kısmı geçişlerde harcanır."
         )
         for o in tablo.gizli_tutku_ortaklari[1:]:
             p.append(veri["metinler"][str(o)])
     elif karakter == "duz":
         p.append(
-            "Zirve yalnızca bir frekans farkla önde: bu tutku var ama tablonuzu "
-            "tek başına belirlemiyor. Tablonuz görece dengeli dağılmış, yani "
+            "Zirve yalnızca bir frekans farkla önde: bu tutku var ama tablonu "
+            "tek başına belirlemiyor. Tablon görece dengeli dağılmış, yani "
             "baskın bir eksenden çok geniş bir taban okuyoruz."
         )
 
     if n in tablo.asiri_sayilar:
         p.append(
-            "Bu sayı aynı zamanda 'aşırı' kayıtta: yani hem yönünüz hem "
-            "yükünüz. Aşağıdaki yoğunluk notu bu yüzden ayrıca önemli."
+            "Bu sayı aynı zamanda 'aşırı' kayıtta: yani hem yönün hem "
+            "yükün. Aşağıdaki yoğunluk notu bu yüzden ayrıca önemli."
         )
     return Bolum("gizli_tutku", f"Gizli Tutku: {n}", tuple(p),
                  {"sayi": n, "karakter": karakter,
@@ -113,9 +113,9 @@ def _hucre_bolumu(tablo: KapsamTablosu) -> Bolum:
     p: list[str] = [
         "Her sayı iki katmanda okunur. **Hücre metni** o sayının *niteliğini* "
         "anlatır: sayının, frekansının rengiyle nasıl çalıştığını. **Yoğunluk "
-        "notu** ise *niceliği* anlatır: o frekansın, adınızın uzunluğuna göre "
+        "notu** ise *niceliği* anlatır: o frekansın, adının uzunluğuna göre "
         "beklenenin altında mı üstünde mi olduğunu. İkisi farklı şeyler söyler; "
-        "çeliştiklerini düşündüğünüz yerde nicelik baskındır. "
+        "çeliştiklerini düşündüğün yerde nicelik baskındır. "
         "(_Titreşim_ sözcüğü metinlerde bir sayının taşıdığı niteliğin karşılığı "
         "olarak kullanılır.)"
     ]

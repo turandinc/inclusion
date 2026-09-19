@@ -28,6 +28,9 @@ from numeroloji.planlar import denge_hesapla, planlar_hesapla  # noqa: E402
 from numeroloji.sentez import sentez_uret, tekrar_denetle  # noqa: E402
 from numeroloji.veri import yukle  # noqa: E402
 
+sys.path.insert(0, str(KOK / "scripts"))
+import hitap  # noqa: E402
+
 
 class TestHarf(unittest.TestCase):
     def test_turkce_katlama(self):
@@ -203,7 +206,7 @@ class TestRapor(unittest.TestCase):
 
     def test_tekrar_denetimi_gercekten_yakalar(self):
         """Denetim canli olmali: uydurma bir metin esigi asmali."""
-        self.assertTrue(tekrar_denetle("kendinizi ifade edersiniz " * 5))
+        self.assertTrue(tekrar_denetle("kendini ifade edersin " * 5))
 
     def test_eksik_hucre_rapor_kirmiyor(self):
         """7|8, 7|9 ve 8|9 hucreleri yok (o frekanslara pratikte ulasilamaz).
@@ -272,7 +275,8 @@ class TestIcerikRegresyonu(unittest.TestCase):
                   "estetizm", "naziklik", "spontanl", "altruizm",
                   "harmonik", "durugörü", "aktivitelerde", "sektörler",
                   "stabil", "manuel yetenek", "insan merkezci"]:
-            self.assertNotIn(y, self.korpus, f"ceviri hatasi geri gelmis: {y!r}")
+            for bicim in {y, hitap.cevir(y)}:     # 'siz' ve 'sen' hali
+                self.assertNotIn(bicim, self.korpus, f"ceviri hatasi geri gelmis: {bicim!r}")
 
     def test_birinci_cogul_cekim_hatasi_yok(self):
         """Fransizca 'on aime' kalibinin 'severiz' cevirisi."""
@@ -290,38 +294,32 @@ class TestIcerikRegresyonu(unittest.TestCase):
                 self.assertNotIn("görüyorum", d[alan], f"{n}|{alan}")
                 self.assertNotIn("zorundasın", d[alan], f"{n}|{alan}")
 
-    #: 1.0'da frekans=0 satirlarinda gecen gercek 2. tekil fiil bicimleri.
-    #: scripts ile inclusion.md'den cikarildi; iyelik ekleri (hayatin, kendin,
-    #: zarafetin gibi) elle ayiklandi.
-    IKINCI_TEKIL = (
-        "alınmamalısın", "bağdaştırıyorsun", "başladın", "başlayacaksın",
-        "bitiremedin", "bulacaksın", "düşünüyorsun", "gerçekleştirdin",
-        "geçireceksin", "göreceksin", "hissediyorsun", "hissetmiyorsun",
-        "kalacaksın", "karşılaşacaksın", "karşılaştın", "kaçınıyorsun",
-        "keşfedeceksin", "takınacaksın", "taşıyorsun", "vermelisin",
-        "vurguluyorsun", "zorlanacaksın", "zorlanıyorsun", "zorundasın",
-        "öğreneceksin", "üstlendin", "üstleneceksin",
-    )
+    def test_tek_ses_sen(self):
+        """Rapor tek bir seste konusur: 2. tekil ('sen').
 
-    def test_ikinci_tekil_ses_kalmadi(self):
-        """1.0'da frekans=0 satirlari 2. tekil, digerleri 2. coguldu; rapor iki
-        farkli kisi tarafindan konusuyor gibi okunuyordu. Ses birlestirildi.
-
-        Kelime sinirina demirlenmis arama sart: 2. cogul bicimler 2. tekil
-        bicimlerin ustkumesidir ('tasiyorsun' <- 'tasiyorsunuz'), duz substring
-        aramasi dogru metni hatali bulur.
+        1.0'da frekans=0 satirlari 2. tekil, digerleri 2. coguldu; 2.0 once
+        her seyi 'siz'de birlestirdi, sonra uretimdeki numeroloji raporuyla
+        tutarli olsun diye 'sen'e cevrildi (scripts/hitap.py). Tek bir 'siz'
+        bicimi bile kalirsa rapor yine iki kisi konusuyor gibi okunur.
         """
-        for bicim in self.IKINCI_TEKIL:
-            bulunan = re.search(rf"\b{re.escape(bicim)}\b", self.korpus)
-            self.assertIsNone(
-                bulunan, f"2. tekil bicim geri gelmis: {bicim!r}")
+        kalan = sorted({k for m in self.metinler for k in hitap.kalan_cogul(m)})
+        self.assertEqual(kalan, [], f"2. cogul bicim kalmis: {kalan[:15]}")
 
-    def test_ikinci_tekil_listesi_kaynakta_gercekten_vardi(self):
-        """Testin kendisi curumesin: bu bicimler 1.0 kaynaginda bulunmali."""
-        ham = (KOK / "inclusion.md").read_text(encoding="utf-8").lower()
-        for bicim in self.IKINCI_TEKIL:
-            self.assertRegex(ham, rf"\b{re.escape(bicim)}\b",
-                             f"{bicim!r} 1.0 kaynaginda yok")
+    def test_hitap_donusumu_kararli(self):
+        """Donusum idempotent olmali ve uretim hatti veriyle uyumlu kalmali."""
+        for m in self.metinler:
+            self.assertEqual(hitap.cevir(m), m)
+        self.assertEqual(hitap.cevir("Tablonuzda 4 yok; kendinizi zorlamayın, size "
+                                     "uygun olanı seçin ve yalnızca deneyin."),
+                         "Tablonda 4 yok; kendini zorlama, sana "
+                         "uygun olanı seç ve yalnızca dene.")
+
+    def test_rapor_iskeleti_tek_ses(self):
+        """rapor.py'deki sabit metinler de 'sen' ile konusmali."""
+        for ad, dt in (("Ayşe Nur Karahasanoğlu", "1990-03-17"),
+                       ("Mehmet Öztürk", "1977-01-03"), ("Ali Kaya", "1985-08-08")):
+            metin = rapor_uret(Kisi(ad, dt)).duz_metin()
+            self.assertEqual(hitap.kalan_cogul(metin), [], ad)
 
     def test_tum_metinler_turkce_imlali(self):
         """Diakritiksiz metin Turkce bir urunde kabul edilemez."""

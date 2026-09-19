@@ -195,16 +195,26 @@ ortalama 948 karakter, kaderci), frekans ≥ 1 satırları 2. çoğul ("edersini
 ortalama 355 karakter, ölçülü) idi. Rapor iki ayrı kişi tarafından konuşuyormuş
 gibi okunuyordu.
 
-**Karar:** Tümü **2. çoğul (siz)**. 87 hücrenin 78'i zaten öyleydi.
+**Karar (ilk):** Tümü **2. çoğul (siz)**. 87 hücrenin 78'i zaten öyleydi.
+
+**Karar (revize):** Tek ses ilkesi korunur, ama seçilen ses **2. tekil (sen)**.
+Kapsam tablosu, baştan sona "sen" ile konuşan üretimdeki numeroloji raporuna
+gömülüyor; bir bölümün "siz" olması, 1.0'daki iki-anlatıcı kusurunun aynısını
+rapor düzeyinde yeniden üretirdi. Metinler "siz" ile yazılıp bakımı yapılır,
+`scripts/hitap.py` ile "sen"e çevrilir (hücre migrasyonu bunu en son adım olarak
+uygular). Dönüşüm kurala dayalıdır (`n + ünlü + z` → `n`), istisnaları —
+zamirler, emir kipi, kökünde `niz` geçen kelimeler — dosyada tek tek listelidir.
 
 Ayrıca 11 yerde Fransızca `on aime` kalıbı "severiz" diye çevrilmişti ve cümle
 ortasında anlatıcı değişiyordu: *"Yalnız çalışmayı **sever**, yeteneklerin**ize**
 güven duyar**sınız**"*. Düzeltildi. Birinci tekil kâhin sesi ("görüyorum")
 kaldırıldı.
 
-Regresyon testi (`TestIcerikRegresyonu.test_ikinci_tekil_ses_kalmadi`) 1.0
-kaynağından çıkarılmış 27 gerçek 2. tekil biçimi kelime sınırına demirlenmiş
-olarak arar.
+Regresyon testleri: `test_tek_ses_sen` kullanıcıya basılan her metinde tek bir
+2. çoğul biçim bile kalmadığını, `test_rapor_iskeleti_tek_ses` rapor
+kodundaki sabit metinleri, `test_hitap_donusumu_kararli` dönüşümün idempotent
+olduğunu denetler. Kaldırılan çeviri kalıpları hem "siz" hem "sen" hâliyle
+aranır.
 
 ---
 

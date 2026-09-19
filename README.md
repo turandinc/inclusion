@@ -83,14 +83,17 @@ python3 -m unittest discover -s tests
 ```
 
 Testler hesaplamayı doğrulamakla kalmaz; **içerik regresyonu** da korur:
-1.0 sürümünden kaldırılan kaderci öngörüler, klinik iddialar, çeviri hataları
-ve 2. tekil ses geri gelirse test kırılır.
+1.0 sürümünden kaldırılan kaderci öngörüler, klinik iddialar ve çeviri
+hataları geri gelirse, ya da metinlerde tek bir "siz" biçimi kalırsa (rapor
+"sen" ile konuşur) test kırılır.
 
 ## Veri yeniden üretimi
 
 ```bash
 python3 scripts/taban_oran_uret.py      # data/taban-oranlar.json
 python3 scripts/hucre_migrasyonu.py     # data/kapsam-hucreleri.json
+python3 scripts/hitap.py                # metinleri 'sen' hitabına çevirir
+python3 scripts/hitap.py --kontrol      # 'siz' biçimi kaldıysa 1 döner
 ```
 
-İkisi de idempotenttir ve `inclusion.md`'yi kaynak alır.
+Üçü de idempotenttir. İlk ikisi `inclusion.md`'yi kaynak alır; migrasyon hitap dönüşümünü kendisi de uygular.

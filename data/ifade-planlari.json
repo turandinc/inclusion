@@ -15,30 +15,30 @@
     "fiziksel": {
       "ad": "Fiziksel plan",
       "aciklama": "Bedenle, elle, somut olanla kurulan ilişki.",
-      "zayif": "Fiziksel plan zayıf: somut ve bedensel olanla kurduğunuz ilişki ikincil kalır.",
-      "dengeli": "Fiziksel plan dengede: somut olanla kurduğunuz ilişki zorlanmadan çalışır.",
-      "baskin": "Fiziksel plan baskın: elle tutulur olan, bedensel olan sizin birincil kanalınız."
+      "zayif": "Fiziksel plan zayıf: somut ve bedensel olanla kurduğun ilişki ikincil kalır.",
+      "dengeli": "Fiziksel plan dengede: somut olanla kurduğun ilişki zorlanmadan çalışır.",
+      "baskin": "Fiziksel plan baskın: elle tutulur olan, bedensel olan senin birincil kanalın."
     },
     "zihinsel": {
       "ad": "Zihinsel plan",
       "aciklama": "Akıl yürütme, planlama, çözümleme.",
-      "zayif": "Zihinsel plan zayıf: çözümlemeden çok sezerek ya da yaparak ilerlersiniz.",
+      "zayif": "Zihinsel plan zayıf: çözümlemeden çok sezerek ya da yaparak ilerlersin.",
       "dengeli": "Zihinsel plan dengede: düşünmek diğer kanalları bastırmadan çalışır.",
-      "baskin": "Zihinsel plan baskın: bir şeyi önce kafanızda kurar, sonra yaşarsınız."
+      "baskin": "Zihinsel plan baskın: bir şeyi önce kafanda kurar, sonra yaşarsın."
     },
     "duygusal": {
       "ad": "Duygusal plan",
       "aciklama": "Duygu, bağ, etkilenme.",
-      "zayif": "Duygusal plan zayıf: duygu sizde kararın belirleyeni değil.",
+      "zayif": "Duygusal plan zayıf: duygu sende kararın belirleyeni değil.",
       "dengeli": "Duygusal plan dengede: duygu bilgi verir ama yönetmez.",
-      "baskin": "Duygusal plan baskın: her şeyi önce duygusal tonundan tanırsınız."
+      "baskin": "Duygusal plan baskın: her şeyi önce duygusal tonundan tanırsın."
     },
     "sezgisel": {
       "ad": "Sezgisel plan",
       "aciklama": "Doğrudan kavrayış, nedenini söyleyemediğiniz bilgi.",
-      "zayif": "Sezgisel plan zayıf: gerekçesini kuramadığınız bir bilgiye güvenmezsiniz.",
+      "zayif": "Sezgisel plan zayıf: gerekçesini kuramadığın bir bilgiye güvenmezsin.",
       "dengeli": "Sezgisel plan dengede: sezgi diğer kanallarla birlikte çalışır.",
-      "baskin": "Sezgisel plan baskın: bildiğinizi nereden bildiğinizi çoğu zaman açıklayamazsınız."
+      "baskin": "Sezgisel plan baskın: bildiğini nereden bildiğini çoğu zaman açıklayamazsın."
     }
   }
 }

@@ -16,6 +16,10 @@ Uc is yapar:
 3. METADATA. Her hucreye temalar / anahtar / kutup eklenir. Kutup, metindeki
    cekince yan cumlelerinden turetilir (asagidaki CEKINCE_ISARETLERI).
 
+4. HITAP. Metinler 'siz' ile yazilir, en son 'sen'e cevrilir (scripts/hitap.py).
+   Kutup, isaretler 'siz' bicimleriyle tanimli oldugu icin cevirmeden ONCE
+   belirlenir.
+
 Kullanim:  python3 scripts/hucre_migrasyonu.py
 """
 
@@ -27,6 +31,9 @@ import sys
 from pathlib import Path
 
 KOK = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import hitap  # noqa: E402
 
 # --------------------------------------------------------------------------
 # Basamak alanlari. Hucre temalari = alan(sayi) + alan(frekans).
@@ -286,7 +293,7 @@ def main() -> int:
         hucreler[anahtar_hucre] = {
             "sayi": sayi,
             "frekans": frekans,
-            "metin": yeni,
+            "metin": hitap.cevir(yeni),
             "temalar": temalar,
             "kutup": kutup_belirle(yeni),
             "kaynak": kaynak_tipi,
