@@ -46,6 +46,7 @@ Motor Python referans uygulamasıdır. Başka bir dile taşımak için:
 | `docs/PORT-KILAVUZU.md` | Adım adım algoritma şartnamesi + tipik tuzaklar |
 | `tests/uyumluluk-vektorleri.json` | 24 altın vektör (girdi → beklenen çıktı) |
 | `scripts/vektor_uret.py --dogrula` | Vektörlerin motorla uyumunu denetler |
+| `ports/js/numeroloji.js` | Node (CommonJS) portu — 24/24 vektör geçiyor: `node ports/js/uyumluluk.test.js` |
 
 `data/*.json` hiçbir dile bağlı değildir ve olduğu gibi okunur. Portun işi
 yalnızca doğru sayıları üretmek ve doğru metin anahtarını seçmek.
