@@ -55,15 +55,26 @@ data/                     Yorum korpusu ve parametreler (dilden bağımsız)
   ifade-planlari.json       harf tabanlı planlar — KAPALI, bkz. YOL-HARITASI
 src/numeroloji/           Referans uygulama (stdlib, bağımlılıksız)
 scripts/                  Üretim betikleri (idempotent)
-tests/                    41 test, bağımlılıksız
+tests/                    44 test, bağımlılıksız
+  uyumluluk-vektorleri.json  Port doğrulama vektörleri (dilden bağımsız)
 docs/METODOLOJI.md        Disiplin kararları ve gerekçeleri
+docs/PORT-KILAVUZU.md     Motoru başka bir dile taşıma şartnamesi
 docs/YOL-HARITASI.md      Madde madde durum
 inclusion.md              1.0 korpusu — kaynak belge, silinmedi
 ```
 
 `data/` içeriği saf JSON'dur; Python motoru bir **referans uygulamadır**.
-Uygulamanız başka bir dilde ise korpusu doğrudan tüketip motoru porte
-edebilirsiniz — `docs/METODOLOJI.md` tüm hesaplama kurallarını yazar.
+
+Uygulamanız başka bir dildeyse (Dart, TypeScript, Kotlin, Swift, PHP…)
+korpusu doğrudan tüketip motoru porte edebilirsiniz:
+
+- `docs/PORT-KILAVUZU.md` — adım adım algoritma şartnamesi ve tipik tuzaklar
+- `tests/uyumluluk-vektorleri.json` — 24 altın vektör; portunuz hepsini
+  geçiyorsa doğrudur
+
+```bash
+python3 scripts/vektor_uret.py --dogrula   # vektörler motorla uyumlu mu
+```
 
 ## Testler
 

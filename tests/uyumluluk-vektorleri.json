@@ -1,0 +1,2981 @@
+{
+  "surum": "1.0",
+  "aciklama": "Port dogrulama vektorleri. Bir port bu girdileri alip ayni 'beklenen' bloklarini uretmelidir. Metin icerigi degil, HESAPLAMA dogrulanir; metin secimi 'metin_varyantlari' ve 'siniflar' alanlariyla belirlenir.",
+  "sema": "latin26_katlamali",
+  "kaynak_parametreler": "data/taban-oranlar.json (harf_olasiligi, esikler)",
+  "kilavuz": "docs/PORT-KILAVUZU.md",
+  "vektorler": [
+    {
+      "ad": "Ayşe Nur Karahasanoğlu",
+      "dogum_tarihi": "1990-03-17",
+      "sinar": "uzun ad; usta sayi 22 Ruh Arzusu; 22->4 telafisi",
+      "beklenen": {
+        "ad_duz": "AYSENURKARAHASANOGLU",
+        "harf_sayisi": 20,
+        "cekirdek": {
+          "yasam_yolu": 3,
+          "ifade": 7,
+          "ruh_arzusu": 22,
+          "kisilik": 3,
+          "dogum_gunu": 8,
+          "dogum_ayi": 3,
+          "olgunluk": 1,
+          "telafi_kumesi": [
+            1,
+            3,
+            4,
+            7,
+            8,
+            22
+          ]
+        },
+        "frekanslar": {
+          "1": 7,
+          "2": 1,
+          "3": 3,
+          "4": 0,
+          "5": 3,
+          "6": 1,
+          "7": 2,
+          "8": 1,
+          "9": 2
+        },
+        "beklenen_frekans": {
+          "1": 3.72,
+          "2": 1.84,
+          "3": 3.21,
+          "4": 1.5,
+          "5": 3.98,
+          "6": 0.8,
+          "7": 1.27,
+          "8": 1.06,
+          "9": 2.61
+        },
+        "z": {
+          "1": 1.88,
+          "2": -0.65,
+          "3": -0.13,
+          "4": -1.27,
+          "5": -0.55,
+          "6": 0.23,
+          "7": 0.67,
+          "8": -0.06,
+          "9": -0.41
+        },
+        "siniflar": {
+          "1": "asiri",
+          "2": "dengeli",
+          "3": "dengeli",
+          "4": "eksik",
+          "5": "dengeli",
+          "6": "dengeli",
+          "7": "dengeli",
+          "8": "dengeli",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "telafili",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "hucre",
+          "8": "hucre",
+          "9": "hucre"
+        },
+        "karmik_dersler": [],
+        "telafi_edilmis_dersler": [
+          4
+        ],
+        "asiri_sayilar": [
+          1
+        ],
+        "gizli_tutku": 1,
+        "gizli_tutku_ortaklari": [
+          1
+        ],
+        "gizli_tutku_karakteri": "belirgin",
+        "tek_toplam": 17,
+        "cift_toplam": 3,
+        "tek_z": 1.12,
+        "tek_cift_sinif": "tek_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 9,
+            "beklenen": 6.49,
+            "z": 1.2,
+            "sinif": "baskin"
+          },
+          "iliski": {
+            "toplam": 5,
+            "beklenen": 6.88,
+            "z": -0.89,
+            "sinif": "zayif"
+          },
+          "ifade": {
+            "toplam": 6,
+            "beklenen": 6.63,
+            "z": -0.3,
+            "sinif": "dengeli"
+          }
+        },
+        "sentez": []
+      }
+    },
+    {
+      "ad": "Mehmet Öztürk",
+      "dogum_tarihi": "1977-01-03",
+      "sinar": "1 telafi edilmis; 7 kolektif ders; 2 ve 8 asiri -> celiski",
+      "beklenen": {
+        "ad_duz": "MEHMETOZTURK",
+        "harf_sayisi": 12,
+        "cekirdek": {
+          "yasam_yolu": 1,
+          "ifade": 4,
+          "ruh_arzusu": 1,
+          "kisilik": 3,
+          "dogum_gunu": 3,
+          "dogum_ayi": 1,
+          "olgunluk": 5,
+          "telafi_kumesi": [
+            1,
+            3,
+            4,
+            5
+          ]
+        },
+        "frekanslar": {
+          "1": 0,
+          "2": 3,
+          "3": 1,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 2,
+          "9": 1
+        },
+        "beklenen_frekans": {
+          "1": 2.23,
+          "2": 1.1,
+          "3": 1.93,
+          "4": 0.9,
+          "5": 2.39,
+          "6": 0.48,
+          "7": 0.76,
+          "8": 0.64,
+          "9": 1.57
+        },
+        "z": {
+          "1": -1.66,
+          "2": 1.89,
+          "3": -0.73,
+          "4": 1.2,
+          "5": -0.28,
+          "6": 0.76,
+          "7": -0.9,
+          "8": 1.76,
+          "9": -0.49
+        },
+        "siniflar": {
+          "1": "eksik",
+          "2": "asiri",
+          "3": "dengeli",
+          "4": "normalin_ustu",
+          "5": "dengeli",
+          "6": "normalin_ustu",
+          "7": "eksik",
+          "8": "asiri",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "telafili",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "kolektif",
+          "8": "hucre",
+          "9": "hucre"
+        },
+        "karmik_dersler": [
+          7
+        ],
+        "telafi_edilmis_dersler": [
+          1
+        ],
+        "asiri_sayilar": [
+          2,
+          8
+        ],
+        "gizli_tutku": 2,
+        "gizli_tutku_ortaklari": [
+          2
+        ],
+        "gizli_tutku_karakteri": "duz",
+        "tek_toplam": 4,
+        "cift_toplam": 8,
+        "tek_z": -3.21,
+        "tek_cift_sinif": "cift_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 2,
+            "beklenen": 3.89,
+            "z": -1.17,
+            "sinif": "zayif"
+          },
+          "iliski": {
+            "toplam": 7,
+            "beklenen": 4.13,
+            "z": 1.74,
+            "sinif": "baskin"
+          },
+          "ifade": {
+            "toplam": 3,
+            "beklenen": 3.98,
+            "z": -0.6,
+            "sinif": "dengeli"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "celiski",
+            "sayilar": [
+              2,
+              8
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "Ali Kaya",
+      "dogum_tarihi": "1985-08-08",
+      "sinar": "cok kisa ad; ayni sayim farkli sinif",
+      "beklenen": {
+        "ad_duz": "ALIKAYA",
+        "harf_sayisi": 7,
+        "cekirdek": {
+          "yasam_yolu": 3,
+          "ifade": 6,
+          "ruh_arzusu": 3,
+          "kisilik": 3,
+          "dogum_gunu": 8,
+          "dogum_ayi": 8,
+          "olgunluk": 9,
+          "telafi_kumesi": [
+            3,
+            6,
+            8,
+            9
+          ]
+        },
+        "frekanslar": {
+          "1": 3,
+          "2": 1,
+          "3": 1,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 1,
+          "8": 0,
+          "9": 1
+        },
+        "beklenen_frekans": {
+          "1": 1.3,
+          "2": 0.64,
+          "3": 1.12,
+          "4": 0.53,
+          "5": 1.39,
+          "6": 0.28,
+          "7": 0.44,
+          "8": 0.37,
+          "9": 0.92
+        },
+        "z": {
+          "1": 1.65,
+          "2": 0.46,
+          "3": -0.13,
+          "4": -0.75,
+          "5": -1.32,
+          "6": -0.54,
+          "7": 0.87,
+          "8": -0.63,
+          "9": 0.1
+        },
+        "siniflar": {
+          "1": "normalin_ustu",
+          "2": "dengeli",
+          "3": "dengeli",
+          "4": "eksik",
+          "5": "eksik",
+          "6": "eksik",
+          "7": "normalin_ustu",
+          "8": "eksik",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "kolektif",
+          "5": "kisisel",
+          "6": "telafili",
+          "7": "hucre",
+          "8": "telafili",
+          "9": "hucre"
+        },
+        "karmik_dersler": [
+          4,
+          5
+        ],
+        "telafi_edilmis_dersler": [
+          6,
+          8
+        ],
+        "asiri_sayilar": [],
+        "gizli_tutku": 1,
+        "gizli_tutku_ortaklari": [
+          1
+        ],
+        "gizli_tutku_karakteri": "belirgin",
+        "tek_toplam": 6,
+        "cift_toplam": 1,
+        "tek_z": 0.71,
+        "tek_cift_sinif": "dengeli",
+        "eksenler": {
+          "eylem": {
+            "toplam": 4,
+            "beklenen": 2.27,
+            "z": 1.39,
+            "sinif": "baskin"
+          },
+          "iliski": {
+            "toplam": 1,
+            "beklenen": 2.41,
+            "z": -1.12,
+            "sinif": "zayif"
+          },
+          "ifade": {
+            "toplam": 2,
+            "beklenen": 2.32,
+            "z": -0.26,
+            "sinif": "dengeli"
+          }
+        },
+        "sentez": []
+      }
+    },
+    {
+      "ad": "Zeynep Çelik",
+      "dogum_tarihi": "2001-11-29",
+      "sinar": "Ç ve ç katlamasi",
+      "beklenen": {
+        "ad_duz": "ZEYNEPCELIK",
+        "harf_sayisi": 11,
+        "cekirdek": {
+          "yasam_yolu": 7,
+          "ifade": 5,
+          "ruh_arzusu": 6,
+          "kisilik": 8,
+          "dogum_gunu": 11,
+          "dogum_ayi": 2,
+          "olgunluk": 3,
+          "telafi_kumesi": [
+            2,
+            3,
+            5,
+            6,
+            7,
+            8,
+            11
+          ]
+        },
+        "frekanslar": {
+          "1": 0,
+          "2": 1,
+          "3": 2,
+          "4": 0,
+          "5": 4,
+          "6": 0,
+          "7": 2,
+          "8": 1,
+          "9": 1
+        },
+        "beklenen_frekans": {
+          "1": 2.05,
+          "2": 1.01,
+          "3": 1.77,
+          "4": 0.83,
+          "5": 2.19,
+          "6": 0.44,
+          "7": 0.7,
+          "8": 0.58,
+          "9": 1.44
+        },
+        "z": {
+          "1": -1.59,
+          "2": -0.01,
+          "3": 0.19,
+          "4": -0.95,
+          "5": 1.37,
+          "6": -0.68,
+          "7": 1.62,
+          "8": 0.56,
+          "9": -0.39
+        },
+        "siniflar": {
+          "1": "eksik",
+          "2": "dengeli",
+          "3": "dengeli",
+          "4": "eksik",
+          "5": "normalin_ustu",
+          "6": "eksik",
+          "7": "normalin_ustu",
+          "8": "dengeli",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "kisisel",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "kolektif",
+          "5": "hucre",
+          "6": "telafili",
+          "7": "hucre",
+          "8": "hucre",
+          "9": "hucre"
+        },
+        "karmik_dersler": [
+          1,
+          4
+        ],
+        "telafi_edilmis_dersler": [
+          6
+        ],
+        "asiri_sayilar": [],
+        "gizli_tutku": 5,
+        "gizli_tutku_ortaklari": [
+          5
+        ],
+        "gizli_tutku_karakteri": "belirgin",
+        "tek_toplam": 9,
+        "cift_toplam": 2,
+        "tek_z": 0.59,
+        "tek_cift_sinif": "dengeli",
+        "eksenler": {
+          "eylem": {
+            "toplam": 2,
+            "beklenen": 3.57,
+            "z": -1.01,
+            "sinif": "zayif"
+          },
+          "iliski": {
+            "toplam": 6,
+            "beklenen": 3.78,
+            "z": 1.41,
+            "sinif": "baskin"
+          },
+          "ifade": {
+            "toplam": 3,
+            "beklenen": 3.64,
+            "z": -0.41,
+            "sinif": "dengeli"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "pekisme",
+            "sayilar": [
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "İbrahim Şahin",
+      "dogum_tarihi": "1963-02-04",
+      "sinar": "bas harf I; S katlamasi",
+      "beklenen": {
+        "ad_duz": "IBRAHIMSAHIN",
+        "harf_sayisi": 12,
+        "cekirdek": {
+          "yasam_yolu": 7,
+          "ifade": 3,
+          "ruh_arzusu": 11,
+          "kisilik": 1,
+          "dogum_gunu": 4,
+          "dogum_ayi": 2,
+          "olgunluk": 1,
+          "telafi_kumesi": [
+            1,
+            2,
+            3,
+            4,
+            7,
+            11
+          ]
+        },
+        "frekanslar": {
+          "1": 3,
+          "2": 1,
+          "3": 0,
+          "4": 1,
+          "5": 1,
+          "6": 0,
+          "7": 0,
+          "8": 2,
+          "9": 4
+        },
+        "beklenen_frekans": {
+          "1": 2.23,
+          "2": 1.1,
+          "3": 1.93,
+          "4": 0.9,
+          "5": 2.39,
+          "6": 0.48,
+          "7": 0.76,
+          "8": 0.64,
+          "9": 1.57
+        },
+        "z": {
+          "1": 0.57,
+          "2": -0.1,
+          "3": -1.51,
+          "4": 0.11,
+          "5": -1.0,
+          "6": -0.71,
+          "7": -0.9,
+          "8": 1.76,
+          "9": 2.08
+        },
+        "siniflar": {
+          "1": "dengeli",
+          "2": "dengeli",
+          "3": "eksik",
+          "4": "dengeli",
+          "5": "normalin_alti",
+          "6": "eksik",
+          "7": "eksik",
+          "8": "asiri",
+          "9": "asiri"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "telafili",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "kolektif",
+          "7": "telafili",
+          "8": "hucre",
+          "9": "hucre"
+        },
+        "karmik_dersler": [
+          6
+        ],
+        "telafi_edilmis_dersler": [
+          3,
+          7
+        ],
+        "asiri_sayilar": [
+          8,
+          9
+        ],
+        "gizli_tutku": 9,
+        "gizli_tutku_ortaklari": [
+          9
+        ],
+        "gizli_tutku_karakteri": "duz",
+        "tek_toplam": 8,
+        "cift_toplam": 4,
+        "tek_z": -0.58,
+        "tek_cift_sinif": "dengeli",
+        "eksenler": {
+          "eylem": {
+            "toplam": 4,
+            "beklenen": 3.89,
+            "z": 0.06,
+            "sinif": "dengeli"
+          },
+          "iliski": {
+            "toplam": 4,
+            "beklenen": 4.13,
+            "z": -0.08,
+            "sinif": "dengeli"
+          },
+          "ifade": {
+            "toplam": 4,
+            "beklenen": 3.98,
+            "z": 0.01,
+            "sinif": "dengeli"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "celiski",
+            "sayilar": [
+              8,
+              9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "Ilgın Işık",
+      "dogum_tarihi": "1999-09-09",
+      "sinar": "noktasiz I ve noktali I ayni sayiya",
+      "beklenen": {
+        "ad_duz": "ILGINISIK",
+        "harf_sayisi": 9,
+        "cekirdek": {
+          "yasam_yolu": 1,
+          "ifade": 9,
+          "ruh_arzusu": 9,
+          "kisilik": 9,
+          "dogum_gunu": 9,
+          "dogum_ayi": 9,
+          "olgunluk": 1,
+          "telafi_kumesi": [
+            1,
+            9
+          ]
+        },
+        "frekanslar": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 1,
+          "8": 0,
+          "9": 4
+        },
+        "beklenen_frekans": {
+          "1": 1.68,
+          "2": 0.83,
+          "3": 1.44,
+          "4": 0.68,
+          "5": 1.79,
+          "6": 0.36,
+          "7": 0.57,
+          "8": 0.48,
+          "9": 1.18
+        },
+        "z": {
+          "1": -0.58,
+          "2": 0.2,
+          "3": -0.4,
+          "4": -0.85,
+          "5": -0.66,
+          "6": -0.61,
+          "7": 0.59,
+          "8": -0.71,
+          "9": 2.79
+        },
+        "siniflar": {
+          "1": "dengeli",
+          "2": "dengeli",
+          "3": "dengeli",
+          "4": "eksik",
+          "5": "dengeli",
+          "6": "eksik",
+          "7": "dengeli",
+          "8": "eksik",
+          "9": "asiri"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "kolektif",
+          "5": "hucre",
+          "6": "kolektif",
+          "7": "hucre",
+          "8": "kolektif",
+          "9": "hucre"
+        },
+        "karmik_dersler": [
+          4,
+          6,
+          8
+        ],
+        "telafi_edilmis_dersler": [],
+        "asiri_sayilar": [
+          9
+        ],
+        "gizli_tutku": 9,
+        "gizli_tutku_ortaklari": [
+          9
+        ],
+        "gizli_tutku_karakteri": "belirgin",
+        "tek_toplam": 8,
+        "cift_toplam": 1,
+        "tek_z": 1.02,
+        "tek_cift_sinif": "tek_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 2,
+            "beklenen": 2.92,
+            "z": -0.66,
+            "sinif": "dengeli"
+          },
+          "iliski": {
+            "toplam": 2,
+            "beklenen": 3.1,
+            "z": -0.77,
+            "sinif": "zayif"
+          },
+          "ifade": {
+            "toplam": 5,
+            "beklenen": 2.98,
+            "z": 1.43,
+            "sinif": "baskin"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "pekisme",
+            "sayilar": [
+              8,
+              9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "Öznur Ünlüoğlu",
+      "dogum_tarihi": "1970-06-30",
+      "sinar": "O, U, G katlamasi; uzun soyad",
+      "beklenen": {
+        "ad_duz": "OZNURUNLUOGLU",
+        "harf_sayisi": 13,
+        "cekirdek": {
+          "yasam_yolu": 8,
+          "ifade": 1,
+          "ruh_arzusu": 6,
+          "kisilik": 4,
+          "dogum_gunu": 3,
+          "dogum_ayi": 6,
+          "olgunluk": 9,
+          "telafi_kumesi": [
+            1,
+            3,
+            4,
+            6,
+            8,
+            9
+          ]
+        },
+        "frekanslar": {
+          "1": 0,
+          "2": 0,
+          "3": 6,
+          "4": 0,
+          "5": 2,
+          "6": 2,
+          "7": 1,
+          "8": 1,
+          "9": 1
+        },
+        "beklenen_frekans": {
+          "1": 2.42,
+          "2": 1.2,
+          "3": 2.09,
+          "4": 0.98,
+          "5": 2.59,
+          "6": 0.52,
+          "7": 0.82,
+          "8": 0.69,
+          "9": 1.7
+        },
+        "z": {
+          "1": -1.72,
+          "2": -1.15,
+          "3": 2.96,
+          "4": -1.03,
+          "5": -0.41,
+          "6": 2.09,
+          "7": 0.2,
+          "8": 0.39,
+          "9": -0.58
+        },
+        "siniflar": {
+          "1": "eksik",
+          "2": "eksik",
+          "3": "asiri",
+          "4": "eksik",
+          "5": "dengeli",
+          "6": "asiri",
+          "7": "dengeli",
+          "8": "dengeli",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "telafili",
+          "2": "kolektif",
+          "3": "hucre",
+          "4": "telafili",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "hucre",
+          "8": "hucre",
+          "9": "hucre"
+        },
+        "karmik_dersler": [
+          2
+        ],
+        "telafi_edilmis_dersler": [
+          1,
+          4
+        ],
+        "asiri_sayilar": [
+          3,
+          6
+        ],
+        "gizli_tutku": 3,
+        "gizli_tutku_ortaklari": [
+          3
+        ],
+        "gizli_tutku_karakteri": "belirgin",
+        "tek_toplam": 10,
+        "cift_toplam": 3,
+        "tek_z": 0.24,
+        "tek_cift_sinif": "dengeli",
+        "eksenler": {
+          "eylem": {
+            "toplam": 1,
+            "beklenen": 4.22,
+            "z": -1.91,
+            "sinif": "zayif"
+          },
+          "iliski": {
+            "toplam": 3,
+            "beklenen": 4.47,
+            "z": -0.86,
+            "sinif": "zayif"
+          },
+          "ifade": {
+            "toplam": 9,
+            "beklenen": 4.31,
+            "z": 2.77,
+            "sinif": "baskin"
+          }
+        },
+        "sentez": []
+      }
+    },
+    {
+      "ad": "Al-i Osman Bey",
+      "dogum_tarihi": "1955-12-25",
+      "sinar": "tire; atilan kelime yok, harfler sayilir",
+      "beklenen": {
+        "ad_duz": "ALIOSMANBEY",
+        "harf_sayisi": 11,
+        "cekirdek": {
+          "yasam_yolu": 3,
+          "ifade": 8,
+          "ruh_arzusu": 22,
+          "kisilik": 22,
+          "dogum_gunu": 7,
+          "dogum_ayi": 3,
+          "olgunluk": 11,
+          "telafi_kumesi": [
+            2,
+            3,
+            4,
+            7,
+            8,
+            11,
+            22
+          ]
+        },
+        "frekanslar": {
+          "1": 3,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 2,
+          "6": 1,
+          "7": 1,
+          "8": 0,
+          "9": 1
+        },
+        "beklenen_frekans": {
+          "1": 2.05,
+          "2": 1.01,
+          "3": 1.77,
+          "4": 0.83,
+          "5": 2.19,
+          "6": 0.44,
+          "7": 0.7,
+          "8": 0.58,
+          "9": 1.44
+        },
+        "z": {
+          "1": 0.74,
+          "2": -0.01,
+          "3": -0.63,
+          "4": 0.2,
+          "5": -0.14,
+          "6": 0.86,
+          "7": 0.38,
+          "8": -0.78,
+          "9": -0.39
+        },
+        "siniflar": {
+          "1": "dengeli",
+          "2": "dengeli",
+          "3": "dengeli",
+          "4": "dengeli",
+          "5": "dengeli",
+          "6": "normalin_ustu",
+          "7": "dengeli",
+          "8": "eksik",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "hucre",
+          "8": "telafili",
+          "9": "hucre"
+        },
+        "karmik_dersler": [],
+        "telafi_edilmis_dersler": [
+          8
+        ],
+        "asiri_sayilar": [],
+        "gizli_tutku": 1,
+        "gizli_tutku_ortaklari": [
+          1
+        ],
+        "gizli_tutku_karakteri": "duz",
+        "tek_toplam": 8,
+        "cift_toplam": 3,
+        "tek_z": -0.09,
+        "tek_cift_sinif": "dengeli",
+        "eksenler": {
+          "eylem": {
+            "toplam": 5,
+            "beklenen": 3.57,
+            "z": 0.92,
+            "sinif": "baskin"
+          },
+          "iliski": {
+            "toplam": 3,
+            "beklenen": 3.78,
+            "z": -0.5,
+            "sinif": "dengeli"
+          },
+          "ifade": {
+            "toplam": 3,
+            "beklenen": 3.64,
+            "z": -0.41,
+            "sinif": "dengeli"
+          }
+        },
+        "sentez": []
+      }
+    },
+    {
+      "ad": "D'Artagnan Kaya",
+      "dogum_tarihi": "2004-04-04",
+      "sinar": "kesme isareti",
+      "beklenen": {
+        "ad_duz": "DARTAGNANKAYA",
+        "harf_sayisi": 13,
+        "cekirdek": {
+          "yasam_yolu": 5,
+          "ifade": 1,
+          "ruh_arzusu": 5,
+          "kisilik": 5,
+          "dogum_gunu": 4,
+          "dogum_ayi": 4,
+          "olgunluk": 6,
+          "telafi_kumesi": [
+            1,
+            4,
+            5,
+            6
+          ]
+        },
+        "frekanslar": {
+          "1": 5,
+          "2": 2,
+          "3": 0,
+          "4": 1,
+          "5": 2,
+          "6": 0,
+          "7": 2,
+          "8": 0,
+          "9": 1
+        },
+        "beklenen_frekans": {
+          "1": 2.42,
+          "2": 1.2,
+          "3": 2.09,
+          "4": 0.98,
+          "5": 2.59,
+          "6": 0.52,
+          "7": 0.82,
+          "8": 0.69,
+          "9": 1.7
+        },
+        "z": {
+          "1": 1.84,
+          "2": 0.77,
+          "3": -1.58,
+          "4": 0.02,
+          "5": -0.41,
+          "6": -0.74,
+          "7": 1.34,
+          "8": -0.85,
+          "9": -0.58
+        },
+        "siniflar": {
+          "1": "asiri",
+          "2": "normalin_ustu",
+          "3": "eksik",
+          "4": "dengeli",
+          "5": "dengeli",
+          "6": "eksik",
+          "7": "normalin_ustu",
+          "8": "eksik",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "kisisel",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "telafili",
+          "7": "hucre",
+          "8": "kolektif",
+          "9": "hucre"
+        },
+        "karmik_dersler": [
+          3,
+          8
+        ],
+        "telafi_edilmis_dersler": [
+          6
+        ],
+        "asiri_sayilar": [
+          1
+        ],
+        "gizli_tutku": 1,
+        "gizli_tutku_ortaklari": [
+          1
+        ],
+        "gizli_tutku_karakteri": "belirgin",
+        "tek_toplam": 10,
+        "cift_toplam": 3,
+        "tek_z": 0.24,
+        "tek_cift_sinif": "dengeli",
+        "eksenler": {
+          "eylem": {
+            "toplam": 8,
+            "beklenen": 4.22,
+            "z": 2.24,
+            "sinif": "baskin"
+          },
+          "iliski": {
+            "toplam": 4,
+            "beklenen": 4.47,
+            "z": -0.28,
+            "sinif": "dengeli"
+          },
+          "ifade": {
+            "toplam": 1,
+            "beklenen": 4.31,
+            "z": -1.95,
+            "sinif": "zayif"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "celiski",
+            "sayilar": [
+              1,
+              2
+            ]
+          },
+          {
+            "tur": "pekisme",
+            "sayilar": [
+              3,
+              7
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "Ece Su",
+      "dogum_tarihi": "2010-10-10",
+      "sinar": "asgari uzunluk; yuksek z duyarliligi",
+      "beklenen": {
+        "ad_duz": "ECESU",
+        "harf_sayisi": 5,
+        "cekirdek": {
+          "yasam_yolu": 5,
+          "ifade": 8,
+          "ruh_arzusu": 4,
+          "kisilik": 4,
+          "dogum_gunu": 1,
+          "dogum_ayi": 1,
+          "olgunluk": 4,
+          "telafi_kumesi": [
+            1,
+            4,
+            5,
+            8
+          ]
+        },
+        "frekanslar": {
+          "1": 1,
+          "2": 0,
+          "3": 2,
+          "4": 0,
+          "5": 2,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        },
+        "beklenen_frekans": {
+          "1": 0.93,
+          "2": 0.46,
+          "3": 0.8,
+          "4": 0.38,
+          "5": 1.0,
+          "6": 0.2,
+          "7": 0.32,
+          "8": 0.26,
+          "9": 0.65
+        },
+        "z": {
+          "1": 0.08,
+          "2": -0.71,
+          "3": 1.46,
+          "4": -0.64,
+          "5": 1.12,
+          "6": -0.46,
+          "7": -0.58,
+          "8": -0.53,
+          "9": -0.87
+        },
+        "siniflar": {
+          "1": "dengeli",
+          "2": "eksik",
+          "3": "normalin_ustu",
+          "4": "eksik",
+          "5": "normalin_ustu",
+          "6": "eksik",
+          "7": "eksik",
+          "8": "eksik",
+          "9": "eksik"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "kolektif",
+          "3": "hucre",
+          "4": "telafili",
+          "5": "hucre",
+          "6": "kolektif",
+          "7": "kolektif",
+          "8": "telafili",
+          "9": "kisisel"
+        },
+        "karmik_dersler": [
+          2,
+          6,
+          7,
+          9
+        ],
+        "telafi_edilmis_dersler": [
+          4,
+          8
+        ],
+        "asiri_sayilar": [],
+        "gizli_tutku": 3,
+        "gizli_tutku_ortaklari": [
+          3,
+          5
+        ],
+        "gizli_tutku_karakteri": "paylasimli",
+        "tek_toplam": 5,
+        "cift_toplam": 0,
+        "tek_z": 1.33,
+        "tek_cift_sinif": "tek_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 1,
+            "beklenen": 1.62,
+            "z": -0.59,
+            "sinif": "dengeli"
+          },
+          "iliski": {
+            "toplam": 2,
+            "beklenen": 1.72,
+            "z": 0.26,
+            "sinif": "dengeli"
+          },
+          "ifade": {
+            "toplam": 2,
+            "beklenen": 1.66,
+            "z": 0.33,
+            "sinif": "dengeli"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "pekisme",
+            "sayilar": [
+              6,
+              5
+            ]
+          },
+          {
+            "tur": "pekisme",
+            "sayilar": [
+              7,
+              5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "Mustafa Kemal Atatürk",
+      "dogum_tarihi": "1881-05-19",
+      "sinar": "uc parcali ad",
+      "beklenen": {
+        "ad_duz": "MUSTAFAKEMALATATURK",
+        "harf_sayisi": 19,
+        "cekirdek": {
+          "yasam_yolu": 33,
+          "ifade": 8,
+          "ruh_arzusu": 7,
+          "kisilik": 1,
+          "dogum_gunu": 1,
+          "dogum_ayi": 5,
+          "olgunluk": 5,
+          "telafi_kumesi": [
+            1,
+            5,
+            6,
+            7,
+            8,
+            33
+          ]
+        },
+        "frekanslar": {
+          "1": 6,
+          "2": 5,
+          "3": 3,
+          "4": 2,
+          "5": 1,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 1
+        },
+        "beklenen_frekans": {
+          "1": 3.54,
+          "2": 1.75,
+          "3": 3.05,
+          "4": 1.43,
+          "5": 3.78,
+          "6": 0.76,
+          "7": 1.2,
+          "8": 1.01,
+          "9": 2.48
+        },
+        "z": {
+          "1": 1.45,
+          "2": 2.58,
+          "3": -0.03,
+          "4": 0.5,
+          "5": -1.6,
+          "6": 0.28,
+          "7": -1.13,
+          "8": -1.03,
+          "9": -1.01
+        },
+        "siniflar": {
+          "1": "normalin_ustu",
+          "2": "asiri",
+          "3": "dengeli",
+          "4": "dengeli",
+          "5": "normalin_alti",
+          "6": "dengeli",
+          "7": "eksik",
+          "8": "eksik",
+          "9": "normalin_alti"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "telafili",
+          "8": "telafili",
+          "9": "hucre"
+        },
+        "karmik_dersler": [],
+        "telafi_edilmis_dersler": [
+          7,
+          8
+        ],
+        "asiri_sayilar": [
+          2
+        ],
+        "gizli_tutku": 1,
+        "gizli_tutku_ortaklari": [
+          1
+        ],
+        "gizli_tutku_karakteri": "duz",
+        "tek_toplam": 11,
+        "cift_toplam": 8,
+        "tek_z": -1.6,
+        "tek_cift_sinif": "cift_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 8,
+            "beklenen": 6.17,
+            "z": 0.9,
+            "sinif": "baskin"
+          },
+          "iliski": {
+            "toplam": 6,
+            "beklenen": 6.54,
+            "z": -0.26,
+            "sinif": "dengeli"
+          },
+          "ifade": {
+            "toplam": 5,
+            "beklenen": 6.3,
+            "z": -0.63,
+            "sinif": "dengeli"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "celiski",
+            "sayilar": [
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "Şule Ağaoğlu",
+      "dogum_tarihi": "1988-08-18",
+      "sinar": "S ve G katlamasi bir arada",
+      "beklenen": {
+        "ad_duz": "SULEAGAOGLU",
+        "harf_sayisi": 11,
+        "cekirdek": {
+          "yasam_yolu": 7,
+          "ifade": 4,
+          "ruh_arzusu": 1,
+          "kisilik": 3,
+          "dogum_gunu": 9,
+          "dogum_ayi": 8,
+          "olgunluk": 11,
+          "telafi_kumesi": [
+            1,
+            2,
+            3,
+            4,
+            7,
+            8,
+            9,
+            11
+          ]
+        },
+        "frekanslar": {
+          "1": 3,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 1,
+          "6": 1,
+          "7": 2,
+          "8": 0,
+          "9": 0
+        },
+        "beklenen_frekans": {
+          "1": 2.05,
+          "2": 1.01,
+          "3": 1.77,
+          "4": 0.83,
+          "5": 2.19,
+          "6": 0.44,
+          "7": 0.7,
+          "8": 0.58,
+          "9": 1.44
+        },
+        "z": {
+          "1": 0.74,
+          "2": -1.06,
+          "3": 1.84,
+          "4": -0.95,
+          "5": -0.9,
+          "6": 0.86,
+          "7": 1.62,
+          "8": -0.78,
+          "9": -1.29
+        },
+        "siniflar": {
+          "1": "dengeli",
+          "2": "eksik",
+          "3": "asiri",
+          "4": "eksik",
+          "5": "normalin_alti",
+          "6": "normalin_ustu",
+          "7": "normalin_ustu",
+          "8": "eksik",
+          "9": "eksik"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "telafili",
+          "3": "hucre",
+          "4": "telafili",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "hucre",
+          "8": "telafili",
+          "9": "telafili"
+        },
+        "karmik_dersler": [],
+        "telafi_edilmis_dersler": [
+          2,
+          4,
+          8,
+          9
+        ],
+        "asiri_sayilar": [
+          3
+        ],
+        "gizli_tutku": 3,
+        "gizli_tutku_ortaklari": [
+          3
+        ],
+        "gizli_tutku_karakteri": "duz",
+        "tek_toplam": 10,
+        "cift_toplam": 1,
+        "tek_z": 1.28,
+        "tek_cift_sinif": "tek_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 5,
+            "beklenen": 3.57,
+            "z": 0.92,
+            "sinif": "baskin"
+          },
+          "iliski": {
+            "toplam": 1,
+            "beklenen": 3.78,
+            "z": -1.77,
+            "sinif": "zayif"
+          },
+          "ifade": {
+            "toplam": 5,
+            "beklenen": 3.64,
+            "z": 0.87,
+            "sinif": "baskin"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "celiski",
+            "sayilar": [
+              3,
+              7
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "Gülşah Yılmazoğlu",
+      "dogum_tarihi": "1992-02-29",
+      "sinar": "artik yil",
+      "beklenen": {
+        "ad_duz": "GULSAHYILMAZOGLU",
+        "harf_sayisi": 16,
+        "cekirdek": {
+          "yasam_yolu": 7,
+          "ifade": 11,
+          "ruh_arzusu": 5,
+          "kisilik": 6,
+          "dogum_gunu": 11,
+          "dogum_ayi": 2,
+          "olgunluk": 9,
+          "telafi_kumesi": [
+            2,
+            5,
+            6,
+            7,
+            9,
+            11
+          ]
+        },
+        "frekanslar": {
+          "1": 3,
+          "2": 0,
+          "3": 5,
+          "4": 1,
+          "5": 0,
+          "6": 1,
+          "7": 3,
+          "8": 2,
+          "9": 1
+        },
+        "beklenen_frekans": {
+          "1": 2.98,
+          "2": 1.47,
+          "3": 2.57,
+          "4": 1.2,
+          "5": 3.19,
+          "6": 0.64,
+          "7": 1.01,
+          "8": 0.85,
+          "9": 2.09
+        },
+        "z": {
+          "1": 0.01,
+          "2": -1.27,
+          "3": 1.66,
+          "4": -0.19,
+          "5": -1.99,
+          "6": 0.46,
+          "7": 2.04,
+          "8": 1.29,
+          "9": -0.81
+        },
+        "siniflar": {
+          "1": "dengeli",
+          "2": "eksik",
+          "3": "normalin_ustu",
+          "4": "dengeli",
+          "5": "eksik",
+          "6": "dengeli",
+          "7": "asiri",
+          "8": "normalin_ustu",
+          "9": "normalin_alti"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "telafili",
+          "3": "hucre",
+          "4": "hucre",
+          "5": "telafili",
+          "6": "hucre",
+          "7": "hucre",
+          "8": "hucre",
+          "9": "hucre"
+        },
+        "karmik_dersler": [],
+        "telafi_edilmis_dersler": [
+          2,
+          5
+        ],
+        "asiri_sayilar": [
+          7
+        ],
+        "gizli_tutku": 3,
+        "gizli_tutku_ortaklari": [
+          3
+        ],
+        "gizli_tutku_karakteri": "belirgin",
+        "tek_toplam": 12,
+        "cift_toplam": 4,
+        "tek_z": 0.09,
+        "tek_cift_sinif": "dengeli",
+        "eksenler": {
+          "eylem": {
+            "toplam": 7,
+            "beklenen": 5.19,
+            "z": 0.96,
+            "sinif": "baskin"
+          },
+          "iliski": {
+            "toplam": 2,
+            "beklenen": 5.51,
+            "z": -1.84,
+            "sinif": "zayif"
+          },
+          "ifade": {
+            "toplam": 7,
+            "beklenen": 5.3,
+            "z": 0.9,
+            "sinif": "baskin"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "celiski",
+            "sayilar": [
+              3,
+              7
+            ]
+          },
+          {
+            "tur": "celiski",
+            "sayilar": [
+              7,
+              8
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "Hüseyin Çakıroğlu",
+      "dogum_tarihi": "1966-11-11",
+      "sinar": "usta sayi uretme egilimi",
+      "beklenen": {
+        "ad_duz": "HUSEYINCAKIROGLU",
+        "harf_sayisi": 16,
+        "cekirdek": {
+          "yasam_yolu": 8,
+          "ifade": 9,
+          "ruh_arzusu": 9,
+          "kisilik": 9,
+          "dogum_gunu": 2,
+          "dogum_ayi": 2,
+          "olgunluk": 8,
+          "telafi_kumesi": [
+            2,
+            8,
+            9
+          ]
+        },
+        "frekanslar": {
+          "1": 2,
+          "2": 1,
+          "3": 4,
+          "4": 0,
+          "5": 2,
+          "6": 1,
+          "7": 2,
+          "8": 1,
+          "9": 3
+        },
+        "beklenen_frekans": {
+          "1": 2.98,
+          "2": 1.47,
+          "3": 2.57,
+          "4": 1.2,
+          "5": 3.19,
+          "6": 0.64,
+          "7": 1.01,
+          "8": 0.85,
+          "9": 2.09
+        },
+        "z": {
+          "1": -0.63,
+          "2": -0.41,
+          "3": 0.98,
+          "4": -1.14,
+          "5": -0.74,
+          "6": 0.46,
+          "7": 1.01,
+          "8": 0.17,
+          "9": 0.67
+        },
+        "siniflar": {
+          "1": "dengeli",
+          "2": "dengeli",
+          "3": "normalin_ustu",
+          "4": "eksik",
+          "5": "dengeli",
+          "6": "dengeli",
+          "7": "normalin_ustu",
+          "8": "dengeli",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "kolektif",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "hucre",
+          "8": "hucre",
+          "9": "hucre"
+        },
+        "karmik_dersler": [
+          4
+        ],
+        "telafi_edilmis_dersler": [],
+        "asiri_sayilar": [],
+        "gizli_tutku": 3,
+        "gizli_tutku_ortaklari": [
+          3
+        ],
+        "gizli_tutku_karakteri": "duz",
+        "tek_toplam": 13,
+        "cift_toplam": 3,
+        "tek_z": 0.66,
+        "tek_cift_sinif": "dengeli",
+        "eksenler": {
+          "eylem": {
+            "toplam": 4,
+            "beklenen": 5.19,
+            "z": -0.64,
+            "sinif": "dengeli"
+          },
+          "iliski": {
+            "toplam": 4,
+            "beklenen": 5.51,
+            "z": -0.79,
+            "sinif": "zayif"
+          },
+          "ifade": {
+            "toplam": 8,
+            "beklenen": 5.3,
+            "z": 1.43,
+            "sinif": "baskin"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "celiski",
+            "sayilar": [
+              3,
+              7
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "Ayşegül Kahraman",
+      "dogum_tarihi": "1983-07-22",
+      "sinar": "22 dogum gunu",
+      "beklenen": {
+        "ad_duz": "AYSEGULKAHRAMAN",
+        "harf_sayisi": 15,
+        "cekirdek": {
+          "yasam_yolu": 5,
+          "ifade": 4,
+          "ruh_arzusu": 3,
+          "kisilik": 1,
+          "dogum_gunu": 4,
+          "dogum_ayi": 7,
+          "olgunluk": 9,
+          "telafi_kumesi": [
+            1,
+            3,
+            4,
+            5,
+            7,
+            9
+          ]
+        },
+        "frekanslar": {
+          "1": 5,
+          "2": 1,
+          "3": 2,
+          "4": 1,
+          "5": 2,
+          "6": 0,
+          "7": 2,
+          "8": 1,
+          "9": 1
+        },
+        "beklenen_frekans": {
+          "1": 2.79,
+          "2": 1.38,
+          "3": 2.41,
+          "4": 1.13,
+          "5": 2.99,
+          "6": 0.6,
+          "7": 0.95,
+          "8": 0.79,
+          "9": 1.96
+        },
+        "z": {
+          "1": 1.46,
+          "2": -0.34,
+          "3": -0.29,
+          "4": -0.12,
+          "5": -0.64,
+          "6": -0.79,
+          "7": 1.11,
+          "8": 0.24,
+          "9": -0.74
+        },
+        "siniflar": {
+          "1": "normalin_ustu",
+          "2": "dengeli",
+          "3": "dengeli",
+          "4": "dengeli",
+          "5": "dengeli",
+          "6": "eksik",
+          "7": "normalin_ustu",
+          "8": "dengeli",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "kolektif",
+          "7": "hucre",
+          "8": "hucre",
+          "9": "hucre"
+        },
+        "karmik_dersler": [
+          6
+        ],
+        "telafi_edilmis_dersler": [],
+        "asiri_sayilar": [],
+        "gizli_tutku": 1,
+        "gizli_tutku_ortaklari": [
+          1
+        ],
+        "gizli_tutku_karakteri": "belirgin",
+        "tek_toplam": 12,
+        "cift_toplam": 3,
+        "tek_z": 0.53,
+        "tek_cift_sinif": "dengeli",
+        "eksenler": {
+          "eylem": {
+            "toplam": 8,
+            "beklenen": 4.87,
+            "z": 1.73,
+            "sinif": "baskin"
+          },
+          "iliski": {
+            "toplam": 4,
+            "beklenen": 5.16,
+            "z": -0.63,
+            "sinif": "dengeli"
+          },
+          "ifade": {
+            "toplam": 3,
+            "beklenen": 4.97,
+            "z": -1.08,
+            "sinif": "zayif"
+          }
+        },
+        "sentez": []
+      }
+    },
+    {
+      "ad": "Emre Koç",
+      "dogum_tarihi": "2000-01-01",
+      "sinar": "kisa; Yasam Yolu 4",
+      "beklenen": {
+        "ad_duz": "EMREKOC",
+        "harf_sayisi": 7,
+        "cekirdek": {
+          "yasam_yolu": 4,
+          "ifade": 7,
+          "ruh_arzusu": 7,
+          "kisilik": 9,
+          "dogum_gunu": 1,
+          "dogum_ayi": 1,
+          "olgunluk": 11,
+          "telafi_kumesi": [
+            1,
+            2,
+            4,
+            7,
+            9,
+            11
+          ]
+        },
+        "frekanslar": {
+          "1": 0,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 1
+        },
+        "beklenen_frekans": {
+          "1": 1.3,
+          "2": 0.64,
+          "3": 1.12,
+          "4": 0.53,
+          "5": 1.39,
+          "6": 0.28,
+          "7": 0.44,
+          "8": 0.37,
+          "9": 0.92
+        },
+        "z": {
+          "1": -1.27,
+          "2": 0.46,
+          "3": -0.13,
+          "4": 0.68,
+          "5": 0.57,
+          "6": 1.39,
+          "7": -0.69,
+          "8": -0.63,
+          "9": 0.1
+        },
+        "siniflar": {
+          "1": "eksik",
+          "2": "dengeli",
+          "3": "dengeli",
+          "4": "dengeli",
+          "5": "dengeli",
+          "6": "normalin_ustu",
+          "7": "eksik",
+          "8": "eksik",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "telafili",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "telafili",
+          "8": "kolektif",
+          "9": "hucre"
+        },
+        "karmik_dersler": [
+          8
+        ],
+        "telafi_edilmis_dersler": [
+          1,
+          7
+        ],
+        "asiri_sayilar": [],
+        "gizli_tutku": 5,
+        "gizli_tutku_ortaklari": [
+          5
+        ],
+        "gizli_tutku_karakteri": "duz",
+        "tek_toplam": 4,
+        "cift_toplam": 3,
+        "tek_z": -1.02,
+        "tek_cift_sinif": "cift_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 1,
+            "beklenen": 2.27,
+            "z": -1.03,
+            "sinif": "zayif"
+          },
+          "iliski": {
+            "toplam": 3,
+            "beklenen": 2.41,
+            "z": 0.47,
+            "sinif": "dengeli"
+          },
+          "ifade": {
+            "toplam": 3,
+            "beklenen": 2.32,
+            "z": 0.55,
+            "sinif": "dengeli"
+          }
+        },
+        "sentez": []
+      }
+    },
+    {
+      "ad": "Fatma Nur Şimşek",
+      "dogum_tarihi": "1975-03-13",
+      "sinar": "cift S",
+      "beklenen": {
+        "ad_duz": "FATMANURSIMSEK",
+        "harf_sayisi": 14,
+        "cekirdek": {
+          "yasam_yolu": 11,
+          "ifade": 8,
+          "ruh_arzusu": 1,
+          "kisilik": 7,
+          "dogum_gunu": 4,
+          "dogum_ayi": 3,
+          "olgunluk": 1,
+          "telafi_kumesi": [
+            1,
+            2,
+            3,
+            4,
+            7,
+            8,
+            11
+          ]
+        },
+        "frekanslar": {
+          "1": 4,
+          "2": 2,
+          "3": 1,
+          "4": 2,
+          "5": 2,
+          "6": 1,
+          "7": 0,
+          "8": 0,
+          "9": 2
+        },
+        "beklenen_frekans": {
+          "1": 2.61,
+          "2": 1.29,
+          "3": 2.25,
+          "4": 1.05,
+          "5": 2.79,
+          "6": 0.56,
+          "7": 0.89,
+          "8": 0.74,
+          "9": 1.83
+        },
+        "z": {
+          "1": 0.96,
+          "2": 0.66,
+          "3": -0.91,
+          "4": 0.96,
+          "5": -0.53,
+          "6": 0.6,
+          "7": -0.97,
+          "8": -0.88,
+          "9": 0.13
+        },
+        "siniflar": {
+          "1": "normalin_ustu",
+          "2": "dengeli",
+          "3": "normalin_alti",
+          "4": "normalin_ustu",
+          "5": "dengeli",
+          "6": "dengeli",
+          "7": "eksik",
+          "8": "eksik",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "telafili",
+          "8": "telafili",
+          "9": "hucre"
+        },
+        "karmik_dersler": [],
+        "telafi_edilmis_dersler": [
+          7,
+          8
+        ],
+        "asiri_sayilar": [],
+        "gizli_tutku": 1,
+        "gizli_tutku_ortaklari": [
+          1
+        ],
+        "gizli_tutku_karakteri": "belirgin",
+        "tek_toplam": 9,
+        "cift_toplam": 5,
+        "tek_z": -0.83,
+        "tek_cift_sinif": "cift_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 6,
+            "beklenen": 4.54,
+            "z": 0.83,
+            "sinif": "baskin"
+          },
+          "iliski": {
+            "toplam": 4,
+            "beklenen": 4.82,
+            "z": -0.46,
+            "sinif": "dengeli"
+          },
+          "ifade": {
+            "toplam": 4,
+            "beklenen": 4.64,
+            "z": -0.36,
+            "sinif": "dengeli"
+          }
+        },
+        "sentez": []
+      }
+    },
+    {
+      "ad": "Yağmur Özdemircioğlu",
+      "dogum_tarihi": "1997-09-27",
+      "sinar": "en uzun soyad",
+      "beklenen": {
+        "ad_duz": "YAGMUROZDEMIRCIOGLU",
+        "harf_sayisi": 19,
+        "cekirdek": {
+          "yasam_yolu": 8,
+          "ifade": 8,
+          "ruh_arzusu": 6,
+          "kisilik": 11,
+          "dogum_gunu": 9,
+          "dogum_ayi": 9,
+          "olgunluk": 7,
+          "telafi_kumesi": [
+            2,
+            6,
+            7,
+            8,
+            9,
+            11
+          ]
+        },
+        "frekanslar": {
+          "1": 1,
+          "2": 0,
+          "3": 4,
+          "4": 3,
+          "5": 1,
+          "6": 2,
+          "7": 3,
+          "8": 1,
+          "9": 4
+        },
+        "beklenen_frekans": {
+          "1": 3.54,
+          "2": 1.75,
+          "3": 3.05,
+          "4": 1.43,
+          "5": 3.78,
+          "6": 0.76,
+          "7": 1.2,
+          "8": 1.01,
+          "9": 2.48
+        },
+        "z": {
+          "1": -1.5,
+          "2": -1.39,
+          "3": 0.59,
+          "4": 1.37,
+          "5": -1.6,
+          "6": 1.45,
+          "7": 1.69,
+          "8": -0.01,
+          "9": 1.03
+        },
+        "siniflar": {
+          "1": "normalin_alti",
+          "2": "eksik",
+          "3": "dengeli",
+          "4": "normalin_ustu",
+          "5": "normalin_alti",
+          "6": "normalin_ustu",
+          "7": "normalin_ustu",
+          "8": "dengeli",
+          "9": "normalin_ustu"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "telafili",
+          "3": "hucre",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "hucre",
+          "8": "hucre",
+          "9": "hucre"
+        },
+        "karmik_dersler": [],
+        "telafi_edilmis_dersler": [
+          2
+        ],
+        "asiri_sayilar": [],
+        "gizli_tutku": 3,
+        "gizli_tutku_ortaklari": [
+          3,
+          9
+        ],
+        "gizli_tutku_karakteri": "paylasimli",
+        "tek_toplam": 13,
+        "cift_toplam": 6,
+        "tek_z": -0.55,
+        "tek_cift_sinif": "dengeli",
+        "eksenler": {
+          "eylem": {
+            "toplam": 7,
+            "beklenen": 6.17,
+            "z": 0.41,
+            "sinif": "dengeli"
+          },
+          "iliski": {
+            "toplam": 2,
+            "beklenen": 6.54,
+            "z": -2.19,
+            "sinif": "zayif"
+          },
+          "ifade": {
+            "toplam": 10,
+            "beklenen": 6.3,
+            "z": 1.81,
+            "sinif": "baskin"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "celiski",
+            "sayilar": [
+              4,
+              9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "Kaan Uz",
+      "dogum_tarihi": "2015-05-05",
+      "sinar": "cok kisa; 5 agirlikli",
+      "beklenen": {
+        "ad_duz": "KAANUZ",
+        "harf_sayisi": 6,
+        "cekirdek": {
+          "yasam_yolu": 9,
+          "ifade": 2,
+          "ruh_arzusu": 5,
+          "kisilik": 6,
+          "dogum_gunu": 5,
+          "dogum_ayi": 5,
+          "olgunluk": 11,
+          "telafi_kumesi": [
+            2,
+            5,
+            6,
+            9,
+            11
+          ]
+        },
+        "frekanslar": {
+          "1": 2,
+          "2": 1,
+          "3": 1,
+          "4": 0,
+          "5": 1,
+          "6": 0,
+          "7": 0,
+          "8": 1,
+          "9": 0
+        },
+        "beklenen_frekans": {
+          "1": 1.12,
+          "2": 0.55,
+          "3": 0.96,
+          "4": 0.45,
+          "5": 1.19,
+          "6": 0.24,
+          "7": 0.38,
+          "8": 0.32,
+          "9": 0.78
+        },
+        "z": {
+          "1": 0.93,
+          "2": 0.63,
+          "3": 0.04,
+          "4": -0.7,
+          "5": -0.2,
+          "6": -0.5,
+          "7": -0.64,
+          "8": 1.24,
+          "9": -0.95
+        },
+        "siniflar": {
+          "1": "normalin_ustu",
+          "2": "dengeli",
+          "3": "dengeli",
+          "4": "eksik",
+          "5": "dengeli",
+          "6": "eksik",
+          "7": "eksik",
+          "8": "normalin_ustu",
+          "9": "eksik"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "kolektif",
+          "5": "hucre",
+          "6": "telafili",
+          "7": "kolektif",
+          "8": "hucre",
+          "9": "telafili"
+        },
+        "karmik_dersler": [
+          4,
+          7
+        ],
+        "telafi_edilmis_dersler": [
+          6,
+          9
+        ],
+        "asiri_sayilar": [],
+        "gizli_tutku": 1,
+        "gizli_tutku_ortaklari": [
+          1
+        ],
+        "gizli_tutku_karakteri": "duz",
+        "tek_toplam": 4,
+        "cift_toplam": 2,
+        "tek_z": -0.41,
+        "tek_cift_sinif": "dengeli",
+        "eksenler": {
+          "eylem": {
+            "toplam": 2,
+            "beklenen": 1.95,
+            "z": 0.05,
+            "sinif": "dengeli"
+          },
+          "iliski": {
+            "toplam": 3,
+            "beklenen": 2.06,
+            "z": 0.8,
+            "sinif": "baskin"
+          },
+          "ifade": {
+            "toplam": 1,
+            "beklenen": 1.99,
+            "z": -0.86,
+            "sinif": "zayif"
+          }
+        },
+        "sentez": []
+      }
+    },
+    {
+      "ad": "Pınar Güngörmüş",
+      "dogum_tarihi": "1979-04-16",
+      "sinar": "noktasiz i; U katlamasi",
+      "beklenen": {
+        "ad_duz": "PINARGUNGORMUS",
+        "harf_sayisi": 14,
+        "cekirdek": {
+          "yasam_yolu": 1,
+          "ifade": 4,
+          "ruh_arzusu": 22,
+          "kisilik": 9,
+          "dogum_gunu": 7,
+          "dogum_ayi": 4,
+          "olgunluk": 5,
+          "telafi_kumesi": [
+            1,
+            4,
+            5,
+            7,
+            9,
+            22
+          ]
+        },
+        "frekanslar": {
+          "1": 2,
+          "2": 0,
+          "3": 2,
+          "4": 1,
+          "5": 2,
+          "6": 1,
+          "7": 3,
+          "8": 0,
+          "9": 3
+        },
+        "beklenen_frekans": {
+          "1": 2.61,
+          "2": 1.29,
+          "3": 2.25,
+          "4": 1.05,
+          "5": 2.79,
+          "6": 0.56,
+          "7": 0.89,
+          "8": 0.74,
+          "9": 1.83
+        },
+        "z": {
+          "1": -0.42,
+          "2": -1.19,
+          "3": -0.18,
+          "4": -0.05,
+          "5": -0.53,
+          "6": 0.6,
+          "7": 2.32,
+          "8": -0.88,
+          "9": 0.93
+        },
+        "siniflar": {
+          "1": "dengeli",
+          "2": "eksik",
+          "3": "dengeli",
+          "4": "dengeli",
+          "5": "dengeli",
+          "6": "dengeli",
+          "7": "asiri",
+          "8": "eksik",
+          "9": "normalin_ustu"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "kolektif",
+          "3": "hucre",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "hucre",
+          "8": "kolektif",
+          "9": "hucre"
+        },
+        "karmik_dersler": [
+          2,
+          8
+        ],
+        "telafi_edilmis_dersler": [],
+        "asiri_sayilar": [
+          7
+        ],
+        "gizli_tutku": 7,
+        "gizli_tutku_ortaklari": [
+          7,
+          9
+        ],
+        "gizli_tutku_karakteri": "paylasimli",
+        "tek_toplam": 12,
+        "cift_toplam": 2,
+        "tek_z": 1.0,
+        "tek_cift_sinif": "tek_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 6,
+            "beklenen": 4.54,
+            "z": 0.83,
+            "sinif": "baskin"
+          },
+          "iliski": {
+            "toplam": 2,
+            "beklenen": 4.82,
+            "z": -1.58,
+            "sinif": "zayif"
+          },
+          "ifade": {
+            "toplam": 6,
+            "beklenen": 4.64,
+            "z": 0.77,
+            "sinif": "baskin"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "pekisme",
+            "sayilar": [
+              8,
+              9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "Ömer Faruk Aydın",
+      "dogum_tarihi": "1986-12-08",
+      "sinar": "uc parcali; O katlamasi",
+      "beklenen": {
+        "ad_duz": "OMERFARUKAYDIN",
+        "harf_sayisi": 14,
+        "cekirdek": {
+          "yasam_yolu": 8,
+          "ifade": 8,
+          "ruh_arzusu": 7,
+          "kisilik": 1,
+          "dogum_gunu": 8,
+          "dogum_ayi": 3,
+          "olgunluk": 7,
+          "telafi_kumesi": [
+            1,
+            3,
+            7,
+            8
+          ]
+        },
+        "frekanslar": {
+          "1": 2,
+          "2": 1,
+          "3": 1,
+          "4": 2,
+          "5": 2,
+          "6": 2,
+          "7": 1,
+          "8": 0,
+          "9": 3
+        },
+        "beklenen_frekans": {
+          "1": 2.61,
+          "2": 1.29,
+          "3": 2.25,
+          "4": 1.05,
+          "5": 2.79,
+          "6": 0.56,
+          "7": 0.89,
+          "8": 0.74,
+          "9": 1.83
+        },
+        "z": {
+          "1": -0.42,
+          "2": -0.27,
+          "3": -0.91,
+          "4": 0.96,
+          "5": -0.53,
+          "6": 1.96,
+          "7": 0.13,
+          "8": -0.88,
+          "9": 0.93
+        },
+        "siniflar": {
+          "1": "dengeli",
+          "2": "dengeli",
+          "3": "normalin_alti",
+          "4": "normalin_ustu",
+          "5": "dengeli",
+          "6": "asiri",
+          "7": "dengeli",
+          "8": "eksik",
+          "9": "normalin_ustu"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "hucre",
+          "8": "telafili",
+          "9": "hucre"
+        },
+        "karmik_dersler": [],
+        "telafi_edilmis_dersler": [
+          8
+        ],
+        "asiri_sayilar": [
+          6
+        ],
+        "gizli_tutku": 9,
+        "gizli_tutku_ortaklari": [
+          9
+        ],
+        "gizli_tutku_karakteri": "duz",
+        "tek_toplam": 9,
+        "cift_toplam": 5,
+        "tek_z": -0.83,
+        "tek_cift_sinif": "cift_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 5,
+            "beklenen": 4.54,
+            "z": 0.26,
+            "sinif": "dengeli"
+          },
+          "iliski": {
+            "toplam": 3,
+            "beklenen": 4.82,
+            "z": -1.02,
+            "sinif": "zayif"
+          },
+          "ifade": {
+            "toplam": 6,
+            "beklenen": 4.64,
+            "z": 0.77,
+            "sinif": "baskin"
+          }
+        },
+        "sentez": [
+          {
+            "tur": "celiski",
+            "sayilar": [
+              4,
+              9
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "ad": "Sevda Ak",
+      "dogum_tarihi": "2020-02-02",
+      "sinar": "en kisa vektor",
+      "beklenen": {
+        "ad_duz": "SEVDAAK",
+        "harf_sayisi": 7,
+        "cekirdek": {
+          "yasam_yolu": 8,
+          "ifade": 9,
+          "ruh_arzusu": 7,
+          "kisilik": 11,
+          "dogum_gunu": 2,
+          "dogum_ayi": 2,
+          "olgunluk": 8,
+          "telafi_kumesi": [
+            2,
+            7,
+            8,
+            9,
+            11
+          ]
+        },
+        "frekanslar": {
+          "1": 3,
+          "2": 1,
+          "3": 0,
+          "4": 2,
+          "5": 1,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0
+        },
+        "beklenen_frekans": {
+          "1": 1.3,
+          "2": 0.64,
+          "3": 1.12,
+          "4": 0.53,
+          "5": 1.39,
+          "6": 0.28,
+          "7": 0.44,
+          "8": 0.37,
+          "9": 0.92
+        },
+        "z": {
+          "1": 1.65,
+          "2": 0.46,
+          "3": -1.16,
+          "4": 2.11,
+          "5": -0.37,
+          "6": -0.54,
+          "7": -0.69,
+          "8": -0.63,
+          "9": -1.03
+        },
+        "siniflar": {
+          "1": "normalin_ustu",
+          "2": "dengeli",
+          "3": "eksik",
+          "4": "asiri",
+          "5": "dengeli",
+          "6": "eksik",
+          "7": "eksik",
+          "8": "eksik",
+          "9": "eksik"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "kisisel",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "kolektif",
+          "7": "telafili",
+          "8": "telafili",
+          "9": "telafili"
+        },
+        "karmik_dersler": [
+          3,
+          6
+        ],
+        "telafi_edilmis_dersler": [
+          7,
+          8,
+          9
+        ],
+        "asiri_sayilar": [
+          4
+        ],
+        "gizli_tutku": 1,
+        "gizli_tutku_ortaklari": [
+          1
+        ],
+        "gizli_tutku_karakteri": "duz",
+        "tek_toplam": 4,
+        "cift_toplam": 3,
+        "tek_z": -1.02,
+        "tek_cift_sinif": "cift_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 5,
+            "beklenen": 2.27,
+            "z": 2.2,
+            "sinif": "baskin"
+          },
+          "iliski": {
+            "toplam": 2,
+            "beklenen": 2.41,
+            "z": -0.33,
+            "sinif": "dengeli"
+          },
+          "ifade": {
+            "toplam": 0,
+            "beklenen": 2.32,
+            "z": -1.86,
+            "sinif": "zayif"
+          }
+        },
+        "sentez": []
+      }
+    },
+    {
+      "ad": "Nazlı Ceylan Erdoğan",
+      "dogum_tarihi": "1961-10-31",
+      "sinar": "uc parcali; G katlamasi",
+      "beklenen": {
+        "ad_duz": "NAZLICEYLANERDOGAN",
+        "harf_sayisi": 18,
+        "cekirdek": {
+          "yasam_yolu": 22,
+          "ifade": 6,
+          "ruh_arzusu": 1,
+          "kisilik": 5,
+          "dogum_gunu": 4,
+          "dogum_ayi": 1,
+          "olgunluk": 1,
+          "telafi_kumesi": [
+            1,
+            4,
+            5,
+            6,
+            22
+          ]
+        },
+        "frekanslar": {
+          "1": 3,
+          "2": 0,
+          "3": 3,
+          "4": 1,
+          "5": 5,
+          "6": 1,
+          "7": 2,
+          "8": 1,
+          "9": 2
+        },
+        "beklenen_frekans": {
+          "1": 3.35,
+          "2": 1.66,
+          "3": 2.89,
+          "4": 1.35,
+          "5": 3.58,
+          "6": 0.72,
+          "7": 1.14,
+          "8": 0.95,
+          "9": 2.35
+        },
+        "z": {
+          "1": -0.21,
+          "2": -1.35,
+          "3": 0.07,
+          "4": -0.31,
+          "5": 0.84,
+          "6": 0.33,
+          "7": 0.83,
+          "8": 0.05,
+          "9": -0.25
+        },
+        "siniflar": {
+          "1": "dengeli",
+          "2": "eksik",
+          "3": "dengeli",
+          "4": "dengeli",
+          "5": "normalin_ustu",
+          "6": "dengeli",
+          "7": "normalin_ustu",
+          "8": "dengeli",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "kolektif",
+          "3": "hucre",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "hucre",
+          "7": "hucre",
+          "8": "hucre",
+          "9": "hucre"
+        },
+        "karmik_dersler": [
+          2
+        ],
+        "telafi_edilmis_dersler": [],
+        "asiri_sayilar": [],
+        "gizli_tutku": 5,
+        "gizli_tutku_ortaklari": [
+          5
+        ],
+        "gizli_tutku_karakteri": "belirgin",
+        "tek_toplam": 15,
+        "cift_toplam": 3,
+        "tek_z": 0.9,
+        "tek_cift_sinif": "tek_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 6,
+            "beklenen": 5.84,
+            "z": 0.08,
+            "sinif": "dengeli"
+          },
+          "iliski": {
+            "toplam": 6,
+            "beklenen": 6.19,
+            "z": -0.1,
+            "sinif": "dengeli"
+          },
+          "ifade": {
+            "toplam": 6,
+            "beklenen": 5.96,
+            "z": 0.02,
+            "sinif": "dengeli"
+          }
+        },
+        "sentez": []
+      }
+    },
+    {
+      "ad": "Zübeyde Hanım",
+      "dogum_tarihi": "1857-01-15",
+      "sinar": "eski tarih",
+      "beklenen": {
+        "ad_duz": "ZUBEYDEHANIM",
+        "harf_sayisi": 12,
+        "cekirdek": {
+          "yasam_yolu": 1,
+          "ifade": 7,
+          "ruh_arzusu": 5,
+          "kisilik": 11,
+          "dogum_gunu": 6,
+          "dogum_ayi": 1,
+          "olgunluk": 8,
+          "telafi_kumesi": [
+            1,
+            2,
+            5,
+            6,
+            7,
+            8,
+            11
+          ]
+        },
+        "frekanslar": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 2,
+          "5": 3,
+          "6": 0,
+          "7": 1,
+          "8": 2,
+          "9": 1
+        },
+        "beklenen_frekans": {
+          "1": 2.23,
+          "2": 1.1,
+          "3": 1.93,
+          "4": 0.9,
+          "5": 2.39,
+          "6": 0.48,
+          "7": 0.76,
+          "8": 0.64,
+          "9": 1.57
+        },
+        "z": {
+          "1": -0.92,
+          "2": -0.1,
+          "3": -0.73,
+          "4": 1.2,
+          "5": 0.44,
+          "6": -0.71,
+          "7": 0.29,
+          "8": 1.76,
+          "9": -0.49
+        },
+        "siniflar": {
+          "1": "normalin_alti",
+          "2": "dengeli",
+          "3": "dengeli",
+          "4": "normalin_ustu",
+          "5": "dengeli",
+          "6": "eksik",
+          "7": "dengeli",
+          "8": "asiri",
+          "9": "dengeli"
+        },
+        "metin_varyantlari": {
+          "1": "hucre",
+          "2": "hucre",
+          "3": "hucre",
+          "4": "hucre",
+          "5": "hucre",
+          "6": "telafili",
+          "7": "hucre",
+          "8": "hucre",
+          "9": "hucre"
+        },
+        "karmik_dersler": [],
+        "telafi_edilmis_dersler": [
+          6
+        ],
+        "asiri_sayilar": [
+          8
+        ],
+        "gizli_tutku": 5,
+        "gizli_tutku_ortaklari": [
+          5
+        ],
+        "gizli_tutku_karakteri": "duz",
+        "tek_toplam": 7,
+        "cift_toplam": 5,
+        "tek_z": -1.24,
+        "tek_cift_sinif": "cift_agir",
+        "eksenler": {
+          "eylem": {
+            "toplam": 4,
+            "beklenen": 3.89,
+            "z": 0.06,
+            "sinif": "dengeli"
+          },
+          "iliski": {
+            "toplam": 6,
+            "beklenen": 4.13,
+            "z": 1.14,
+            "sinif": "baskin"
+          },
+          "ifade": {
+            "toplam": 2,
+            "beklenen": 3.98,
+            "z": -1.21,
+            "sinif": "zayif"
+          }
+        },
+        "sentez": []
+      }
+    }
+  ]
+}

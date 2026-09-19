@@ -37,6 +37,21 @@ kusurun aynısı olurdu — o yüzden kapalı bırakıldı.
 
 ---
 
+## Port kiti
+
+Motor Python referans uygulamasıdır. Başka bir dile taşımak için:
+
+| Dosya | Ne işe yarar |
+|---|---|
+| `docs/PORT-KILAVUZU.md` | Adım adım algoritma şartnamesi + tipik tuzaklar |
+| `tests/uyumluluk-vektorleri.json` | 24 altın vektör (girdi → beklenen çıktı) |
+| `scripts/vektor_uret.py --dogrula` | Vektörlerin motorla uyumunu denetler |
+
+`data/*.json` hiçbir dile bağlı değildir ve olduğu gibi okunur. Portun işi
+yalnızca doğru sayıları üretmek ve doğru metin anahtarını seçmek.
+
+---
+
 ## Sonraki adımlar için öneriler (bu turun kapsamı dışında)
 
 1. **Karmik Borç (13/14/16/19).** Karmik Ders'ten farklı bir kavram; doğum

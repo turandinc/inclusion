@@ -375,3 +375,50 @@ class TestKorpusButunlugu(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+class TestUyumlulukVektorleri(unittest.TestCase):
+    """Port dogrulama vektorleri motorla uyumlu kalmali.
+
+    Bu testin isi iki yonlu: hem vektorlerin cürümesini engeller, hem de
+    hesaplamayi degistiren bir PR'in sessizce gecmesini imkansiz kilar.
+    Davranis bilincli degistiyse vektorler yeniden uretilir:
+        python3 scripts/vektor_uret.py
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        yol = KOK / "tests" / "uyumluluk-vektorleri.json"
+        cls.veri = json.loads(yol.read_text(encoding="utf-8"))
+
+    def test_vektor_kapsami(self):
+        self.assertGreaterEqual(len(self.veri["vektorler"]), 20)
+        for v in self.veri["vektorler"]:
+            self.assertTrue(v["sinar"], v["ad"])       # her vektor ne sinadigini yazar
+
+    def test_motor_vektorlerle_uyumlu(self):
+        sys.path.insert(0, str(KOK / "scripts"))
+        from vektor_uret import vektor  # noqa: E402
+
+        for v in self.veri["vektorler"]:
+            uretilen = vektor(v["ad"], v["dogum_tarihi"], v["sinar"])
+            self.assertEqual(uretilen["beklenen"], v["beklenen"],
+                             f"{v['ad']} vektoru sapti ({v['sinar']})")
+
+    def test_sinir_durumlari_gercekten_kapsaniyor(self):
+        """Vektor kumesi, kilavuzun sozunu verdigi tuzaklari icermeli."""
+        b = {v["ad"]: v["beklenen"] for v in self.veri["vektorler"]}
+        # noktasiz i / noktali I ayrimi
+        self.assertEqual(b["Ilgın Işık"]["ad_duz"], "ILGINISIK")
+        # tire ve kesme atilir, harfler birlestirilmez
+        self.assertEqual(b["Al-i Osman Bey"]["ad_duz"], "ALIOSMANBEY")
+        self.assertEqual(b["D'Artagnan Kaya"]["ad_duz"], "DARTAGNANKAYA")
+        # usta sayi cekirdekte ve telafi kumesinde indirgenmis haliyle
+        self.assertEqual(b["Ayşe Nur Karahasanoğlu"]["cekirdek"]["ruh_arzusu"], 22)
+        self.assertIn(4, b["Ayşe Nur Karahasanoğlu"]["cekirdek"]["telafi_kumesi"])
+        # Dogum Ayi telafisi
+        self.assertEqual(b["Mehmet Öztürk"]["metin_varyantlari"]["1"], "telafili")
+        # kolektif siddet varyanti
+        self.assertEqual(b["Mehmet Öztürk"]["metin_varyantlari"]["7"], "kolektif")
+        # en az bir vektorde celiski tetiklenmis olmali
+        self.assertTrue(any(v["beklenen"]["sentez"] for v in self.veri["vektorler"]))
