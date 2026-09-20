@@ -15,25 +15,32 @@ Analizde çıkan 11 maddenin uygulanma durumu.
 | 9 | `1\|N` ve `5\|N` derinleştirme | ✅ | 18 hücre elle yeniden yazıldı |
 | 10 | Sentez katmanı + şablon kırma | ✅ | `sentez.py`, `sentez.json`, `tekrar_denetle()` |
 | 11 | Tek/çift + üçlü eksenler | ✅ | `planlar.py`, `denge.json` |
-| 11b | İfade Planları (harf tabanlı) | ⚠️ **kapalı** | `ifade-planlari.json` — gruplama doğrulanmadı |
+| 11b | İfade Planları (harf tabanlı) | ⛔ **kalıcı kapalı** | `ifade-planlari.json` — ürün kendi gruplamasını kullanıyor |
 
 ---
 
-## Tek açık kalem: İfade Planları
+## Kapanan kalem: İfade Planları (⛔ kalıcı kapalı)
 
 Harf tabanlı dört planın (fiziksel / zihinsel / duygusal / sezgisel) harf
-gruplaması kaynaklar arasında önemli ölçüde değişiyor ve yerleşik tek bir tablo
-yok. Motor ve metinler hazır, ama bölüm `"etkin": false` olduğu için rapora
-basılmıyor.
+gruplaması kaynaklar arasında değişiyor ve yerleşik tek bir tablo yok. 20 Eyl
+2026'da ürün sahibiyle netleşti: **bu kavram üretimdeki raporda zaten var.**
+"İfade Düzlemi (Harf Kaliteleri) Göstergesi" bölümü, ürünün kendi harf
+gruplamasıyla (Excel/VBA kaynağı, Türkçe harfleri de kapsıyor) hesaplanıyor.
 
-**Açmak için:** kendi kaynağınızdaki gruplamayı `data/ifade-planlari.json`
-içindeki `harf_gruplari` ile karşılaştırın, düzeltin, `"etkin": true` ve
-`"kaynak_dogrulamasi": "<kaynağınız>"` yapın. `tests/test_numeroloji.py`
-içindeki `test_ifade_planlari_dogrulanmadan_kapali` testi de o zaman
-güncellenmeli.
+İki gruplama aynı değil:
 
-Doğrulanmamış bir harf tablosunu gelenek gibi sunmak, bu revizyonun düzelttiği
-kusurun aynısı olurdu — o yüzden kapalı bırakıldı.
+| Grup | Üründeki (canlı) | Buradaki (kapalı) |
+|---|---|---|
+| Zihinsel | A H J N P **G Ğ L** | A H J N P |
+| Bedensel/Fiziksel | E W **D M** | E W |
+| Duygusal | O Ö R I İ **Z B S Ş T X** | I O R S U Y |
+| Sezgisel | K F Q U Ü Y C Ç V | B C D F G K L M Q T V X Z |
+
+Aynı kişi için farklı yüzdeler üretirler; ikisi bir arada yayınlanamaz. Bu
+yüzden buradaki katman **açılmayacak** — veri, karşılaştırma yapmak isteyen
+için duruyor. Açılması gerekirse önce ürünün kendi gruplamasının kaynağı
+gözden geçirilmeli ve hangisinin doğru kabul edileceğine karar verilmeli;
+o karar canlı rapordaki yüzdeleri değiştirir.
 
 ---
 

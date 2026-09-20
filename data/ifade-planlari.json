@@ -1,8 +1,9 @@
 {
   "surum": "0.9-taslak",
   "etkin": false,
-  "kaynak_dogrulamasi": "ONAYLANMADI",
-  "uyari": "DİKKAT: Harf tabanlı İfade Planları'nın (fiziksel / zihinsel / duygusal / sezgisel) harf gruplaması yazarlar arasında ÖNEMLİ ÖLÇÜDE değişir ve tek bir yerleşik tablo yoktur. Aşağıdaki gruplama yaygın yayınlanmış bir sürümdür, ancak bu depoda doğrulanmamıştır. Motor bu bölümü 'etkin': false olduğu sürece RAPORA BASMAZ. Kendi kaynağınıza göre gruplamayı onaylayıp etkin=true yapın; onaylamadan yayına almayın. Tek/çift ve üçlü eksen okumaları (data/denge.json) bu belirsizliği taşımaz ve etkin durumdadır.",
+  "durum": "kalici_kapali",
+  "kaynak_dogrulamasi": "KALICI KAPALI - urun kendi gruplamasini kullaniyor",
+  "uyari": "KALICI OLARAK KAPALI (20 Eyl 2026, urun sahibinin karari). Harf tabanli Ifade Planlari (fiziksel / zihinsel / duygusal / sezgisel) kavrami, uretimdeki numeroloji raporunda ZATEN var: 'Ifade Duzlemi (Harf Kaliteleri) Gostergesi' bolumu, urunun KENDI harf gruplamasiyla (Excel/VBA kaynagi) hesaplaniyor ve Turkce harfleri de kapsiyor. Asagidaki gruplama klasik Ingilizce kaynaklardaki dagilim; ikisi ayni kisi icin FARKLI yuzdeler uretir, dolayisiyla ayni raporda birlikte yayinlanamaz. Bu katman bilgi amaciyla saklaniyor, motor 'etkin': false oldugu surece hicbir sey basmaz. Acilmasi, once urunun kendi gruplamasinin gozden gecirilmesini ve hangisinin dogru kabul edilecegine karar verilmesini gerektirir.",
 
   "harf_gruplari": {
     "fiziksel": ["E", "W"],

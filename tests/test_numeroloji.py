@@ -148,10 +148,18 @@ class TestDenge(unittest.TestCase):
         self.assertEqual(len(d.eksenler), 3)
         self.assertEqual(sum(e.toplam for e in d.eksenler), t.harf_sayisi)
 
-    def test_ifade_planlari_dogrulanmadan_kapali(self):
+    def test_ifade_planlari_kalici_kapali(self):
+        """Ifade Planlari KALICI kapali (20 Eyl 2026, urun sahibinin karari).
+
+        Ayni kavram uretimdeki raporda ZATEN var ve urunun KENDI harf
+        gruplamasiyla hesaplaniyor; buradaki gruplama klasik Ingilizce
+        kaynaklardan ve ayni kisi icin FARKLI yuzdeler uretiyor. Ikisi bir
+        arada yayinlanamaz — ayrintisi docs/YOL-HARITASI.md. Bu test
+        katmanin sessizce acilmasini engeller.
+        """
         veri = yukle("ifade-planlari")
         self.assertFalse(veri["etkin"])
-        self.assertEqual(veri["kaynak_dogrulamasi"], "ONAYLANMADI")
+        self.assertEqual(veri["durum"], "kalici_kapali")
         self.assertEqual(planlar_hesapla(
             kapsam_hesapla(Kisi("Ali Kaya", "1990-01-01"))), ())
 
