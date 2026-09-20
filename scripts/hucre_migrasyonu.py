@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""inclusion.md (surum 1.0) -> data/kapsam-hucreleri.json (surum 2.0)
+"""kaynak/uretim-metinleri.json (+ inclusion.md) -> data/kapsam-hucreleri.json
+
+METIN KAYNAGI (20 Eyl 2026, kullanici geri bildirimi): frekans >= 1 hucrelerinin
+metni, uretimdeki numeroloji uygulamasinin CANLI metinlerinden alinir
+(kaynak/uretim-metinleri.json). 2.0 once inclusion.md'yi (ham ceviri) temel
+almisti; oysa canli metinler yillar icinde daha sade ve sicak bir Turkceye
+cevrilmisti ve 2.0 o sicakligi kaybediyordu ("jest", "iliskisel yetenekleriyle
+yasar" gibi ceviri kokan ifadeler). inclusion.md hala okunur: hangi ikame
+kuralinin hangi kaynaktan geldigini denetlemek icin.
 
 Uc is yapar:
 
@@ -212,6 +220,10 @@ IKAMELER: list[tuple[str, str, str]] = [
     ("\"insan merkezcilikte\" veya \"yardımseverlikte\"",
      "insana dönük işlerde ya da yardım alanlarında", "1|9 tirnakli birebir ceviri"),
     ("\"ideallere\" ve \"yardımseverliğe\"", "ideallere ve yardımseverliğe", "4|9 gereksiz tirnak"),
+
+    # -- canli metindeki (kaynak/uretim-metinleri.json) iki ceviri kalintisi --
+    ("doğal spontanlığın", "doğallığın", "3|3 'spontanlık' Turkcelesmemis"),
+    ("yardım eden sektörlerde", "yardım edilen alanlarda", "4|6 'sektor' is jargonu"),
 ]
 
 # --------------------------------------------------------------------------
@@ -220,26 +232,40 @@ IKAMELER: list[tuple[str, str, str]] = [
 #    Ayrica sablon acilisi ("... ile kendinizi ifade edersiniz") kirildi.
 # --------------------------------------------------------------------------
 YENI_METIN: dict[str, str] = {
-    "1|1": "Bireyselliğiniz tek bir 1 üzerinden çalışır: net, dolambaçsız ve fazla süslenmeden. Girişmek ve risk almak size kolay gelir; bir işi başlatmak için ortamın hazır olmasını beklemezsiniz. Yeniliğe duyduğunuz ilgi meraktan çok sahiplenme isteğinden gelir — kendinize ait bir şey kurmak istersiniz. Tek bir 1'in sınırı şudur: başlangıç gücü kadar sürdürme gücünüz yoktur, bu yüzden başladığınız işi taşıyacak bir yapıya ya da bir ortağa ihtiyaç duyarsınız.",
-    "1|2": "Karar verme ve kendinizi ortaya koyma biçiminiz ölçülü. Daha çekingen ve daha hassassınız; sesinizi yükseltmeden ilerlemeyi tercih edersiniz. Buna karşın dostluk anlayışınız, diplomatik yetenekleriniz, işbirliği kapasiteniz, sezgileriniz ve verdiğiniz isabetli tavsiyelerle kendinizi kabul ettirirsiniz — bunlar sizin için gerçek değerler. Bu tablo, 1'in doğrudanlığını 2'nin dolaylı yollarına çevirir: istediğinizi elde ederken çarpışmak yerine ikna edersiniz.",
-    "1|3": "Girişimciliğiniz yaratıcılık, ifade yeteneği ve coşku üzerinden ilerler. Kararlarınız kendiliğindenliğiyle öne çıkar; uzun hesaplar yapmadan atlarsınız ve bu çoğu zaman işinize yarar. Ön planda olma arzusu doğal yaratıcılığınızı harekete geçirecek — belki gereğinden fazla. Dikkat edilecek yer, bir fikri anlatmakla onu gerçekleştirmenin aynı şey olmadığı: anlatma kolaylığınız, bitirme disiplininizin önüne geçebilir.",
-    "1|4": "Girişimciliğiniz ciddi niteliklerle, organizasyon yeteneğiyle, azimle ve elle tutulur başarılarla çalışır. Bir işe girerken temelini de düşünürsünüz; bu, 1'in aceleciliğini dengeleyen ender bir birleşim. Ciddi ve net bir hedefinizin olmaması girişimlerinizi yavaşlatabilir — 1 ile 4 birlikte yön istiyor; yön yoksa enerji düzene değil oyalanmaya gider.",
-    "1|5": "Girişimciliğiniz çeşitlilik, özgürlük tutkusu ve yeni fikirler üzerinden ilerler. Bir kapı kapanırsa üçünü birden denersiniz; bu esneklik sizin en güçlü tarafınız. Çok fazla kısıtlama ve durağan bir çevre arzularınızı da girişimlerinizi de söndürür — sizin için sıkıcı olan, yavaş olan değil tekrarlı olandır. Aynı esnekliğin bedeli, uzun soluklu işlerde ilginizin ilk zorlukta başka yöne kayması.",
-    "1|6": "Girişimciliğiniz uyum alanındaki birikiminizle çalışır: sanat, zevk, toplumsal ilişkiler. Uzlaşma yeteneğiniz ve sorumluluk üstlenme kapasiteniz sizi çevrenizde güvenilir kılar. Tek şartınız, attığınız adımın mevcut dengeyi bozmaması — 1 öne çıkmak isterken 6 kimseyi kırmamak ister. Bu gerilim iyi yönetildiğinde ikna edici bir liderlik, kötü yönetildiğinde hiç atılmayan adımlar üretir.",
-    "1|7": "Girişimciliğiniz gözlem ve düşünme üzerinden ilerler. Bağımsızlığınız çoğunlukla fikirlerde ve özgünlükte görünür; kalabalığın gittiği yere gitmemek sizin için bir tavır değil, doğal bir eğilim. Kararlarınız değerler sisteminizden ve ahlaki yapınızdan güçlü biçimde etkilenir — bir işin size uygun olması, kârlı olmasından önce gelir. Fazlası, harekete geçmeden önce çok uzun süre düşünmek.",
-    "1|8": "Kendi alanınızı koruma ve yönetme yeteneğiniz ile başarısızlık sonrası toparlanma gücünüz belirgin. Bağımsızlığınız ve dinamizminiz somut alanlarda, toplumsal ya da sportif başarıda görünür hale gelir; soyut bir bağımsızlık değil, gösterilebilir bir bağımsızlık istersiniz. Bu birleşim size sıra dışı bir dayanıklılık verir — düştüğünüz yerden kalkma süreniz kısadır. Karşılığında, gücü ölçmeyi öğrenmek gerekir; 1 ile 8 birlikte kolayca fazla ileri gider.",
-    "1|9": "Girişimciliğiniz önce ideallerinizden ve yüksek duyarlılığınızdan beslenir. Bağımsızlığınız ve dinamizminiz yaratıcılıkta, bilgi arayışında, insana dönük işlerde ya da yardım alanlarında serbest kalır. Girişme biçiminiz evrensel bir yerden çalışır, bencillikten uzaktır ve olaylara bakış açınız geneldir. Riski de buradan gelir: geneli görmek, önünüzdeki somut adımı gözden kaçırmanıza yol açabilir.",
-
-    "5|1": "Çeşitliliğiniz, canlı zekânız, uyum yeteneğiniz ve özgürlük ihtiyacınız kendini kendiliğinden, dinamik, özgün ve zaman zaman kışkırtıcı biçimde gösterir. Tek bir 1 ile birleşen 5, hızlı karar veren ve hızlı yön değiştiren bir yapı kurar. Sınırı açık: girişim uzun ve zorluysa, sonuç alınana kadar istek her zaman sürmez. Bu tabloyu iyi kullanmanın yolu, uzun işleri kısa etaplara bölmek.",
-    "5|2": "Merak, açık fikirlilik ve uyum yeteneğiniz bir iletişim, bir ilişki ya da bir alışveriş kurmak için çalışır. İnsanla temas sizin için bir araç değil, enerjinin kendisi. Ancak kurulan işbirliğinin fazla müdahaleci ya da fazla ağır olmaması gerekir; öyle olduğunda 5'in özgürlük ihtiyacıyla çatışır ve gergin bir durum doğar. Bu tabloda ilişkiler, nefes payı bırakıldığı sürece iyi işler.",
-    "5|3": "Canlılığınız, açık fikirliliğiniz, zekânız ve çok yönlülüğünüz sağlam bir zemin oluşturuyor. Yetenekleriniz öncelikle kendinizi ifade etme, iletişim ve yaratıcılık yönünde kullanılır — anlatmak sizin için düşünmenin bir parçası. Coşkunuz var ve doğal merakınız, başkalarıyla daha iyi iletişim kurmak amacıyla öğrenme isteği getirir. 5 ile 3 birlikte hızlı ve parlak bir zihin kurar; eksik kalan, o parlaklığı tek bir konuda derinleştirme sabrı.",
-    "5|4": "5'in açık fikirliliği, canlılığı, çok yönlülüğü ve enerjisi somut dış etkinliklere yönelir; sonuç almak ve ilerlemek istersiniz. Bu, 5'in en verimli birleşimlerinden biri — özgürlük ihtiyacı bir üretim biçimine dönüşür. Ancak çalışma dünyasının talepleri, 5 için hayati olan hareket özgürlüğünü her zaman sunmaz. Bu tablodaki asıl mesele, işin kendisi değil işin içindeki serbestlik payı.",
-    "5|5": "5'in enerjisi, tutkusu, canlı zekâsı ve en çeşitli duruma uyum sağlama yeteneği belirgin biçimde öne çıkar ve çoğunlukla yeni olanın, macera olanın peşinde kendiliğinden ifade bulur. Bu, tablonun doğal merkezine oturan bir denge: 5, beklenen düzeyde. Kendi kendini besleyen bir hareketlilik taşırsınız; dışarıdan uyarıya ihtiyacınız az. Buna karşılık kendi hareketinizi durdurmayı öğrenmek, bu tabloda dışarıdan gelen hiçbir şeyin öğretmediği tek beceri.",
-    "5|6": "Açık fikirlilik, canlılık ve uyum yeteneği ağırlıklı olarak aile içinde yaşanır: uyum, insan sıcaklığı, aşk, tutku ve duygusallık üzerinden. Yakınlarınıza kapalı bir düzen değil, hareketli ve konuk kabul eden bir ortam kurarsınız. Aile sorumlulukları kısıtlayıcı hale geldiğinde dengeyi korumak zorlaşabilir. Niteliklerinizin diğer olası ifadeleri yaratıcılık ve estetik duyarlılık.",
-    "5|7": "Açık fikirlilik ve uyum yeteneğiniz kavramlara ve yeni fikirlere yönelir. Merak entelektüel bir biçimde, bilgi arayışı içinde kullanılır; gözlem yeteneği ve sezgi mevcut. 5'in dışa dönük enerjisi burada içe kıvrılır — dünyayı gezmek yerine bir konunun içinde gezinirsiniz. Bunun bedeli, dışa dönük başarı tarafında bir zayıflık: fikir olgunlaşırken fırsat geçebilir.",
-    "5|8": "Açık zihninizi, uyum yeteneğinizi, canlılığınızı ve çok yönlülüğünüzü maddi ve rekabetçi dünyada başarılı olmak için kullanmayı seversiniz. Hırsınız, risk alma isteğiniz ve yaşam alanına duyduğunuz ihtiyaç tutumunuzda görülür. Büyük enerjinizi yüksek ölçekli projeler için kullanmayı seversiniz, ancak bu ciddi bir denge becerisi gerektirir — 5 ile 8 birlikte hem hızı hem de riski aynı anda yükseltir.",
-    "5|9": "Açık zihniniz ve keşfetme isteğiniz belirgin biçimde öne çıkar. Bu merakı ve doğal enerjiyi bilgiye, dünyaya ve insanlara açıklık yönünde kullanmaya eğilimlisiniz. Özgürlüğe, seyahate, insanlarla tanışmaya ve geniş bir alana yayılmaya ihtiyacınız var; büyük bir hoşgörü taşıyorsunuz. 5 ile 9 birlikte ufku genişletir ama merkezi zayıflatır: her yere ait olmak, hiçbir yere yerleşmemek anlamına gelebilir.",
+    # 1|N ve 5|N: canli metinde en kisa kalan satirlar (cogu iki cumle).
+    # 2.0 bunlari derinlestirmisti; 20 Eyl 2026'da derinlik korunup dil
+    # sadelestirildi (kullanici geri bildirimi: "akademik degil, sade").
+    "1|1": "Enerjik ve yenilikçi bir yanın var; bunu saklamadan, olduğu gibi gösterirsin. Bir işe girişmek, risk almak sana kolay gelir — ortamın hazır olmasını beklemezsin. Yeni şeylere ilgin meraktan çok “kendime ait olsun” isteğinden gelir. Tek bir 1'in sınırı şu: başlatma gücün, sürdürme gücünden fazla. Bu yüzden başladığın işi taşıyacak bir düzene ya da bir ortağa ihtiyacın olur.",
+    "1|2": "Karar verirken ve kendini gösterirken ölçülüsün. Sesini yükseltmeden ilerlemeyi seversin; daha çekingen ve daha hassassın. Buna karşılık dostluğun, ikna gücün, birlikte çalışma becerin, sezgilerin ve verdiğin yerinde tavsiyelerle kendini kabul ettirirsin. Burada 1'in doğrudanlığı 2'nin yumuşak yoluna dönüşür: istediğini kavga ederek değil, ikna ederek alırsın.",
+    "1|3": "Girişkenliğin yaratıcılık, anlatım gücü ve coşku üzerinden çalışır. Kararların anlıktır; uzun hesap yapmadan atlarsın ve bu çoğu zaman işine yarar. Öne çıkma isteğin yaratıcılığını harekete geçirir — bazen gereğinden fazla. Dikkat edilecek yer şu: bir fikri anlatmakla onu bitirmek aynı şey değil. Anlatma kolaylığın, işi tamamlama disiplininin önüne geçebilir.",
+    "1|4": "Girişkenliğin ciddiyet, düzen ve sabırla çalışır; ortaya elle tutulur işler çıkarırsın. Bir işe başlarken temelini de düşünürsün — bu, 1'in aceleciliğini dengeleyen ender bir birleşim. Net bir hedefin yoksa işler yavaşlar: 1 ile 4 birlikte yön ister, yön olmayınca enerji düzene değil oyalanmaya gider.",
+    "1|5": "Girişkenliğin çeşitlilik, özgürlük ve yeni fikirler üzerinden ilerler. Bir kapı kapanırsa üç kapıyı birden denersin; bu esneklik en güçlü yanın. Çok fazla kural ve durağan bir ortam hem isteğini hem girişimini söndürür — seni sıkan şey yavaşlık değil, hep aynı şeyi yapmak. Aynı esnekliğin bedeli de var: uzun süren işlerde ilk zorlukta ilgin başka yöne kayabilir.",
+    "1|6": "Girişkenliğin uyum alanındaki birikiminle çalışır: sanat, zevk, insan ilişkileri. Uzlaşma becerin ve sorumluluk alman seni çevrende güvenilir kılar. Tek şartın var: attığın adım mevcut dengeyi bozmasın. 1 öne çıkmak ister, 6 kimseyi kırmak istemez. Bunu iyi yönetirsen ikna edici bir liderlik çıkar; yönetemezsen hiç atılmayan adımlar.",
+    "1|7": "Girişkenliğin gözlem ve düşünme üzerinden ilerler. Bağımsızlığın daha çok fikirlerinde görünür; kalabalığın gittiği yere gitmemek senin için bir gösteri değil, doğal bir eğilim. Kararlarında değerlerin ve vicdanın ağır basar — bir işin sana uygun olması, kazançlı olmasından önce gelir. Fazlası şu: harekete geçmeden önce çok uzun düşünmek.",
+    "1|8": "Kendi alanını koruma ve yönetme becerin güçlü; düştükten sonra toparlanman da hızlı. Bağımsızlığın soyut değil, gösterilebilir olsun istersin: işte, toplum içinde ya da sporda görünen bir başarı. Bu birleşim sana az rastlanan bir dayanıklılık verir. Karşılığında gücü ölçmeyi öğrenmek gerekir; 1 ile 8 birlikte kolayca fazla ileri gider.",
+    "1|9": "Girişkenliğin önce ideallerinden ve yüksek duyarlılığından beslenir. Enerjin yaratıcılıkta, bilgi arayışında, insana dokunan ya da yardım eden işlerde serbest kalır. Bir işe girişirken bencil bir yerden değil, herkes için iyi olandan bakarsın. Riskin de burada: büyük resmi görürken önündeki küçük adımı atlayabilirsin.",
+    "5|1": "Çok yönlülüğün, canlı zekân, uyum becerin ve özgürlük ihtiyacın kendini anlık, hareketli, özgün, bazen de meydan okuyan biçimde gösterir. Tek bir 1 ile birleşen 5, hızlı karar veren ve hızlı yön değiştiren birini anlatır. Sınırı açık: iş uzun ve zorsa isteğin sonuna kadar sürmeyebilir. Bu tabloyu iyi kullanmanın yolu, uzun işleri kısa parçalara bölmek.",
+    "5|2": "Merakın, açık fikirliliğin ve uyum becerin bir iletişim, bir ilişki ya da bir alışveriş kurmak için çalışır. İnsanla temas senin için bir araç değil, enerjinin kendisi. Ama kurduğun ortaklık fazla müdahaleci ya da fazla ağır olmamalı; öyle olunca 5'in özgürlük ihtiyacıyla çatışır ve gerilim başlar. Bu tabloda ilişkiler, nefes payı bırakıldığı sürece iyi gider.",
+    "5|3": "Canlılığın, açık fikirliliğin, zekân ve çok yönlülüğün sağlam bir zemin kuruyor. Yeteneklerin daha çok kendini anlatmak, iletişim kurmak ve üretmek için çalışır — anlatmak, senin düşünme biçiminin bir parçası. Coşkulusun; merakın, insanlarla daha iyi iletişim kurmak için öğrenme isteği getirir. 5 ile 3 birlikte hızlı ve parlak bir zihin kurar; eksik kalan, o parlaklığı tek bir konuda derinleştirecek sabır.",
+    "5|4": "Açık fikirliliğin, canlılığın ve çok yönlülüğün somut işlere yönelir; sonuç almak ve ilerlemek istersin. Bu, 5'in en verimli birleşimlerinden biri — özgürlük ihtiyacı bir üretim biçimine dönüşür. Ama çalışma hayatı, senin için hayati olan hareket serbestliğini her zaman vermez. Burada asıl mesele işin kendisi değil, işin içindeki serbestlik payı.",
+    "5|5": "Enerjin, tutkun, canlı zekân ve her duruma uyum sağlama becerin açıkça öne çıkıyor; çoğu zaman yeni olanın, macera olanın peşinden gidersin. Bu, tablonun tam ortasına oturan bir denge: 5 beklenen düzeyde. Kendi kendini besleyen bir hareketliliğin var, dışarıdan dürtülmeye ihtiyacın az. Buna karşılık kendi hareketini durdurmayı öğrenmek, bu tabloda kimsenin sana öğretmediği tek beceri.",
+    "5|6": "Açık fikirliliğin, canlılığın ve uyumun çoğunlukla ailede yaşanır: sıcaklık, sevgi, tutku ve duygusallık üzerinden. Yakınlarına kapalı bir düzen değil, hareketli ve misafir seven bir ortam kurarsın. Aile sorumlulukları seni kısıtlamaya başladığında dengeyi korumak zorlaşabilir. Bu yanının başka çıkış yolları da var: yaratıcılık ve güzellik duygusu.",
+    "5|7": "Açık fikirliliğin ve uyum becerin fikirlere yönelir. Merakın bilgi arayışına dönüşür; gözlem gücün ve sezgin kuvvetli. 5'in dışa dönük enerjisi burada içe kıvrılır — dünyayı gezmek yerine bir konunun içinde gezersin. Bunun bedeli dışarıda görünen başarıda çıkar: sen fikri olgunlaştırırken fırsat geçip gidebilir.",
+    "5|8": "Açık zihnini, uyum becerini, canlılığını ve çok yönlülüğünü iş dünyasında ve rekabette kullanmayı seversin. Hırsın, risk alma isteğin ve geniş bir alana duyduğun ihtiyaç tavrından belli olur. Büyük enerjini büyük işlere vermek hoşuna gider, ama bu ciddi bir denge ister: 5 ile 8 birlikte hem hızı hem riski aynı anda yükseltir.",
+    "5|9": "Açık zihnin ve keşfetme isteğin öne çıkıyor. Bu merakı bilgiye, dünyaya ve insanlara açılmak için kullanırsın. Özgürlüğe, yolculuğa, yeni insanlara ve geniş bir alana ihtiyacın var; hoşgörün de geniş. 5 ile 9 birlikte ufku genişletir ama merkezi zayıflatır: her yere ait olmak, hiçbir yere yerleşememek anlamına gelebilir.",
 }
+
+
+def canli_metinler() -> dict[str, str]:
+    """Uretimdeki uygulamanin kapsam metinleri: {"<sayi>|<frekans>": metin}."""
+    yol = KOK / "kaynak" / "uretim-metinleri.json"
+    ham = json.loads(yol.read_text(encoding="utf-8"))
+    cikti = {}
+    for satir in ham:
+        anahtar = str(satir.get("key", ""))
+        if "-" in anahtar and satir.get("yorum"):
+            cikti[anahtar.replace("-", "|")] = str(satir["yorum"]).strip()
+    return cikti
 
 
 def satirlari_oku() -> list[tuple[int, int, str]]:
@@ -265,6 +291,7 @@ def kutup_belirle(metin: str) -> list[str]:
 
 def main() -> int:
     satirlar = satirlari_oku()
+    canli = canli_metinler()
     sayaclar = {eski: 0 for eski, _, _ in IKAMELER}
 
     hucreler: dict[str, dict] = {}
@@ -282,12 +309,16 @@ def main() -> int:
             kaynak_tipi = "elle_yazildi"
             elle_yazilan += 1
         else:
-            yeni = metin
+            # Taban metin: canli uygulama; yoksa inclusion.md satiri.
+            yeni = canli.get(anahtar_hucre, metin)
+            taban_canli = anahtar_hucre in canli
             for eski, yerine, _ in IKAMELER:
                 if eski in yeni:
                     sayaclar[eski] += yeni.count(eski)
                     yeni = yeni.replace(eski, yerine)
-            kaynak_tipi = "duzeltildi" if yeni != metin else "degismedi"
+            taban = canli.get(anahtar_hucre, metin)
+            kaynak_tipi = ("duzeltildi" if yeni != taban
+                           else ("canli_metin" if taban_canli else "degismedi"))
 
         temalar = list(dict.fromkeys(ALANLAR[sayi] + ALANLAR[frekans]))
         hucreler[anahtar_hucre] = {
@@ -299,23 +330,30 @@ def main() -> int:
             "kaynak": kaynak_tipi,
         }
 
-    # Bir kural uygulanmadiysa iki olasilik var:
+    # Bir kural uygulanmadiysa uc olasilik var:
     #  (a) hedef hucre elle yeniden yazildi -> kural gereksiz, hata degil;
-    #  (b) kaynak metin beklendigi gibi degil -> gercek kacirma, hata.
+    #  (b) kural inclusion.md'ye aitti, taban artik canli metin -> bilgi;
+    #  (c) hicbir kaynakta karsiligi yok -> kural curumus, hata.
     gereksiz: list[tuple[str, str]] = []
+    canliya_gecti: list[tuple[str, str]] = []
     kacirilan: list[tuple[str, str]] = []
+    md_tum = chr(10).join(orijinaller.values())
     for eski, _, gerekce in IKAMELER:
         if sayaclar[eski]:
             continue
-        kapsandi = any(eski in orijinaller.get(h, "") for h in YENI_METIN)
-        (gereksiz if kapsandi else kacirilan).append((eski, gerekce))
+        if any(eski in orijinaller.get(h, "") for h in YENI_METIN):
+            gereksiz.append((eski, gerekce))
+        elif eski in md_tum:
+            canliya_gecti.append((eski, gerekce))
+        else:
+            kacirilan.append((eski, gerekce))
 
     cikti = {
         "surum": "2.0",
         "aciklama": "Kapsam tablosunun frekans >= 1 hucreleri. Metin, sayi ile frekansin karisimini (blend) anlatir; frekansin NICELIGI ayri bir katmanda okunur (data/yogunluk.json). Bu ayrim 1.0'da karismis durumdaydi.",
         "uretim": {
             "betik": "scripts/hucre_migrasyonu.py",
-            "kaynak": "inclusion.md (surum 1.0)",
+            "kaynak": "kaynak/uretim-metinleri.json (canli metinler) + inclusion.md",
             "hucre_sayisi": len(hucreler),
             "elle_yazilan": elle_yazilan,
             "mekanik_duzeltme_sayisi": sum(sayaclar.values()),
@@ -337,6 +375,11 @@ def main() -> int:
         print(f"\n  bilgi - yeniden yazimla kapsandigi icin uygulanmayan "
               f"{len(gereksiz)} kural:")
         for _, g in gereksiz:
+            print(f"    . {g}")
+    if canliya_gecti:
+        print(f"\n  bilgi - taban metin canliya gectigi icin uygulanmayan "
+              f"{len(canliya_gecti)} kural (ilgili ifade canli metinde zaten yok):")
+        for _, g in canliya_gecti:
             print(f"    . {g}")
     if kacirilan:
         print("\n  HATA - hedefini bulamayan ikame kurallari "

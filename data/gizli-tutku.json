@@ -2,20 +2,20 @@
   "surum": "1.0",
   "aciklama": "Gizli Tutku (passion cachée): tabloda en yüksek frekansa sahip sayı. Tablonun manşet çıktısıdır — 1.0 sürümünde hesaplanmıyor ve ayrı bir metni yoktu; en yüksek hücre diğerleriyle aynı okunuyordu.",
   "karakter_notu": {
-    "belirgin": "Zirve ikinciyi en az iki frekans farkla geçiyor: tek ve net bir tutku.",
-    "duz": "Zirve yalnızca bir frekans farkla önde: tutku var ama tek başına belirleyici değil.",
-    "paylasimli": "Birden fazla sayı aynı zirvede: tutku iki eksen arasında paylaşılıyor ve bu bir gerilim üretir."
+    "belirgin": "Bu sayı, ikinciyi en az iki adet farkla geçiyor: tek ve net bir tutku.",
+    "duz": "Bu sayı yalnızca bir adet farkla önde: tutku var ama tek başına belirleyici değil.",
+    "paylasimli": "Birden fazla sayı aynı sayıda geçiyor: tutkun ikiye bölünmüş ve bu bir gerilim yaratıyor."
   },
   "metinler": {
-    "1": "Seni en çok çeken şey kendine ait olan. Bir işin, bir fikrin, bir alanın senin imzanı taşıması, o şeyin büyüklüğünden önce gelir. Kendi kararınla yapılmış küçük bir iş, başkasının kararıyla yapılmış büyük bir işten daha çok tatmin eder. Bu tutkunun bedeli, paylaşmanın sana ödün gibi görünmesi.",
-    "2": "Seni en çok çeken şey bağ. Bir insanla, bir ekiple, bir ortamla kurulan ince uyum senin için işin kendisinden daha anlamlı. Birinin seni doğru anlaması, başarının çoğundan değerlidir. Bu tutkunun bedeli, bağı korumak için kendinden sessizce vazgeçmen.",
-    "3": "Seni en çok çeken şey ortaya koymak. Bir şeyi görünür kılmak, anlatmak, biçim vermek — içinde kalan hiçbir şey sana yetmez. Bu tutku seni hızlı ve üretken kılar. Bedeli, anlatmanın verdiği tatmini bitirmenin verdiği tatminle karıştırmak.",
-    "4": "Seni en çok çeken şey kalıcı olan. Ayakta duran, işleyen, sana ihtiyaç duymadan da sürebilen bir şey kurmak senin asıl arzun. Gösteriş değil sağlamlık peşindesin. Bedeli, kurduğun düzenin bir noktada seni de bağlaması.",
-    "5": "Seni en çok çeken şey açık kalan kapı. Seçenek, hareket, henüz kararlaştırılmamış olan — bunlar sana özgürlükten önce canlılık verir. Bedeli, kapıyı açık tutmak için hiçbirinden içeri girmemek.",
-    "6": "Seni en çok çeken şey yerinde olan. İnsanların, eşyaların, ilişkilerin doğru yerde durması sende estetik bir tatmin yaratır; dağınıklık seni yorar. Yakınlarına dönük olman bir görev değil bir istek. Bedeli, herkesin yerini senin belirlemek istemen.",
-    "7": "Seni en çok çeken şey anlamak. Bir şeyin nasıl çalıştığını görmek, senin için o şeyi kullanmaktan daha güçlü bir haz. Yüzeyde bırakılan hiçbir açıklama seni doyurmaz. Bedeli, anlamanın kendisini bir varış noktası sanmak.",
-    "8": "Seni en çok çeken şey etki. Bir şeyin gerçekten döndüğünü, hareket ettiğini, sonuç verdiğini görmek senin asıl motorun. Ölçek seni büyütür. Bedeli, durmayı bir gerileme sayma alışkanlığı.",
-    "9": "Seni en çok çeken şey bütün. Tek tek olanlar değil, hepsinin ne anlama geldiği. Kendinden büyük bir şeye bağlanma isteği sende ahlaki bir zorunluluk gibi çalışır. Bedeli, önündeki somut adımı bütünün içinde kaybetmek."
+    "1": "Seni en çok çeken şey kendine ait olan. Bir işin, bir fikrin, bir alanın senin imzanı taşıması, o işin büyüklüğünden önce gelir. Kendi kararınla yaptığın küçük bir iş, başkasının kararıyla yapılan büyük bir işten daha çok tatmin eder. Bunun bedeli: paylaşmak sana ödün vermek gibi gelir.",
+    "2": "Seni en çok çeken şey bağ kurmak. Bir insanla, bir ekiple, bir ortamla yakaladığın uyum, işin kendisinden daha kıymetli. Birinin seni doğru anlaması, çoğu başarıdan değerli. Bunun bedeli: bağ bozulmasın diye kendi isteklerinden sessizce vazgeçebilirsin.",
+    "3": "Seni en çok çeken şey ortaya koymak. Bir şeyi görünür kılmak, anlatmak, ona biçim vermek — içinde kalan hiçbir şey sana yetmez. Bu istek seni hızlı ve üretken yapar. Bedeli: anlatmanın verdiği tatmini, bitirmenin verdiği tatminle karıştırmak.",
+    "4": "Seni en çok çeken şey kalıcı olan. Ayakta duran, işleyen, sen olmadan da yürüyen bir şey kurmak asıl isteğin. Gösterişin değil, sağlamlığın peşindesin. Bedeli: kurduğun düzen bir noktada seni de bağlar.",
+    "5": "Seni en çok çeken şey açık kalan kapı. Seçenek, hareket, henüz karar verilmemiş olan — bunlar sana özgürlükten önce canlılık verir. Bedeli: kapıyı açık tutayım derken hiçbirinden içeri girmemek.",
+    "6": "Seni en çok çeken şey yerli yerinde olan. İnsanların, eşyaların, ilişkilerin doğru yerde durması içini rahatlatır; dağınıklık seni yorar. Yakınlarına dönük olman bir görev değil, bir istek. Bedeli: herkesin yerini senin belirlemek istemen.",
+    "7": "Seni en çok çeken şey anlamak. Bir şeyin nasıl çalıştığını görmek, onu kullanmaktan daha çok keyif verir. Yüzeyde kalan hiçbir açıklama sana yetmez. Bedeli: anlamayı bir varış noktası sanmak.",
+    "8": "Seni en çok çeken şey bir işin gerçekten yürümesi. Döndüğünü, hareket ettiğini, sonuç verdiğini görmek asıl motorun. Büyük işler seni büyütür. Bedeli: durmayı geri gitmek saymak.",
+    "9": "Seni en çok çeken şey bütünü görmek. Tek tek olanlar değil, hepsinin birlikte ne anlama geldiği. Kendinden büyük bir şeye bağlanma isteği sende neredeyse vicdani bir zorunluluk gibi çalışır. Bedeli: büyük resme bakarken önündeki adımı kaçırmak."
   },
   "yogunluk_sayisi_notu": "Gizli Tutku ile 'aşırı' kaydına düşen sayılar aynı olmak zorunda değildir: Gizli Tutku tablonun görece zirvesi, 'aşırı' ise beklentiye göre fazlalıktır. İkisi örtüşüyorsa okuma pekişir; örtüşmüyorsa Gizli Tutku bir yön, aşırı sayı bir yük olarak okunur."
 }
