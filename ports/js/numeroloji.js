@@ -365,9 +365,83 @@ function metinleriSec(sonuc, secenekler = {}) {
   };
 }
 
+// ---------------------------------------------------------------------------
+// İkincil tablo: sonradan edinilen soyadın (evlilik soyadı) etkisi
+// ---------------------------------------------------------------------------
+
+const SINIF_SIRASI = ['eksik', 'normalin_alti', 'dengeli', 'normalin_ustu', 'asiri'];
+
+/**
+ * Ana tablo (doğum adı) ile ikincil tabloyu (doğum adı + sonradan edinilen
+ * soyad) karşılaştırır. Okunan şey ADET DEĞİL DEĞİŞİMDİR: ad uzadıkça beklenti
+ * de büyüdüğü için bir sayı, adedi artmasına rağmen sınıf olarak aşağı
+ * inebilir ("yumuşama").
+ *
+ * @returns {Array<{sayi, anaFrekans, ikincilFrekans, delta, anaSinif,
+ *   ikincilSinif, etki, etiket, metin}>}
+ */
+function ikincilOkuma(ana, ikincil, secenekler = {}) {
+  const veriDizini = secenekler.veriDizini || VARSAYILAN_VERI_DIZINI;
+  const veri = yukle('ikincil-tablo', veriDizini);
+  const ETIKET = {
+    kapanma: 'Boşluk kapanıyor',
+    guclenme: 'Güçleniyor',
+    yumusama: 'Yumuşuyor',
+    ayni_yonde: 'Aynı yönde destek',
+    destek_yok: 'Destek yok',
+    destek_yok_seyrelme: 'Destek yok — göreli ağırlık azalıyor',
+  };
+
+  const okumalar = [];
+  for (let n = 1; n <= 9; n++) {
+    const a = ana.okumalar[n];
+    const b = ikincil.okumalar[n];
+    const delta = b.frekans - a.frekans;
+
+    const siraFarki = SINIF_SIRASI.indexOf(b.sinif) - SINIF_SIRASI.indexOf(a.sinif);
+
+    let etki;
+    // Harf eklenmese bile ad uzadigi icin beklenti buyur: sayinin goreli
+    // agirligi dusebilir. Bunu "degismiyor" diye anlatmak yanlis olurdu.
+    if (delta <= 0) etki = siraFarki < 0 ? 'destek_yok_seyrelme' : 'destek_yok';
+    else if (a.sinif === 'eksik') etki = 'kapanma';
+    else {
+      etki = siraFarki > 0 ? 'guclenme' : siraFarki < 0 ? 'yumusama' : 'ayni_yonde';
+    }
+
+    const sayiVerisi = veri.sayilar[n];
+    let metin;
+    if (etki === 'kapanma' || etki === 'guclenme' || etki === 'yumusama') {
+      metin = sayiVerisi[etki];
+    } else {
+      metin = veri.genel[etki].replace('{tema}', sayiVerisi.tema);
+    }
+
+    okumalar.push({
+      sayi: n,
+      anaFrekans: a.frekans,
+      ikincilFrekans: b.frekans,
+      delta,
+      anaSinif: a.sinif,
+      ikincilSinif: b.sinif,
+      etki,
+      etiket: ETIKET[etki],
+      metin,
+    });
+  }
+  return okumalar;
+}
+
+/** İkincil tablo bölümünün açıklama metni. */
+function ikincilBolumNotu(secenekler = {}) {
+  return yukle('ikincil-tablo', secenekler.veriDizini || VARSAYILAN_VERI_DIZINI).bolum_notu;
+}
+
 module.exports = {
   kapsamHesapla,
   metinleriSec,
+  ikincilOkuma,
+  ikincilBolumNotu,
   normalize: (ad, veriDizini) => normalize(ad, harfHaritasi(veriDizini || VARSAYILAN_VERI_DIZINI)),
   indirge,
 };

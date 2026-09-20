@@ -1,0 +1,78 @@
+{
+  "surum": "1.0",
+  "aciklama": "Ikincil tablo: dogum adina sonradan eklenen soyadin (evlilik soyadi) etkisi. 1.0'da ve 2.0'in ilk surumunde bu katman icin cerceve yoktu; birlesik tablo, ayni hucre metnini birlesik adetle tekrar ediyordu. Burada okunan sey ADET degil DEGISIMDIR: sayinin ad uzunluguna gore yogunluk sinifi nasil kayiyor. Kullanici onayi: 20 Eyl 2026.",
+  "kural_notu": "Karmik Dersler DOGUM ADINDAN okunur; es soyadi bir dersi ortadan kaldirmaz. 'Kapanma' metinleri bunu acikca soyler.",
+
+  "etkiler": {
+    "kapanma": "Dogum adinda eksik olan sayi, es soyadiyla tabloya giriyor.",
+    "guclenme": "Sayinin yogunluk sinifi bir kademe yukari cikiyor.",
+    "yumusama": "Sinif bir kademe asagi iniyor: ad uzadikca beklenti buyur, asirilik dengeye yaklasir.",
+    "ayni_yonde": "Adet artiyor ama yogunluk sinifi degismiyor.",
+    "destek_yok": "Es soyadinda bu sayiya denk gelen harf yok."
+  },
+
+  "bolum_notu": "EŞ DESTEĞİ SÜTUNU: Bu sütun, evlilik soyadının doğum tablona ne kattığını okur. Doğum adın ana tablondur ve değişmez; evlilik soyadı sonradan edinilen bir katmandır. Burada önemli olan harflerin sayısı değil, o sayının tablodaki ağırlığının nasıl değiştiğidir: bir boşluk kapanıyor mu, bir yan güçleniyor mu, yoksa bir aşırılık dengeye mi yaklaşıyor.",
+
+  "genel": {
+    "ayni_yonde": "Eşinin soyadı bu sayıdan harf getiriyor ama tablodaki ağırlığı değişmiyor: {tema} aynı düzeyde kalıyor, sadece biraz daha desteklenmiş oluyor. Bu sessiz bir destektir; yönünü değiştirmez, elini güçlendirir.",
+    "destek_yok": "Eşinin soyadında bu sayıya denk gelen harf yok. Bu alan senin kendi tablondaki hâliyle kalıyor; ne destekleniyor ne de değişiyor.",
+    "destek_yok_seyrelme": "Eşinin soyadında bu sayıya denk gelen harf yok. Harf sayısı aynı kalırken tablo genişlediği için {tema} göreli olarak biraz geri çekiliyor: kaybolmuyor, ama ortak hayatta belirleyiciliği azalıyor."
+  },
+
+  "sayilar": {
+    "1": {
+      "tema": "bağımsızlık ve karar",
+      "kapanma": "Doğum adında 1 hiç geçmiyor: kendi adına karar vermek ve öne çıkmak sana kendiliğinden gelmiyor. Eşinin soyadı bu boşluğa denk gelen bir harf getiriyor. Karmik Ders ortadan kalkmaz — ders doğum adından okunur ve senindir. Ama pratikte şu olur: karar anlarında yanında seni ileri iten biri vardır. Dikkat edilecek yer, kararı tamamen ona bırakmak; destek başka şey, yerine geçmek başka şey.",
+      "guclenme": "Bağımsızlık ve öne çıkma yanın sende zaten vardı; eşinin soyadıyla bir kademe daha belirginleşiyor. İlişki içinde inisiyatif almak sana daha kolay gelir, ortak kararlarda yönü çoğu zaman sen belirlersin. Dikkat edilecek yer, ortak alanda da tek başına karar verme alışkanlığı.",
+      "yumusama": "Doğum adında 1 beklenenin çok üzerinde: bağımsızlık ihtiyacın baskın. Eşinin soyadıyla bu baskınlık bir kademe geriliyor. Sayı azalmıyor, tablo genişliyor: yanına başka renkler eklenince 1 tek başına belirleyici olmaktan çıkıyor. Pratikte bu, kendi başına karar verme ihtiyacının ilişki içinde yumuşaması demek. Bunu bir kayıp değil, nefes payı olarak okumak daha doğru."
+    },
+    "2": {
+      "tema": "duyarlılık ve işbirliği",
+      "kapanma": "Doğum adında 2 hiç geçmiyor: ayrıntı, sabır ve yan yana durmak senin kendiliğinden gelen yanın değil. Eşinin soyadı bu boşluğa denk gelen bir harf getiriyor. Ders ortadan kalkmaz, o senin; ama ilişki içinde bu alan görünür olur. Ortamın havasını okumak, ikinizin arasında paylaşılan bir iş hâline gelir. Dikkat edilecek yer, ince işlerin hep ona kalması.",
+      "guclenme": "Duyarlılığın ve birlikte çalışma yanın eşinin soyadıyla bir kademe öne çıkıyor. İlişki içinde uyum kurmak, karşındakini hesaba katmak daha doğal gelir. Dikkat edilecek yer, huzuru korumak için kendi isteklerini fazla erken geri çekmek.",
+      "yumusama": "Doğum adında 2 beklenenin üzerinde: duyarlılığın yüksek. Eşinin soyadıyla tablo genişliyor ve bu yoğunluk bir kademe hafifliyor. Pratikte bu, her şeyi hissetme yükünün biraz dağılması demek. İlişki burada bir tampon işlevi görür: alınganlık azalır, duyarlılık kalır."
+    },
+    "3": {
+      "tema": "ifade ve yaratıcılık",
+      "kapanma": "Doğum adında 3 hiç geçmiyor: kendini göstermek ve anlatmak sana zahmetli gelir. Eşinin soyadı bu boşluğa denk gelen bir harf getiriyor. Ders senin, yerini kimse alamaz; ama pratikte şu olur: söylemek istediğini ilişki içinde daha kolay söylersin, bazen de senin adına söyleyen biri olur. Dikkat edilecek yer, sesini tamamen ona emanet etmek.",
+      "guclenme": "Anlatma ve üretme yanın eşinin soyadıyla bir kademe öne çıkıyor. İkinizin birlikte olduğu ortamlarda söz ve neşe daha görünür olur. Dikkat edilecek yer, anlatılanın yapılanın önüne geçmesi.",
+      "yumusama": "Doğum adında 3 beklenenin üzerinde: ifade ihtiyacın yüksek. Eşinin soyadıyla bu yoğunluk bir kademe geriliyor. Pratikte bu, her şeyi anlatma isteğinin azalması ve sözün biraz daha ölçülmesi demek. Dağılma riski düşer, üretim kalır."
+    },
+    "4": {
+      "tema": "düzen ve emek",
+      "kapanma": "Doğum adında 4 hiç geçmiyor: düzen, sabır ve tekrarlı emek senin kendiliğinden gelen yanın değil. Eşinin soyadı bu boşluğa denk gelen bir harf getiriyor. Bu, dersin ortadan kalktığı anlamına gelmez — Karmik Ders doğum adından okunur ve senindir. Ama pratikte şu olur: bu alanda yanında taşıyıcı biri vardır. Düzeni kurmak, işin temelini tutmak ikinizin arasında paylaşılan bir iş hâline gelir. Dikkat edilecek yer, bu işi tamamen ona bırakmak.",
+      "guclenme": "Düzen ve somut emek yanın eşinin soyadıyla bir kademe öne çıkıyor. Ortak hayatta işler daha planlı yürür, söz verilen şey yerine gelir. Dikkat edilecek yer, düzenin amaç hâline gelip esnekliği yemesi.",
+      "yumusama": "Doğum adında 4 beklenenin üzerinde: düzen ihtiyacın yüksek. Eşinin soyadıyla tablo genişliyor ve bu ihtiyaç bir kademe hafifliyor. Pratikte bu, plan dışına çıkıldığında daha az zorlanmak demek. Sağlamlık kalır, katılık azalır."
+    },
+    "5": {
+      "tema": "özgürlük ve değişim",
+      "kapanma": "Doğum adında 5 hiç geçmiyor: yeniye açılmak ve değişime ayak uydurmak sana kendiliğinden gelmiyor. Eşinin soyadı bu boşluğa denk gelen bir harf getiriyor. Ders senin; ama pratikte şu olur: hayatına hareket ve çeşitlilik çoğu zaman ilişki üzerinden girer. Yeni olanı denemek ikinizin arasında kolaylaşır. Dikkat edilecek yer, değişimi hep onun başlatmasını beklemek.",
+      "guclenme": "Esneklik ve merak yanın eşinin soyadıyla bir kademe öne çıkıyor. Ortak hayatta yeniye açılmak, yer değiştirmek, denemek daha kolay olur. Dikkat edilecek yer, hareketin istikrarın önüne geçmesi.",
+      "yumusama": "Doğum adında 5 beklenenin üzerinde: özgürlük ihtiyacın yüksek. Eşinin soyadıyla bu yoğunluk bir kademe geriliyor. Pratikte bu, sürekli hareket ihtiyacının azalması ve bağlanmanın daha az kısıtlayıcı hissedilmesi demek. Canlılık kalır, savrulma azalır."
+    },
+    "6": {
+      "tema": "sorumluluk ve uyum",
+      "kapanma": "Doğum adında 6 hiç geçmiyor: sorumluluk almak ve bağlanmak sana önce kısıtlama gibi görünür. Eşinin soyadı bu boşluğa denk gelen bir harf getiriyor. Ders senin; ama pratikte şu olur: bağlanmanın ne olduğunu en çok bu ilişki içinde öğrenirsin. Yükü paylaşmak burada somut bir deneyime dönüşür. Dikkat edilecek yer, sorumluluğun tamamını onun üstlenmesine izin vermek.",
+      "guclenme": "Sorumluluk ve uyum yanın eşinin soyadıyla bir kademe öne çıkıyor. Ev, aile ve yakın çevre ortak hayatınızda doğal olarak merkeze gelir. Dikkat edilecek yer, herkesin yükünü üstlenip kendinizi unutmak.",
+      "yumusama": "Doğum adında 6 beklenenin üzerinde: sorumluluk duygun yüksek. Eşinin soyadıyla tablo genişliyor ve bu yük bir kademe hafifliyor. Pratikte bu, her şeyi düzeltme ihtiyacının azalması demek. Sahiplenmek kalır, kendini feda etme eğilimi geriler."
+    },
+    "7": {
+      "tema": "derinlik ve iç dünya",
+      "kapanma": "Doğum adında 7 hiç geçmiyor: bir şeyin derinine inmek ve kendine dönmek sana çekici gelmiyor. Eşinin soyadı bu boşluğa denk gelen bir harf getiriyor. Ders senin; ama pratikte şu olur: durup düşünmeyi, sessizliği ve sorgulamayı ilişki içinde tanırsın. Dikkat edilecek yer, derin işleri hep ona havale edip yüzeyde kalmak.",
+      "guclenme": "Derinlik ve inceleme yanın eşinin soyadıyla bir kademe öne çıkıyor. Ortak kararlarda acele etmeden bakmak, nedenini anlamak daha kolay olur. Dikkat edilecek yer, düşünmenin harekete geçmenin önüne geçmesi.",
+      "yumusama": "Doğum adında 7 beklenenin üzerinde: sorgulama ve içe dönme yanın yüksek. Eşinin soyadıyla bu yoğunluk bir kademe geriliyor. Pratikte bu, kendi içine kapanma eğiliminin azalması demek. Derinlik kalır, mesafe azalır."
+    },
+    "8": {
+      "tema": "güç ve maddi dünya",
+      "kapanma": "Doğum adında 8 hiç geçmiyor: para, güç ve verilenle alınan arasındaki denge senin kendiliğinden geldiğin alan değil. Eşinin soyadı bu boşluğa denk gelen bir harf getiriyor. Ders senin; ama pratikte şu olur: maddi dünyanın kuralları ilişki içinde daha görünür olur, çoğu zaman da birlikte öğrenilir. Dikkat edilecek yer, para tarafını tamamen ona bırakıp uzaktan bakmak.",
+      "guclenme": "Güç ve somut başarı yanın eşinin soyadıyla bir kademe öne çıkıyor. Ortak hayatta hedef koymak, riski hesaplamak ve sonucu kovalamak daha kolay olur. Dikkat edilecek yer, başarının ilişkinin önüne geçmesi.",
+      "yumusama": "Doğum adında 8 beklenenin üzerinde: güç ve kazanç ekseni baskın. Eşinin soyadıyla tablo genişliyor ve bu baskınlık bir kademe hafifliyor. Pratikte bu, her şeyi kazanç ve kontrol üzerinden okuma eğiliminin azalması demek. Güç kalır, sertlik azalır."
+    },
+    "9": {
+      "tema": "şefkat ve geniş bakış",
+      "kapanma": "Doğum adında 9 hiç geçmiyor: duyguları anlamak ve kendini başkasının yerine koymak senin için zor bir alan. Eşinin soyadı bu boşluğa denk gelen bir harf getiriyor. Ders senin; ama pratikte şu olur: empatiyi en çok bu ilişki içinde çalışırsın, çoğu zaman da o sana aynayı tutar. Dikkat edilecek yer, duygusal işlerin tamamının ona yüklenmesi.",
+      "guclenme": "Şefkat ve geniş bakış yanın eşinin soyadıyla bir kademe öne çıkıyor. Ortak hayatta başkasına dokunan işler, yardım ve paylaşım doğal olarak yer bulur. Dikkat edilecek yer, dışarıya verirken kendi aranızdakini ihmal etmek.",
+      "yumusama": "Doğum adında 9 beklenenin üzerinde: duygusal yoğunluğun yüksek. Eşinin soyadıyla bu yoğunluk bir kademe geriliyor. Pratikte bu, coşkuyla çöküş arasındaki salınımın azalması demek. Şefkat kalır, sınırsız fedakârlık geriler."
+    }
+  }
+}

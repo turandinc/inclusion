@@ -47,6 +47,7 @@ Motor Python referans uygulamasıdır. Başka bir dile taşımak için:
 | `tests/uyumluluk-vektorleri.json` | 24 altın vektör (girdi → beklenen çıktı) |
 | `scripts/vektor_uret.py --dogrula` | Vektörlerin motorla uyumunu denetler |
 | `ports/js/numeroloji.js` | Node (CommonJS) portu — 24/24 vektör geçiyor: `node ports/js/uyumluluk.test.js` |
+| `ports/js/ikincil.test.js` | İkincil tablo (evlilik soyadı) okuması — 6 örnek, 6 etki türü |
 
 `data/*.json` hiçbir dile bağlı değildir ve olduğu gibi okunur. Portun işi
 yalnızca doğru sayıları üretmek ve doğru metin anahtarını seçmek.
@@ -57,9 +58,16 @@ yalnızca doğru sayıları üretmek ve doğru metin anahtarını seçmek.
 
 1. **Karmik Borç (13/14/16/19).** Karmik Ders'ten farklı bir kavram; doğum
    tarihi ve çekirdek sayı toplamlarından okunur. Korpusta hiç yok.
-2. **İkincil tablolar.** `kapsam_hesapla(..., ad=...)` kullanılan ad ve evlilik
-   soyadı için çalışıyor, ama bunlara ait yorum çerçevesi ("sonradan edinilen
-   titreşim") henüz yazılmadı.
+2. ~~**İkincil tablolar.**~~ ✅ **Yapıldı (20 Eyl 2026).** Evlilik soyadı için
+   çerçeve yazıldı: `data/ikincil-tablo.json` + `ikincilOkuma()` (JS portu).
+   Okunan şey adet değil DEĞİŞİMDİR — ad uzadıkça beklenti büyüdüğü için bir
+   sayı, adedi artsa bile sınıf olarak inebilir. Altı etki: kapanma, güçlenme,
+   yumuşama, aynı yönde destek, destek yok, destek yok + seyrelme. Karmik Ders
+   doğum adından okunur; eş soyadı bir dersi KALDIRMAZ (test bunu korur:
+   `ports/js/ikincil.test.js`).
+
+   ⚠️ Bu katman şu an YALNIZCA JS portunda var; Python referans uygulaması
+   ikincil tabloyu hesaplamıyor. Python'a taşınırsa aynı veri dosyası okunur.
 3. **Hücre metinlerinin tema etiketleriyle filtrelenmesi.** Metadata
    (`temalar`) hazır; "kariyer raporu" / "ilişki raporu" gibi tematik kesitler
    bu alandan üretilebilir.
